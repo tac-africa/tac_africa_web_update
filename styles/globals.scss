@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.img_landing-container {
+    position: relative;
+    
+    img {
+      position: absolute;
+      animation-name: multiple-image-crossfade;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-duration: 16s;
+      &:nth-of-type(1) {
+        animation-delay: 12s;
+      }
+      &:nth-of-type(2) {
+        animation-delay: 8s;
+      }
+      &:nth-of-type(3) {
+        animation-delay: 4s;
+      }
+      &:nth-of-type(4) {
+        animation-delay: 0;
+      }
+    }
+  }
+  
+  @keyframes multiple-image-crossfade {
+    0% {
+      opacity:1;
+    }
+    17% {
+      opacity:1;
+    }
+    25% {
+      opacity:0;
+    }
+    92% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  .slick-dots li.slick-active button:before{
+    color: #1F47AF;
+  }
+
+  .slick-dots:hover button:before{
+    color: #1F47AF;
+  }
