@@ -11,13 +11,13 @@ type CardProps = {
 }
 
 export const CardWithDetails = ( {post} : any ) => {
-  console.log(post)
+  console.log(post.cover?.external?.url)
 
   return (
     <div key={ post.properties.Name.title } className="p-4 flex items-stretch h-[32rem] " style={{display: 'flex: 1 1 auto'}}> {/*md:w-6/12 lg:w-1/3*/}
         <div className="border-2 border-gray-200 rounded-lg w-full  ">
             <img className="object-cover object-center w-full lg:h-48 md:h-36"
-                src={ post.cover?.external.url } alt="blog" />
+                src={ post.cover?.external?.url || 'https://res.cloudinary.com/tacafrica/image/upload/v1657884296/my_folder/fq0rkbyibtd4heb2bjom.png' } alt="blog" />
             <div className="p-6">
                 <span
                     className="inline-block p-2 mb-2 text-xs font-medium tracking-widest text-green-800 bg-green-200 rounded">{"category"}
