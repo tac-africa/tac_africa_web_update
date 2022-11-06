@@ -1,28 +1,9 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
-import { data } from "../../pages/api/labs";
 import { Card } from "../cards/Card";
 import Slider from "react-slick";
-import { getDatabase } from '../../lib/notion'
-import { GetStaticProps, InferGetStaticPropsType } from "next";
 
-
-const databaseId: string = process.env.NOTION_BLOG_DATABASE_ID || ""
-
-export const getStaticProps : GetStaticProps = async () => {
-  const database = await getDatabase(databaseId);
-
-  return {
-    props: {
-      posts: database,
-    },
-    revalidate: 1,
-  };
-};
-
-
-export default function carouselCard({ posts } : InferGetStaticPropsType<typeof getStaticProps>){
+export default function carouselCard({ posts , path } : any){
 
   var settings = {
     dots: true,
@@ -64,10 +45,7 @@ export default function carouselCard({ posts } : InferGetStaticPropsType<typeof 
         <div className="mx:pl-4 pl-4 m-4 pb-8 ">
         <Slider {...settings} className='flex ' >
             {posts.map((post : any) => (
-                <Card post={post} />
-            ) )}
-              {posts.map((post : any) => (
-                <Card post={post} />
+                <Card post={post} path={path} />
             ) )}
         </Slider>
         </div>

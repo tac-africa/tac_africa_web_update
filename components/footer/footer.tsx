@@ -3,8 +3,21 @@ import Button from '../button/Button'
 
 export default function Footer() {
   return (
-    <div>
-        <div className='w-10/12 mx-auto mt-12'>
+    <div className='bg-[#F8FAFC]'>
+        <div className='w-10/12 mx-auto pt-12'>
+            <div className="mx-auto w-10/12 text-center mb-12 lg:w-7/12">
+            <h2 className="text-sweet_blue mx-auto pt-1.5 font-bold text-4xl text-center mb-6">
+                contact <span className="text-primary font-bold text-4xl">us </span>{' '}
+            </h2>
+            <p className="text-sm lg:text-lg">
+                do not hesitate to reach out to us
+            </p>
+            </div>
+            <div className='grid lg:grid-cols-3 gap-4 mb-10'>
+                <div className='h-[10rem] border rounded-xl bg-white'></div>
+                <div className='h-[10rem] border rounded-xl bg-white'></div>
+                <div className='h-[10rem] border rounded-xl bg-white'></div>
+            </div>
 
             <div className="bg-blue-600 rounded-lg min-h-[14rem] mb-10 flex flex-col justify-center items-center">
                 <h2 className='text-white text-3xl font-semibold w-80 text-center mb-4' >Subscribe to our newsletter</h2>

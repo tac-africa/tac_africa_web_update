@@ -1,19 +1,12 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable @next/next/no-img-element */
-import React, { useState, useEffect } from 'react'
-import Link from "next/link";
-import { data } from "../../pages/api/latestNewsData";
+import React from 'react'
 import { CardWithDetails } from "../cards/CardWithDetails";
 import Slider from "react-slick";
-import { getDatabase } from "../../lib/notion";
-// import { getPublishedPosts } from "../../services/notion-service";
 
 export const databaseId: string = process.env.NOTION_BLOG_DATABASE_ID || ""
 
-const CarouselCardWithDetails = ({ posts } : any) => {
-
-  console.log(posts)
-
+const CarouselCardWithDetails = ({ posts, path } : any) => {
 
   var settings = {
     dots: true,
@@ -55,10 +48,7 @@ const CarouselCardWithDetails = ({ posts } : any) => {
         <div className="mx:pl-4 pb-8 ">
         <Slider {...settings} className='flex '>
             {posts.map( (post : any) => (
-                <CardWithDetails post={post} />
-            ) )}
-            {posts.map( (post : any) => (
-                <CardWithDetails post={post} />
+                <CardWithDetails post={post} path={path} />
             ) )}
         </Slider>
         </div>

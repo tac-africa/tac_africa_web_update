@@ -10,29 +10,35 @@ import { getDatabase } from '../lib/notion'
 import { GetStaticProps } from "next";
 import OngoingProjects from '../components/priojects/ongoingProjects'
 import Contact from '../components/contact/Contact'
+import { SetNewsPostData } from '../hooks/setNewsPostsDataHooks'
 
 
 const databaseId: string = process.env.NOTION_BLOG_DATABASE_ID || ""
 
 export const getStaticProps : GetStaticProps = async () => {
-  const database = await getDatabase(databaseId);
+  const news = await getDatabase(databaseId, 'news');
+  const labs = await getDatabase(databaseId, 'labs');
+
 
   return {
     props: {
-      posts: database,
+      posts: news,
+      labPosts: labs
     },
     revalidate: 1,
   };
 };
 
-const Home: NextPage = ( { posts } : any ) => {
 
+const Home: NextPage = ( { posts, labPosts } : any ) => {
+  
+  
 
   return (
     <div className="">
      <LandingPage />
      <LatestNews posts={posts} />
-     <Labs posts={posts} />
+     <Labs posts={labPosts}  />
      <OngoingProjects />
      <Contact />
     </div>

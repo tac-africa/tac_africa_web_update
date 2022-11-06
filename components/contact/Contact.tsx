@@ -2,15 +2,12 @@
 import React from 'react'
 import Button from '../button/Button'
 import Map from '../map/map'
-// import Button from '../Button'
 
 
 export default function Contact() {
    const myENV = process.env.NEXT_PUBLIC_WEB3FORMS_API_KEY
   return (
     <>
-{/* <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" /> */}
-{/* <Map /> */}
 
 <div className="bg-[#F8FAFC]">
     <section id='contact' className=" w-10/12 lg:w-8/12 mx-auto py-20 lg:py-[120px] overflow-hidden relative z-10">
