@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/jsx-key */
-import VideoComp from './videoPlayer/video';
+// import VideoComp from './videoPlayer/video';
 import Link from 'next/link';
 import FormModal from './formModal';
 import React, { useState } from 'react';
