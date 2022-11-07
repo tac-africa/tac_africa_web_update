@@ -32,8 +32,6 @@ export const getStaticProps : GetStaticProps = async () => {
 
 const Home: NextPage = ( { posts, labPosts } : any ) => {
   
-  console.log({ posts, labPosts })
-  
 
   return (
     <div className="">

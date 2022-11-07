@@ -14,6 +14,17 @@ type PdfType = {
 
 export default function LatestNews( {posts} : any) { // fix any type
 
+//fix bug on production
+  let labPosts = posts[0].properties.Category.select.name;
+
+  let news: any[] = []
+
+  posts.forEach((post: any) => {
+    if(labPosts == 'news') {
+      news.push(post)
+    }
+  })
+
 
   const [modalShow, setModalShow] = useState(false);
   const [PDF, setPDF] = useState('');
@@ -40,7 +51,7 @@ export default function LatestNews( {posts} : any) { // fix any type
         </div>
         <p className='text-center text-grey_light'>Browse through latest happenings and events.</p>
         <div className="pl-4 m-4 flex-wrap items-stretch grow">
-          <CarouselCardWithDetails posts={posts} path={'blog'} />
+          <CarouselCardWithDetails posts={news} path={'blog'} />
         </div>
       </div>
     </div>

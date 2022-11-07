@@ -3,6 +3,16 @@ import Link from 'next/link';
 import CarouselCard  from '../components/carousel/carouselCard'
 
 export default function Labs({ posts } : any ) {
+
+  let labPosts = posts[0].properties.Category.select.name;
+
+  let labs: any[] = []
+
+  posts.forEach((post: any) => {
+    if(labPosts == 'labs') {
+      labs.push(post)
+    }
+  })
  
   return (
     <div className=''>
@@ -52,7 +62,7 @@ export default function Labs({ posts } : any ) {
         </h2>
       </div>
       <p className='text-center text-grey_light'>Browse through our digitalized specialized labs.</p>
-        <CarouselCard posts={posts} path={'labs'} />
+        <CarouselCard posts={labs} path={'labs'} />
     </div>
     </div>
   )
