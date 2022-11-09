@@ -10,7 +10,6 @@ import { getDatabase } from '../lib/notion'
 import { GetStaticProps } from "next";
 import OngoingProjects from '../components/priojects/ongoingProjects'
 import Contact from '../components/contact/Contact'
-import { SetNewsPostData } from '../hooks/setNewsPostsDataHooks'
 
 
 const databaseId: string = process.env.NOTION_BLOG_DATABASE_ID || ""
