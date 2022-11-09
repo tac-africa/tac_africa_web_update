@@ -92,7 +92,7 @@ const NavBar = () => {
                   <Link href="/blog">
                       <button
                         type="button"
-                        className="capitalize text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm 2xl:text-lg px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        className="capitalize text-white w-28 bg-blue-700 ml-6 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm 2xl:text-lg px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                         key={data[0].label}
                       >
                         {label}
@@ -110,11 +110,11 @@ const NavBar = () => {
                   </Link>
                 ) : 
                 (
-                  <li>
+                  <li className='py-2.5'>
                     <Link
                       key={i}
                       href={label == 'Home' ? '/' : '/contact'}
-                      className="capitalize block py-2 pr-4 pl-3 text-gray-700 border-b 2xl:text-lg border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                      className="capitalize block py-2.5 pr-4 pl-3 text-gray-700 border-b 2xl:text-lg border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                     >
                       {label}
                     </Link>

@@ -58,7 +58,7 @@ const DropDownButton = ({
         type="button"
       >
         {label}{' '}
-        { !isFooter && <svg
+        <svg
           className="w-4 h-4 ml-2"
           fill="none"
           stroke="currentColor"
@@ -71,13 +71,13 @@ const DropDownButton = ({
             strokeWidth="2"
             d="M19 9l-7 7-7-7"
           ></path>
-        </svg>}
+        </svg>
       </button>
       {/* <!-- Dropdown menu --> */}
       {isShown && (
         <div
           id="dropdownMenu"
-          className={` ${isFooter ? "inline-block " : "block "  }  bg-white z-10 absolute divide-gray-100 rounded shadow dark:bg-gray-700 `}
+          className='block bg-white z-10 absolute divide-gray-100 rounded shadow dark:bg-gray-700 '
         >
           <ul className={` ${content[0].name ? "py-1 px-2" : undefined } text-sm divide-y text-gray-700 dark:text-gray-200`}>
             {content.map(({ name, href } : ContentType ) => (

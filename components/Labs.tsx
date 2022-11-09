@@ -17,8 +17,8 @@ export default function Labs({ posts } : any ) {
   return (
     <div className=''>
             <div className="flex flex-col h-[40rem] " >
-             <div  className="flex flex-col lg:flex-row  w-10/12 m-auto "  >
-              <div className="grid grid-cols-2 gap-2 grid-rows-5  w-full lg:mr-4 lg:w-4/12 rounded-xl overflow-hidden h-[20rem] m-auto ">
+             <div  className="flex flex-col lg:flex-row w-full m-auto "  >
+              <div className="grid grid-cols-2 gap-2 grid-rows-5 w-full lg:mr-4 lg:w-4/12 rounded-xl overflow-hidden h-[25rem] m-auto ">
                 <div className="border bg-blue-700 row-span-2"></div>
                 <div className="border bg-blue-700 row-span-2"></div>
                 <div className="border bg-blue-700 row-span-3 "></div>
@@ -56,12 +56,12 @@ export default function Labs({ posts } : any ) {
       <div className="flex justify-Center items-center  py-4 mx-auto capitalize ">
         <h2 className="text-black mx-auto pt-1.5 font-bold text-4xl mt-12">
           {'Our Digitalized '}
-          <span className="text-primary font-bold text-4xl ">
+          <span className="text-main_blue font-bold text-4xl ">
             {'Specialized Labs'}
           </span>
         </h2>
       </div>
-      <p className='text-center text-grey_light'>Browse through our digitalized specialized labs.</p>
+      <p className='text-center text-black'>Browse through our digitalized specialized labs.</p>
         <CarouselCard posts={labs} path={'labs'} />
     </div>
     </div>

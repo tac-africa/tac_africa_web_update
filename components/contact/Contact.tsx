@@ -10,15 +10,21 @@ export default function Contact() {
     <>
 
 <div className="bg-[#F8FAFC]">
-    <section id='contact' className=" w-10/12 lg:w-8/12 mx-auto py-20 lg:py-[120px] overflow-hidden relative z-10">
+    <section id='contact' className=" w-10/12 lg:w-10/12 mx-auto py-20 lg:py-[120px] overflow-hidden relative z-10">
 
     <div className="mx-auto w-10/12 text-center mb-12 lg:w-7/12">
-          <h2 className="text-sweet_blue mx-auto pt-1.5 font-bold text-6xl text-center">
+          <h2 className=" mx-auto pt-1.5 font-bold text-6xl text-center">
             <span className="text-primary font-bold text-3xl"> Contact Us</span>{' '}
           </h2>
           <p className="text-sm lg:text-lg">
             If you have any questions please do not hesitate to reach out
           </p>
+        </div>
+
+        <div className='grid lg:grid-cols-3 gap-4 mb-10'>
+            <div className='h-[10rem] border rounded-xl bg-white'></div>
+            <div className='h-[10rem] border rounded-xl bg-white'></div>
+            <div className='h-[10rem] border rounded-xl bg-white'></div>
         </div>
 
     <div className="container">

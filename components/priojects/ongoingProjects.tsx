@@ -6,10 +6,10 @@ export default function OngoingProjects() {
     <>
       <div className="w-10/12 mx-auto mt-12 ">
         <div className="mx-auto w-10/12 text-center mb-12 lg:w-7/12">
-          <h2 className="text-sweet_blue mx-auto pt-1.5 font-bold text-4xl text-center mb-6">
-            Explore our <span className="text-primary font-bold text-4xl">recent Projects </span>{' '}
+          <h2 className=" mx-auto pt-1.5 font-bold text-4xl text-center mb-6">
+            Explore our <span className="text-main_blue font-bold ">recent Projects </span>{' '}
           </h2>
-          <p className="text-sm lg:text-lg">
+          <p className="">
             TAC Africa through her collaborations and partnerships
             curate, develop projects to help organization and industries
             benefit from emerging technology
@@ -28,7 +28,7 @@ export default function OngoingProjects() {
             <div className="lg:w-5/12 mx-auto lg:my-auto">
               <div id='irpas'>
                 
-                <h2  className="text-sweet_blue font-bold text-xl my-3">
+                <h2  className=" font-bold text-xl my-3">
                   Institute for Remote Piloted Aircraft Systems (IRPAS)
                 </h2>
                 <p className="text-xs  lg:text-base 2xl:text-xl">
@@ -68,7 +68,7 @@ export default function OngoingProjects() {
             </div>
             <div className="lg:w-5/12 mx-auto lg:my-auto">
               <div id='irpas'>
-                <h2  className="text-sweet_blue font-bold text-xl my-3">
+                <h2  className=" font-bold text-xl my-3">
                   Project 774
                 </h2>
                 <p className="text-xs  lg:text-base 2xl:text-xl">
@@ -103,7 +103,7 @@ export default function OngoingProjects() {
             </div>
             <div className="lg:w-5/12 mx-auto lg:my-auto">
               <div id='irpas'>
-                <h2  className="text-sweet_blue font-bold text-xl my-3">
+                <h2  className=" font-bold text-xl my-3">
                   Project 774
                 </h2>
                 <p className="text-xs  lg:text-base 2xl:text-xl">

@@ -47,7 +47,7 @@ export default function LandingPage() {
                   ''
                 }
               >
-                <h1 className="text-4xl font-semibold leading-10 capitalize text-sweet_blue 2xl:text-6xl  ">
+                <h1 className="text-4xl font-semibold leading-10 capitalize text-main_blue 2xl:text-6xl  ">
                   fostering innovation for future security challenges
                 </h1>
 
@@ -55,7 +55,7 @@ export default function LandingPage() {
                   <div
                     className={
                       // styles.bullet_heading
-                      'font-semibold mt-0 mb-2 text-2xl 2xl:text-4xl text-sweet_blue border-b-4 border-main_yellow'
+                      'font-semibold mt-0 mb-2 text-2xl 2xl:text-4xl text-main_blue border-b-4 border-main_yellow'
                     }
                     // style={{margin: '0em 0.5em 0em 0em'}}
                   >
@@ -64,7 +64,7 @@ export default function LandingPage() {
                   <div
                     className={
                       // styles.bullet_heading
-                      'font-semibold mt-0 mb-2  text-2xl  2xl:text-4xl text-sweet_blue border-b-4 border-main_yellow'
+                      'font-semibold mt-0 mb-2  text-2xl  2xl:text-4xl text-main_blue border-b-4 border-main_yellow'
                     }
                     // style={{margin: '0em 0.5em 0em 0em'}}
                   >
@@ -73,7 +73,7 @@ export default function LandingPage() {
                   <div
                     className={
                       // styles.bullet_heading
-                      'font-semibold mt-0 mb-2 text-2xl  2xl:text-4xl text-sweet_blue border-b-4 border-main_yellow'
+                      'font-semibold mt-0 mb-2 text-2xl  2xl:text-4xl text-main_blue border-b-4 border-main_yellow'
                     }
                     // style={{margin: '0em 0.5em 0em 0em'}}
                   >
@@ -81,7 +81,7 @@ export default function LandingPage() {
                   </div>
                 </h2>
 
-                <p className=" mt-4 2xl:mt-8  text-sweet_blue xl:text-base 2xl:text-3xl 2xl:leading-11 xl:mb-12  ">
+                <p className=" mt-4 2xl:mt-8  text-main_blue xl:text-base 2xl:text-3xl 2xl:leading-11 xl:mb-12  ">
                   Law enforcement officials today are facing a
                   challenging and demanding operating environment. As
                   society is increasingly connected and the world

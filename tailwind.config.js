@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         'main_blue': '#1F47AF', //Blue
         'light_blue': '#288DFF', //Light_Blue
+        'sweet_blue': '#144388',
         'grey_main': '#F5F7FA',
         'grey_light': '#D9D9D9',
         'grey_mid': '#F1F1F1',

@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/jsx-key */
-// import VideoComp from './videoPlayer/video';
 import Link from 'next/link';
 import FormModal from './formModal';
 import React, { useState } from 'react';
@@ -10,7 +9,6 @@ type PdfType = {
     children: React.ReactNode;
     pdfs: string;
 }
-
 
 export default function LatestNews( {posts} : any) { // fix any type
 
@@ -25,10 +23,8 @@ export default function LatestNews( {posts} : any) { // fix any type
     }
   })
 
-
   const [modalShow, setModalShow] = useState(false);
   const [PDF, setPDF] = useState('');
-
 
   return (
     <div className="w-full bg-grey_main">
@@ -40,11 +36,11 @@ export default function LatestNews( {posts} : any) { // fix any type
           setModalShow={setModalShow}
         />
 
-      <div className={` pt-12 pb-20 mx-auto my-0 xl:px-12`}>
+      <div className={` pt-12 mx-auto my-0 xl:px-12`}>
         <div className="flex justify-Center items-center  py-4 mx-auto capitalize">
           <h2 className="text-black mx-auto pt-1.5 font-bold text-4xl">
             {'Our Latest '}
-            <span className="text-primary font-bold text-4xl ">
+            <span className="text-main_blue font-bold text-4xl ">
               {'News Updates'}
             </span>
           </h2>
