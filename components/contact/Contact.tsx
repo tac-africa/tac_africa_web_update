@@ -2,6 +2,9 @@
 import React from 'react'
 import Button from '../button/Button'
 import Map from '../map/map'
+import { BsTelephone } from 'react-icons/bs';
+import { CiLocationOn, CiMail } from 'react-icons/ci';
+// CiLocationOn
 
 
 export default function Contact() {
@@ -22,9 +25,18 @@ export default function Contact() {
         </div>
 
         <div className='grid lg:grid-cols-3 gap-4 mb-10'>
-            <div className='h-[10rem] border rounded-xl bg-white'></div>
-            <div className='h-[10rem] border rounded-xl bg-white'></div>
-            <div className='h-[10rem] border rounded-xl bg-white'></div>
+            <div className='h-[10rem] border rounded-xl bg-white flex flex-col justify-center items-center'>
+                <BsTelephone />
+                <p className='text-sm'>phone: +234 706 224 7581</p>
+            </div>
+            <div className='h-[10rem] border rounded-xl bg-white flex flex-col justify-center items-center'>
+                <CiLocationOn />
+                <p className='text-sm'>TAC HQ: Plot 239 P.O.W Mafemi Crescent, Besides Daily Trust Newspapers, Utako District, Abuja, Nigeria. 900112</p>
+            </div>
+            <div className='h-[10rem] border rounded-xl bg-white flex flex-col justify-center items-center'>
+                <CiMail />
+                <p className='text-sm'>email: secretariat@tacafrica.org</p>
+            </div>
         </div>
 
     <div className="container">
