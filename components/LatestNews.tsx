@@ -27,7 +27,7 @@ export default function LatestNews( {posts} : any) { // fix any type
   const [PDF, setPDF] = useState('');
 
   return (
-    <div className="w-full bg-grey_main">
+    <div className="w-full bg-[#F5F7FA]">
 
       <FormModal
           PDF={PDF}
@@ -45,7 +45,7 @@ export default function LatestNews( {posts} : any) { // fix any type
             </span>
           </h2>
         </div>
-        <p className='text-center text-grey_light'>Browse through latest happenings and events.</p>
+        <p className='text-center text-black'>Browse through latest happenings and events.</p>
         <div className="pl-4 m-4 flex-wrap items-stretch grow">
           <CarouselCardWithDetails posts={news} path={'blog'} />
         </div>

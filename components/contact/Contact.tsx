@@ -110,7 +110,7 @@ export default function Contact() {
                             ></textarea>
                     </div>
                     <input type="hidden" name="redirect" value="/aboutus"></input>
-                    <div className='flex flex-col' >
+                    <div className='flex' >
                         <Button type="submit" text={'Send Message'} />
                     </div>
                 </form>

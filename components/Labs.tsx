@@ -24,7 +24,7 @@ export default function Labs({ posts } : any ) {
                 <div className="border bg-blue-700 row-span-3 "></div>
                 <div className="border bg-blue-700 row-span-3"></div>
               </div>
-              <div className="lg:w-4/12 mx-auto ">
+              <div className="lg:w-6/12 mx-auto ">
                 <div id='irpas'>
                   <h2  className="text-sweet_blue font-bold text-xl my-3">
                   Who we are and what we hope to accomplish
@@ -36,6 +36,18 @@ export default function Labs({ posts } : any ) {
                   in Africa through a community-based
                   approach (Community-centered Digital Hub) to promote digital engagement
                   </p>
+
+                  <h2  className="text-sweet_blue font-bold text-xl my-3">
+                  Who we are and what we hope to accomplish
+                  </h2>
+                  <p className="text-xs  lg:text-base 2xl:text-xl">
+                  <em>Project</em> 774 is an ongoing initiative of the Technology Against 
+                  Crime Africa NGO. It is a project initiated to help
+                  curb the security challenges and drive the growth of the Digital Economy 
+                  in Africa through a community-based
+                  approach (Community-centered Digital Hub) to promote digital engagement
+                  </p>
+                  
                 </div>
 
                 <div className='mt-4'>

@@ -52,3 +52,8 @@
   .slick-dots:hover button:before{
     color: #1F47AF;
   }
+
+  button.slick-arrow.slick-prev::before,
+  button.slick-arrow.slick-next::before {
+    color: #1F47AF;
+  }
