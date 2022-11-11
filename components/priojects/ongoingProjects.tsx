@@ -1,7 +1,21 @@
 import React from 'react'
 import Link from 'next/link'
+import { Text } from '../../pages/projects/[id]';
 
-export default function OngoingProjects() {
+export default function OngoingProjects({ posts } : any ) {
+
+
+  let projectsPosts = posts[0].properties.Category.select.name;
+
+  let projects: any[] = []
+
+  posts.forEach((post: any) => {
+    if( projectsPosts == 'projects') {
+      projects.push(post)
+    }
+  })
+
+
   return (
     <>
       <div className="w-10/12 mx-auto mt-12 ">
@@ -17,34 +31,26 @@ export default function OngoingProjects() {
         </div>
 
         <div className="flex flex-col mb-20">
-          {/* / */}
-          <div className="flex flex-col lg:flex-row ">
+          {
+            projects.map((project) => (
+            <div className="flex flex-col lg:flex-row py-4">
             <div className="w-full lg:mr-4 lg:w-4/12 rounded-xl overflow-hidden h-[20rem] m-auto bg-slate-500">
-            <img src="https://res.cloudinary.com/tacafrica/image/upload/v1657884296/my_folder/fq0rkbyibtd4heb2bjom.png" 
-                  alt="community hub"
+            <img src={ project.cover?.external?.url || 'https://res.cloudinary.com/tacafrica/image/upload/v1657884296/my_folder/fq0rkbyibtd4heb2bjom.png'} alt="project" 
                   className=' h-full w-full object-cover '
                   />
             </div>
             <div className="lg:w-5/12 mx-auto lg:my-auto">
-              <div id='irpas'>
-                
-                <h2  className=" font-bold text-xl my-3">
-                  Institute for Remote Piloted Aircraft Systems (IRPAS)
+              <div>
+                <h2  className=" font-bold text-xl my-3 text-main_blue">
+                <Text text={project.properties.Name.title} />
                 </h2>
                 <p className="text-xs  lg:text-base 2xl:text-xl">
-                  Institute for Remotely Piloted Aircraft System was
-                  conceived to address the growing demand for digital
-                  transformation. Our goal is to be the first Remotely
-                  Piloted Aircraft training and assessment organization
-                  in Nigeria. Our mission is to ensure that the training
-                  and licensing of professional RPAS Pilot In Nigeria is
-                  conducted with the highest standard to meet global
-                  standard practice.
+                <Text text={project.properties.excerpt.rich_text} />
                 </p>
               </div>
 
               <div className='mt-4'>
-                <Link href={'/irpas'}>
+                <Link href={`/projects/${project.id}`}>
                     <button
                       type="button"
                       className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
@@ -55,79 +61,8 @@ export default function OngoingProjects() {
               </div>
             </div>
           </div>
-
-          <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-
-          
-          <div className="flex flex-col lg:flex-row ">
-            <div className="w-full lg:mr-4 lg:w-4/12 rounded-xl overflow-hidden h-[20rem] m-auto bg-slate-500 ">
-            <img src="https://res.cloudinary.com/tacafrica/image/upload/v1657884296/my_folder/fq0rkbyibtd4heb2bjom.png"
-                  alt="community hub"
-                  className=' h-full w-full object-cover '
-                    />
-            </div>
-            <div className="lg:w-5/12 mx-auto lg:my-auto">
-              <div id='irpas'>
-                <h2  className=" font-bold text-xl my-3">
-                  Project 774
-                </h2>
-                <p className="text-xs  lg:text-base 2xl:text-xl">
-                <em>Project</em> 774 is an ongoing initiative of the Technology Against 
-                Crime Africa NGO. It is a project initiated to help
-                curb the security challenges and drive the growth of the Digital Economy 
-                in Africa through a community-based
-                approach (Community-centered Digital Hub) to promote digital engagement
-                </p>
-              </div>
-
-              <div className='mt-4'>
-                <Link href={'/irpas'}>
-                    <button
-                      type="button"
-                      className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-                    >
-                      See full project
-                    </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-
-          <div className="flex flex-col lg:flex-row ">
-            <div className="w-full lg:mr-4 lg:w-4/12 rounded-xl overflow-hidden h-[20rem] m-auto bg-slate-500 ">
-            <img src="https://res.cloudinary.com/tacafrica/image/upload/v1657884296/my_folder/fq0rkbyibtd4heb2bjom.png" 
-                  alt="community hub"
-                  className=' h-full w-full object-cover '
-                  />
-            </div>
-            <div className="lg:w-5/12 mx-auto lg:my-auto">
-              <div id='irpas'>
-                <h2  className=" font-bold text-xl my-3">
-                  Project 774
-                </h2>
-                <p className="text-xs  lg:text-base 2xl:text-xl">
-                <em>Project</em> 774 is an ongoing initiative of the Technology Against 
-                Crime Africa NGO. It is a project initiated to help
-                curb the security challenges and drive the growth of the Digital Economy 
-                in Africa through a community-based
-                approach (Community-centered Digital Hub) to promote digital engagement
-                </p>
-              </div>
-
-              <div className='mt-4'>
-                <Link href={'/irpas'}>
-                    <button
-                      type="button"
-                      className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-                    >
-                      See full project
-                    </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-
+            ))
+          }
 
       </div>
       </div>

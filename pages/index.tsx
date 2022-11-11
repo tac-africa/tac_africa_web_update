@@ -17,26 +17,27 @@ const databaseId: string = process.env.NOTION_BLOG_DATABASE_ID || ""
 export const getStaticProps : GetStaticProps = async () => {
   const news = await getDatabase(databaseId, 'news');
   const labs = await getDatabase(databaseId, 'labs');
-
+  const projects = await getDatabase(databaseId, 'projects');
 
   return {
     props: {
       posts: news,
-      labPosts: labs
+      labPosts: labs,
+      projects
     },
     revalidate: 1,
   };
 };
 
 
-const Home: NextPage = ( { posts, labPosts } : any ) => {
+const Home: NextPage = ( { posts, labPosts, projects} : any ) => {
 
   return (
     <div className="">
      <LandingPage />
-     <LatestNews posts={posts} />
-     <Labs posts={labPosts}  />
-     <OngoingProjects />
+     <LatestNews posts={ posts } />
+     <Labs posts={ labPosts }  />
+     <OngoingProjects posts={ projects} />
      <Contact />
     </div>
   )

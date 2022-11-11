@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/jsx-key */
-import Link from 'next/link';
 import FormModal from './formModal';
 import React, { useState } from 'react';
 import CarouselCardWithDetails from './carousel/carouselCardWithDetails';
