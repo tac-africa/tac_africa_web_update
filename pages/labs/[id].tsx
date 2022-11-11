@@ -4,6 +4,7 @@ import { getDatabase, getPage, getBlocks } from "../../lib/notion";
 import Link from "next/link";
 // import { databaseId } from "./index.js";
 import styles from "../../styles/post.module.css";
+import Button from "../../components/button/Button";
 
 
 const databaseId: string = process.env.NOTION_BLOG_DATABASE_ID || ""
@@ -21,7 +22,7 @@ export const Text = ({ text } : any) => {
     return (
       <span
         className={[
-          bold ? styles.bold : "",
+          bold ? `${styles.bold } text-main_blue`: "",
           code ? styles.code : "",
           italic ? styles.italic : "",
           strikethrough ? styles.strikethrough : "",
@@ -52,28 +53,30 @@ const renderBlock = (block : any ) => {
   const { type, id } = block;
   const value = block[type];
 
+  console.log(value.rich_text    )
+
   switch (type) {
     case "paragraph":
       return (
-        <p>
+        <p className="pb-4">
           <Text text={value.rich_text} />
         </p>
       );
     case "heading_1":
       return (
-        <h1>
+        <h1 className="pb-2 text-main_blue">
           <Text text={value.rich_text} />
         </h1>
       );
     case "heading_2":
       return (
-        <h2>
+        <h2 className="pb-2 text-main_blue">
           <Text text={value.rich_text} />
         </h2>
       );
     case "heading_3":
       return (
-        <h3>
+        <h3 className="pb-2 text-main_blue">
           <Text text={value.rich_text} />
         </h3>
       );
@@ -112,7 +115,7 @@ const renderBlock = (block : any ) => {
         value.type === "external" ? value.external.url : value.file.url;
       const caption = value.caption ? value.caption[0]?.plain_text : "";
       return (
-        <figure>
+        <figure className="py-6">
           <img src={src} alt={caption} />
           {caption && <figcaption>{caption}</figcaption>}
         </figure>
@@ -171,8 +174,8 @@ export default function Post({ page, blocks } : any) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <article className={styles.container}>
-        <h1 className={styles.name}>
+      <article className={`${styles.container}`}>
+        <h1 className={`${styles.name} text-main_blue mt-6`}>
           <Text text={page.properties.Name.title} />
         </h1>
         <section>
@@ -180,7 +183,7 @@ export default function Post({ page, blocks } : any) {
             <Fragment key={block.id}>{renderBlock(block)}</Fragment>
           ))}
           <Link href="/" className={styles.back}>
-            ← Go home
+            <Button text={' ← Go home'} />
           </Link>
         </section>
       </article>
@@ -189,7 +192,7 @@ export default function Post({ page, blocks } : any) {
 }
 
 export const getStaticPaths = async () => {
-  const database = await getDatabase(databaseId, 'labs');
+  const database = await getDatabase(databaseId, 'blog');
   return {
     paths: database.map((page : any) => ({ params: { id: page.id } })),
     fallback: true,

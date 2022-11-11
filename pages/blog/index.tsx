@@ -29,17 +29,17 @@ console.log(posts)
     <div style={{paddingTop: '5vh'}} >
       <h1 className="text-3xl text-center font-semibold tracking-wide mt-6 mb-2 capitalize ">Welcome to our Blog</h1>
      <section>
-            <div className="m-4 flex flex-wrap items-stretch gro w">
+            <div className="m-4 flex flex-wrap items-stretch gro w w-10/12 mx-auto">
                 {
                     posts.map((post :any , i : number) => (
                 <div key={i} className="p-4 md:w-6/12 lg:w-1/3 flex ">
                     <div className="border-2 border-gray-200 rounded-lg">
-                        <img className="object-cover object-center w-full lg:h-48 md:h-36"
-                            src={ 
+                        <img className="object-cover object-center px-4 pt-4 w-full lg:h-48 md:h-36"
+                            src={
                                 post.cover?.external?.url || 
                                 'https://res.cloudinary.com/tacafrica/image/upload/v1657884296/my_folder/fq0rkbyibtd4heb2bjom.png' } 
                                  alt="blog" />
-                        <div className="p-6">
+                        <div className="p-4">
                             <span
                                 className="inline-block p-2 mb-2 text-xs font-medium tracking-widest text-green-800 bg-green-200 rounded">
                                     {post.category}
@@ -65,8 +65,6 @@ console.log(posts)
                 </div>
                     ))
                 }
-
-
             </div>
         </section>
     </div>
