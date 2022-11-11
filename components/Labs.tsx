@@ -16,7 +16,7 @@ export default function Labs({ posts } : any ) {
  
   return (
     <div className=''>
-            <div className="flex flex-col h-[40rem] " >
+            <div className="flex flex-col h-[40rem] w-10/12 mx-auto" >
              <div  className="flex flex-col lg:flex-row w-full m-auto "  >
               <div className="grid grid-cols-2 gap-2 grid-rows-5 w-full lg:mr-4 lg:w-4/12 rounded-xl overflow-hidden h-[25rem] m-auto ">
                 <div className=" row-span-2 rounded-lg">
