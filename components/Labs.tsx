@@ -1,6 +1,20 @@
 import React, { useEffect, useState} from 'react'
 import Link from 'next/link';
 import CarouselCard  from '../components/carousel/carouselCard'
+import { getDatabase } from '../lib/notion';
+import { PageObjectResponse, PartialPageObjectResponse, QueryDatabaseResponse } from '@notionhq/client/build/src/api-endpoints';
+
+import {Client} from "@notionhq/client";
+// import { NotionToMarkdown } from "notion-to-md";
+// import { BlogPost } from "../@types/schema";
+
+
+const notion = new Client({auth: process.env.NOTION_ACCESS_TOKEN});
+
+
+
+const databaseId: string = process.env.NOTION_BLOG_DATABASE_ID || ""
+
 
 export default function Labs({ posts } : any ) {
 
@@ -13,6 +27,7 @@ export default function Labs({ posts } : any ) {
       labs.push(post)
     }
   })
+
  
   return (
     <div className=''>

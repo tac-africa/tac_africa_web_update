@@ -24,8 +24,7 @@ export const getStaticProps : GetStaticProps = async () => {
       posts: news,
       labPosts: labs,
       projects
-    },
-    revalidate: 1,
+    }
   };
 };
 
