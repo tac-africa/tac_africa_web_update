@@ -41,7 +41,7 @@ export default function carouselCard({ posts , path } : any){
 
   return (
     <div className="w-full ">
-      <div className="pt-12 pb-20 mx-auto my-0 xl:px-12  ">
+      <div className="lg:pt-12 pb-20 mx-auto my-0 xl:px-12  ">
         <div className="mx:pl-4 pl-4 m-4 pb-8 ">
         <Slider {...settings} className='flex ' >
             {posts.map((post : any) => (

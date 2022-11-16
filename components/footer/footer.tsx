@@ -6,19 +6,19 @@ export default function Footer() {
     <div className='bg-[#F8FAFC]'>
         <div className='w-10/12 mx-auto pt-12'>
 
-            <div className="bg-blue-600 rounded-lg min-h-[14rem] mb-10 flex flex-col justify-center items-center">
+            <div className="bg-blue-600 rounded-lg h-[20rem] min-h-[14rem] mb-10 flex flex-col justify-center items-center">
                 <h2 className='text-white text-3xl font-semibold w-80 text-center mb-4' >Subscribe to our newsletter</h2>
-                <span>
+                <span className='flex flex-col justify-center lg:flex-row'>
                     <input type="text"
                             name="name"
                             placeholder='Enter your name'
-                            className='rounded-lg bg-blue-600 outline-none border-white placeholder-white mr-2' 
+                            className='rounded-lg bg-blue-600 mx-auto outline-none border-white placeholder-white mr-2 my-2' 
                             />
 
                     <input type="email"
                             name="Email"
                             placeholder='Enter your Email'
-                            className='rounded-lg bg-blue-600 outline-none border-white placeholder-white mr-2'
+                            className='rounded-lg bg-blue-600 mx-auto outline-none border-white placeholder-white mr-2 my-2'
                             />
 
                     <Button text={'Subscribe'}/>

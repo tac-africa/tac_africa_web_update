@@ -31,7 +31,7 @@ export default function Labs({ posts } : any ) {
  
   return (
     <div className=''>
-            <div className="flex flex-col h-[40rem] w-10/12 mx-auto" >
+            <div className="flex flex-col lg:h-[40rem] w-10/12 mx-auto" >
              <div  className="flex flex-col lg:flex-row w-full m-auto "  >
               <div className="grid grid-cols-2 gap-2 grid-rows-5 w-full lg:mr-4 lg:w-4/12 rounded-xl overflow-hidden h-[25rem] m-auto ">
                 <div className=" row-span-2 rounded-lg">
@@ -58,7 +58,7 @@ export default function Labs({ posts } : any ) {
                   <h2  className="text-sweet_blue font-bold text-xl my-3">
                   Who we are and what we hope to accomplish
                   </h2>
-                  <p className="text-xs  lg:text-base 2xl:text-xl">
+                  <p className="text-xs mb-10 lg:text-base 2xl:text-xl tracking-wide text-gray-700">
                   <em>Project</em> 774 is an ongoing initiative of the Technology Against 
                   Crime Africa NGO. It is a project initiated to help
                   curb the security challenges and drive the growth of the Digital Economy 
@@ -69,7 +69,7 @@ export default function Labs({ posts } : any ) {
                   <h2  className="text-sweet_blue font-bold text-xl my-3">
                   Who we are and what we hope to accomplish
                   </h2>
-                  <p className="text-xs  lg:text-base 2xl:text-xl">
+                  <p className="text-xs  lg:text-base 2xl:text-xl tracking-wide text-gray-700">
                   <em>Project</em> 774 is an ongoing initiative of the Technology Against 
                   Crime Africa NGO. It is a project initiated to help
                   curb the security challenges and drive the growth of the Digital Economy 
@@ -95,14 +95,14 @@ export default function Labs({ posts } : any ) {
 
     <div className='bg-[#F5F7FA] '>
       <div className="flex justify-Center items-center  py-4 mx-auto capitalize ">
-        <h2 className="text-black mx-auto pt-1.5 font-bold text-4xl mt-12">
+        <h2 className="text-black mx-auto text-center pt-1.5 font-bold text-4xl mt-12">
           {'Our Digitalized '}
           <span className="text-main_blue font-bold text-4xl ">
             {'Specialized Labs'}
           </span>
         </h2>
       </div>
-      <p className='text-center text-black'>Browse through our digitalized specialized labs.</p>
+      <p className='text-center tracking-wide text-gray-700 p-4'>Browse through our digitalized specialized labs.</p>
         <CarouselCard posts={labs} path={'labs'} />
     </div>
     </div>

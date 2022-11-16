@@ -37,14 +37,14 @@ export default function LatestNews( {posts} : any) { // fix any type
 
       <div className={` pt-12 mx-auto my-0 xl:px-12`}>
         <div className="flex justify-Center items-center  py-4 mx-auto capitalize">
-          <h2 className="text-black mx-auto pt-1.5 font-bold text-4xl">
+          <h2 className="text-black text-center mx-auto pt-1.5 font-bold text-4xl">
             {'Our Latest '}
             <span className="text-main_blue font-bold text-4xl ">
               {'News Updates'}
             </span>
           </h2>
         </div>
-        <p className='text-center text-black'>Browse through latest happenings and events.</p>
+        <p className='text-center tracking-wide text-gray-700 p-4'>Browse through latest happenings and events.</p>
         <div className="pl-4 m-4 flex-wrap items-stretch grow">
           <CarouselCardWithDetails posts={news} path={'blog'} />
         </div>

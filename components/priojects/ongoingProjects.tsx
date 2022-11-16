@@ -23,7 +23,7 @@ export default function OngoingProjects({ posts } : any ) {
           <h2 className=" mx-auto pt-1.5 font-bold text-4xl text-center mb-6">
             Explore our <span className="text-main_blue font-bold ">recent Projects </span>{' '}
           </h2>
-          <p className="">
+          <p className="tracking-wide text-gray-700">
             TAC Africa through her collaborations and partnerships
             curate, develop projects to help organization and industries
             benefit from emerging technology
@@ -44,7 +44,7 @@ export default function OngoingProjects({ posts } : any ) {
                 <h2  className=" font-bold text-xl my-3 text-main_blue">
                 <Text text={project.properties.Name.title} />
                 </h2>
-                <p className="text-xs  lg:text-base 2xl:text-xl">
+                <p className="text-xs  lg:text-base 2xl:text-xl tracking-wide text-gray-700">
                 <Text text={project.properties.excerpt.rich_text} />
                 </p>
               </div>

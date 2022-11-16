@@ -17,25 +17,25 @@ export default function Contact() {
 
     <div className="mx-auto w-10/12 text-center mb-12 lg:w-7/12">
           <h2 className=" mx-auto pt-1.5 font-bold text-6xl text-center">
-            <span className="text-primary font-bold text-3xl"> Contact Us</span>{' '}
+            <span className="text-primary font-bold text-3xl "> Contact Us</span>{' '}
           </h2>
-          <p className="text-sm lg:text-lg">
+          <p className="text-sm lg:text-lg tracking-wide text-gray-700">
             If you have any questions please do not hesitate to reach out
           </p>
         </div>
 
         <div className='grid lg:grid-cols-3 gap-4 mb-10'>
-            <div className='h-[10rem] border rounded-xl bg-white flex flex-col justify-center items-center'>
+            <div className='h-[10rem] border rounded-xl bg-white flex flex-col justify-center items-center '>
                 <BsTelephone />
-                <p className='text-sm px-6 mt-4 text-center'>phone: +234 706 224 7581</p>
+                <p className='text-sm px-6 mt-4 text-center tracking-wide text-gray-700'>phone: +234 706 224 7581</p>
             </div>
             <div className='h-[10rem] border rounded-xl bg-white flex flex-col justify-center items-center'>
                 <CiLocationOn />
-                <p className='text-sm px-6 mt-4 text-center'>TAC HQ: Plot 239 P.O.W Mafemi Crescent, Besides Daily Trust Newspapers, Utako District, Abuja, Nigeria. 900112</p>
+                <p className='text-sm px-6 mt-4 text-center tracking-wide text-gray-700'>TAC HQ: Plot 239 P.O.W Mafemi Crescent, Besides Daily Trust Newspapers, Utako District, Abuja, Nigeria. 900112</p>
             </div>
             <div className='h-[10rem] border rounded-xl bg-white flex flex-col justify-center items-center'>
                 <CiMail />
-                <p className='text-sm px-6 mt-4 text-center'>email: secretariat@tacafrica.org</p>
+                <p className='text-sm px-6 mt-4 text-center tracking-wide text-gray-700'>email: secretariat@tacafrica.org</p>
             </div>
         </div>
 
