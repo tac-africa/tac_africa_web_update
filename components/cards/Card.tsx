@@ -27,7 +27,7 @@ export const Card = ({ post, path }: any ) => {
                         <Text text={post.properties.excerpt.rich_text} />
                     </p>
                     <div className='block text-center'>
-                        <Button center text={'read more'} />
+                        <Button center text={'read more'} color={'bg-main_blue'} />
                     </div>
                 </div>
             </div>

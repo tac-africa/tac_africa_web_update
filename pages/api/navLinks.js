@@ -9,20 +9,20 @@ export const data = [
     {
         label: 'about',
         content : [
-            {href: '/about_us', name: 'About Us'},
-            {href: '/founder', name: 'Founder'},
-            {href: '/our_team', name: 'Our Team'},
+            {href: '/aboutUs', name: 'About Us'},
+            // {href: '/founder', name: 'Founder'},
+            // {href: '/our_team', name: 'Our Team'},
         ], 
-        type: 'dropdown button' 
+        type: 'nav link' 
     },
     {
         label: 'labs',
         content : [
-            {href: '/drone_and_counter_drone', name: 'Drone And Counter Drone'},
-            {href: '/cyber_security_and_cyber_defense', name: 'Cyber Security And Cyber Defense'},
-            {href: '/artificial_intelligence_and_robotics', name: 'AI And Robotics Lab'},
-            {href: '/blockchain_and_crypto_lab', name: 'Blockchain And Crypto Lab'},
-            {href: '/tech_for_social_good', name: 'Technology for social good'}
+            {href: '/labs/DroneAndCounterDroneLab', name: 'Drone And Counter Drone'},
+            {href: '/labs/CyberSecurity&CyberDefense', name: 'Cyber Security And Cyber Defense'},
+            {href: '/labs/BlockChain&CryptoLab', name: 'Blockchain And Crypto Lab'},
+            {href: '/labs/AI&RoboticsLab', name: 'AI And Robotics Lab'},
+            // {href: '/tech_for_social_good', name: 'Technology for social good'}
         ],
         type: 'dropdown button'
     },
