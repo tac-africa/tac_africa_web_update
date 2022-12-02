@@ -1,27 +1,22 @@
 import React from 'react'
+import Script from 'next/script'
 import Button from '../button/Button'
 
 export default function Footer() {
   return (
-    <div className='bg-[#F8FAFC]'>
+    <div className='bg-[#F8FAFC] overflow-hidden'>
         <div className='w-10/12 mx-auto pt-12'>
 
-            <div className="bg-blue-600 rounded-lg h-[20rem] min-h-[14rem] mb-10 flex flex-col justify-center items-center">
+            <div className="bg-[#2563EB] rounded-lg h-[30rem] lg:h-[20rem] min-h-[14rem] mb-10 flex flex-col justify-center items-center">
                 <h2 className='text-white text-3xl font-semibold w-80 text-center mb-4' >Subscribe to our newsletter</h2>
-                <span className='flex flex-col justify-center lg:flex-row'>
-                    <input type="text"
-                            name="name"
-                            placeholder='Enter your name'
-                            className='rounded-lg bg-blue-600 mx-auto outline-none border-white placeholder-white mr-2 my-2' 
-                            />
-
-                    <input type="email"
-                            name="Email"
-                            placeholder='Enter your Email'
-                            className='rounded-lg bg-blue-600 mx-auto outline-none border-white placeholder-white mr-2 my-2'
-                            />
-
-                    <Button text={'Subscribe'}/>
+                <span className='lg:hidden flex flex-col justify-center lg:flex-row w-screen mx-auto'>
+                    <Script type="text/javascript" src="https://campaigns.zoho.com/js/zc.iframe.js" />
+                    <iframe frameBorder="0" id="iframewin" width="80%" height="350px" src="https://zcvf-zcglf.maillist-manage.com/ua/Optin?od=11287ecc229839&zx=12f80d451&sD=1e5f9fabe80f7bf8"></iframe>
+                </span>
+                {/* desktop */}
+                <span className='hidden lg:flex flex-col justify-center lg:flex-row w-screen'>
+                    <Script type="text/javascript" src="https://campaigns.zoho.com/js/zc.iframe.js" />
+                    <iframe frameBorder="0" id="iframewin" width="100%" height="100%" src="https://zcvf-zcglf.maillist-manage.com/ua/Optin?od=11287ecc229839&zx=12f80d451&sD=1e5f9fabe80f7bf8"></iframe>
                 </span>
 
             </div>

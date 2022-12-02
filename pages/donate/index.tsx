@@ -1,4 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
+
+const [value, setValue] = useState('') 
+
+const handleValueChange = (e: any) => {
+  e.preventDefault
+  setValue(e.target.value)
+}
 
 export default function Donation() {
   return (
@@ -17,20 +24,46 @@ export default function Donation() {
       </div>
       <div className='max-w-[800px] mx-auto'>
       <div className="bg-blue-600 rounded-lg h-[10rem] min-h-[14rem] mb-10 flex flex-col justify-center items-center">
-                <h2 className='text-white text-3xl font-semibold w-80 text-center mb-4' >Subscribe to our newsletter</h2>
-                <span className='flex flex-col justify-center lg:flex-row'>
-                    <input type="text"
+                <h2 className='text-white text-3xl font-semibold w-80 text-center mb-4' >Please Enter Amount</h2>
+                <div className='inline-grid items-center justify-items-start'>
+                    {/* <input type="text"
                             name="name"
-                            placeholder='Enter your name'
-                            className='rounded-lg bg-blue-600 mx-auto outline-none border-white placeholder-white mr-2 my-2' 
-                            />
-
-                    <input type="email"
-                            name="Email"
-                            placeholder='Enter your Email'
-                            className='rounded-lg bg-blue-600 mx-auto outline-none border-white placeholder-white mr-2 my-2'
-                            />
-                </span>
+                            placeholder='0.00'
+                            className='rounded-lg bg-blue-600 text-4xl mx-auto outline-none border-blue-600 flex flex-shrink w-[100px] placeholder-white mr-2 my-2' 
+                            /> */}
+                                <div
+      className="auto-grow-input"
+      style={{
+        display: 'inline-grid',
+        alignItems: 'center',
+        justifyItems: 'start',
+        padding: 8,
+        border: '1px solid #ccc',
+        borderRadius: 4,
+      }}
+    >
+      <input
+        value={value}
+        onChange={(e) => handleValueChange(e)}
+        style={{
+          // gridArea: '1 / 1 / 2 / 2',
+          width: '100%',
+          padding: 0,
+          border: 'none',
+        }}
+      />
+      <span
+        style={{
+          gridArea: '1 / 1 / 2 / 2',
+          // border: '1px solid red' ,
+          height: '0px',
+          visibility: 'hidden',
+        }}
+      >
+        {value}
+      </span>
+    </div>
+                </div>
 
             </div>
       </div>
