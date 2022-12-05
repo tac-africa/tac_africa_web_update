@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const [value, setValue] = useState('') 
+// const [value, setValue] = useState('') 
 
 // const handleValueChange = (e: any) => {
 //   e.preventDefault
@@ -43,7 +43,7 @@ export default function Donation() {
       }}
     >
       <input
-        value={value}
+        // value={value}
         // onChange={(e) => handleValueChange(e)}
         style={{
           // gridArea: '1 / 1 / 2 / 2',
@@ -60,7 +60,7 @@ export default function Donation() {
           visibility: 'hidden',
         }}
       >
-        {value}
+        {/* {value} */}
       </span>
     </div>
                 </div>
