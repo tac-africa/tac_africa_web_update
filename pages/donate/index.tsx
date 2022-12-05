@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 
 const [value, setValue] = useState('') 
 
-const handleValueChange = (e: any) => {
-  e.preventDefault
-  setValue(e.target.value)
-}
+// const handleValueChange = (e: any) => {
+//   e.preventDefault
+//   setValue(e.target.value)
+// }
 
 export default function Donation() {
   return (
@@ -44,7 +44,7 @@ export default function Donation() {
     >
       <input
         value={value}
-        onChange={(e) => handleValueChange(e)}
+        // onChange={(e) => handleValueChange(e)}
         style={{
           // gridArea: '1 / 1 / 2 / 2',
           width: '100%',
