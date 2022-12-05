@@ -2,21 +2,19 @@ export const data = [
     {
         label: 'Home',
         content: [
-            {href: '', name: ''}
+            {href: '/', name: ''}
         ],
         type: 'nav link'
     },
     {
-        label: 'about',
+        label: 'About',
         content : [
             {href: '/aboutUs', name: 'About Us'},
-            // {href: '/founder', name: 'Founder'},
-            // {href: '/our_team', name: 'Our Team'},
         ], 
         type: 'nav link' 
     },
     {
-        label: 'labs',
+        label: 'Labs',
         content : [
             {href: '/labs/DroneAndCounterDroneLab', name: 'Drone And Counter Drone'},
             {href: '/labs/CyberSecurity&CyberDefense', name: 'Cyber Security And Cyber Defense'},
@@ -27,7 +25,7 @@ export const data = [
         type: 'dropdown button'
     },
     {
-        label: 'projects',
+        label: 'Projects',
         content: [
             {href: '/irpas', name: 'Institute For Remotely Piloted Aircraft Systems'},
             {href: '/tac_community_hub/', name: 'TAC Community Hub'},
@@ -37,7 +35,7 @@ export const data = [
         type: 'dropdown button'
     },
     {
-        label: 'publications',
+        label: 'Publications',
         content: [
             {href: 'https://www.dropbox.com/s/28ma51r9y0vc1pi/smart_policing_concept.pdf?dl=1', name: 'Smart Policing Concepts ( AI & Robotics )'},
             {href: 'https://www.dropbox.com/s/y4vilgjbrw8pk1n/The_Underground_Economy.pdf?dl=1', name: 'The Underground Economy ( Cyber Security & Cyber Defense )'},
@@ -47,12 +45,19 @@ export const data = [
         type: 'download'
     },
     {
-        label: 'contact',
+        label: 'Newsletters',
         content: [
-            {href: 'contact', name: ''}
+            {href: '/newsletters', name: 'newsletters'}
         ],
         type: 'nav link'
-    },
+    },  
+    // {
+    //     label: 'Contact',
+    //     content: [
+    //         {href: '/contact', name: ''}
+    //     ],
+    //     type: 'nav link'
+    // },
     {
         label: 'blog',
         content: [

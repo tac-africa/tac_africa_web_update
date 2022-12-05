@@ -5,36 +5,36 @@ import FormModal from './formModal';
 import { ConditionalLinks } from './ConditionalLinks';
 
 
-type ContentType = {
-  // map(arg0: ({ name, href }: ContentType) => JSX.Element): import("react").ReactNode;
-  name: string;
-  href: string;
-};
+    type ContentType = {
+      // map(arg0: ({ name, href }: ContentType) => JSX.Element): import("react").ReactNode;
+      name: string;
+      href: string;
+    };
 
-type DropDownProps = {
-  isFooter : boolean
-  setMenuState  : React.Dispatch<React.SetStateAction<boolean>>;
-  menuState  : boolean;
-  label  : any;
-  content  : ContentType[]
-  i  : number;
-  type : string;
-}
+    type DropDownProps = {
+      isFooter : boolean
+      setMenuState  : React.Dispatch<React.SetStateAction<boolean>>;
+      menuState  : boolean;
+      label  : any;
+      content  : ContentType[]
+      i  : number;
+      type : string;
+    }
 
-const DropDownButton = ({
-  isFooter,
-  setMenuState,
-  menuState,
-  label,
-  content,
-  i,
-  type
-}: DropDownProps ) => {
+    const DropDownButton = ({
+      isFooter,
+      setMenuState,
+      menuState,
+      label,
+      content,
+      i,
+      type
+    }: DropDownProps ) => {
 
-  const [isShown, setIsShown] = useState(false);
+    const [isShown, setIsShown] = useState(false);
 
-  const [ modalShow, setModalShow] = useState(false)
-  const [ PDF, setPDF ] = useState('')
+    const [ modalShow, setModalShow] = useState(false)
+    const [ PDF, setPDF ] = useState('')
 
   return (
   <>

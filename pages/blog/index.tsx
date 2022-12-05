@@ -4,7 +4,7 @@
 import Link from 'next/link'
 import { GetStaticProps } from 'next/types';
 import { getDatabase } from '../../lib/notion';
-import { Text } from '../news/[id]';
+import { Text } from './[id]';
 
 const databaseId: string = process.env.NOTION_BLOG_DATABASE_ID || ""
 
@@ -21,8 +21,6 @@ export const getStaticProps : GetStaticProps = async () => {
 
 
 export default function Home({posts} : any) {
-
-console.log(posts)
 
   return (
     <div style={{paddingTop: '5vh'}} >

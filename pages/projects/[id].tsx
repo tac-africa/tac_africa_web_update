@@ -53,7 +53,6 @@ const renderBlock = (block : any ) => {
   const { type, id } = block;
   const value = block[type];
 
-  console.log(value.rich_text    )
 
   switch (type) {
     case "paragraph":

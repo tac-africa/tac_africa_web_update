@@ -68,27 +68,27 @@ const FormModal = ({ PDF, modalShow, setModalShow } : formModalTypes) => {
 
   const [downloadSpinner, setDownloadSpinner] = useState(false)
 
-  let response: string[] = [];
+  let response: string[] | any = [];
 
   useEffect(() => {
     if(response) setDownloadSpinner(false)
   }, [response] )
 
 
-//   const handleSubmit = () => {
-//     if (formDataChecker()) {
-//       setDownloadSpinner(true);
-//       axios.post(
-//         'https://cdn.tacafrica.org/api/visitors',values
-//       )
-//       .then( (res: { data: string[] }) => {
-//         response = res.data
-//         if (response.error == false && typeof window !== "undefined") {
-//               window.location.href = PDF
-//         }
-//       })
-//     }
-//   };
+  const handleSubmit = () => {
+    if (formDataChecker()) {
+      setDownloadSpinner(true);
+      axios.post(
+        'https://cdn.tacafrica.org/api/visitors',values
+      )
+      .then( (res: { data: string[] }) => {
+        response = res.data
+        if (response.error == false && typeof window !== "undefined") {
+              window.location.href = PDF
+        }
+      })
+    }
+  };
 
   return (
     <div className="">
@@ -226,7 +226,7 @@ const FormModal = ({ PDF, modalShow, setModalShow } : formModalTypes) => {
                 <button
                   // type="submit"
                   className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                //   onClick={handleSubmit}
+                  onClick={handleSubmit}
                 >
                   Submit { downloadSpinner &&  (<i className={` ml-2 fa fa-spinner fa-spin`} />)  } 
                 </button>
