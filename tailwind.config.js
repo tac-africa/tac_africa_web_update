@@ -34,6 +34,9 @@ module.exports = {
         '70vh': '70vh',
         '90vh': '90vh',
       },
+      backgroundImage: {
+        drone_swam: "url('https://res.cloudinary.com/tacafrica/image/upload/v1670190575/my_folder/blog/Group_31_ajsdai.png')",
+      },
     }
   },
   corePlugins: {

@@ -1,8 +1,26 @@
-import React from 'react'
+import React, { useState, useCallback } from 'react'
 import Script from 'next/script'
 import Button from '../button/Button'
+import { data } from '../../pages/api/navLinks'
+import DropDownButton from '../DropDownButton'
+
+type Data = {
+    label: string;
+    content: {
+        href: string;
+        name: string;
+    }[];
+    type: string;
+    details?: undefined;
+} 
 
 export default function Footer() {
+    const [menuState, setMenuState] = useState(false);
+
+    const toggleButton = useCallback(() => {
+      setMenuState((menuState) => !menuState);
+    }, []);
+
   return (
     <div className='bg-[#F8FAFC] overflow-hidden'>
         <div className='w-10/12 mx-auto pt-12'>
@@ -54,7 +72,7 @@ export default function Footer() {
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                         <div>
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
-                            <ul className="text-gray-600 dark:text-gray-400">
+                            {/* <ul className="text-gray-600 dark:text-gray-400">
                                 <li className="mb-4">
                                     <a href="https://flowbite.com/" className="hover:underline">About</a>
                                 </li>
@@ -67,7 +85,29 @@ export default function Footer() {
                                 <li>
                                     <a href="https://tailwindcss.com/" className="hover:underline">Donate</a>
                                 </li>
-                            </ul>
+                            </ul> */}
+                                       <ul>
+                      {data?.map(
+                        ({ label, content, type, details }, i) =>
+                          label != 'donate' && label !=  'Home' && label !=  'about' && label !=  'contact' ? (
+                            <DropDownButton
+                                      label={<>
+                                          {' '}
+                                          {content.length > 1 && (
+                                              <> &#x2BC8; </>
+                                          )}{' '}
+                                          {label}
+                                      </>}
+                                      content={content}
+                                      setMenuState={setMenuState}
+                                      menuState={menuState}
+                                      isFooter 
+                                      i={i} 
+                                      type={type}
+                                       />
+                          ) : undefined
+                      )}
+                    </ul>
                         </div>
                         <div>
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>

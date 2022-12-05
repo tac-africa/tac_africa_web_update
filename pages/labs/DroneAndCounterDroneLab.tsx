@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Slider from "react-slick";
+import Button from '../../components/button/Button';
 
 const droneItems = [
   {
@@ -10,19 +11,19 @@ const droneItems = [
     link: ''
   },
   {
-    iconLink: 'icons/2.png',
+    iconLink: '/icons/2.png',
     title: 'Drone Education & Research',
     preview: 'Are you a drone pilot/instructor, are you open to expansion and strategic collaboration in essentially...',
     link: ''
   },
   {
-    iconLink: 'icons/3.png',
+    iconLink: '/icons/3.png',
     title: 'Drone Education & Research',
     preview: 'Are you a drone pilot/instructor, are you open to expansion and strategic collaboration in essentially...',
     link: ''
   },
   {
-    iconLink: 'icons/1.png',
+    iconLink: '/icons/1.png',
     title: 'Drone Education & Research',
     preview: 'Are you a drone pilot/instructor, are you open to expansion and strategic collaboration in essentially...',
     link: ''
@@ -40,7 +41,7 @@ export default function DroneAndCounterDroneLab() {
                 />
             <div className='h-[12rem] bg-white rounded-md w-8/12 mx-auto absolute bottom-0 translate-y-1/2 translate-x-1/4 '></div>
           </div>
-          <div className=''>
+          <div className='my-32'>
             <h2 className='font-semibold text-lg mb-6'>Entering into the virtual lab</h2>
             <p className='pb-4'>
               The TAC AFRICA virtual Drone and Counter Drone lab creates a platform to assemble global subject matter experts from a multidisciplinary background that include academia, law enforcement agencies to synergies through a dedicated online knowledge platform that will raise critical issues which will promote the institutionalization of drone best practices 
@@ -51,8 +52,8 @@ export default function DroneAndCounterDroneLab() {
           </div>
       </div>
       {/* <div></div> */}
-          <div className="flex flex-col mx-auto  bg-[#f6f6f6]" >
-              <div  className="flex flex-col lg:flex-row w-full m-auto "  >
+          <div className="flex flex-col mx-auto bg-[#f6f6f6] " >
+              <div  className="flex flex-col lg:flex-row w-full m-auto py-24 container"  >
                 <div className="grid grid-cols-2 gap-2 grid-rows-5 w-full lg:mr-4 lg:w-4/12 rounded-xl overflow-hidden h-[25rem] m-auto ">
                   <div className=" row-span-2 rounded-lg">
                     <img src={ 'https://res.cloudinary.com/tacafrica/image/upload/v1659626896/my_folder/internationaldayagainsttourture2022/IMG_7705_pvrsrr.jpg'} alt="project" 
@@ -148,29 +149,28 @@ export default function DroneAndCounterDroneLab() {
   };
 
   return (
-    <div className="w-full ">
-      <div className="lg:pt-12 pb-20 mx-auto my-0 xl:px-12  ">
-        <div className='lg:w-4/12'>
-          <h2>Understanding Drone Use And Applications</h2>
-          <p>You may submit a new submission or resubmission here. Your submission must be carefully formatted.</p>
+    <div className="w-full bg-white">
+        <div className='lg:w-4/12 mx-auto text-center py-20'>
+          <h2 className='font-semibold text-xl w-72 mx-auto mb-3'>Understanding Drone Use And Applications</h2>
+          <p className='text-slate-600'>You may submit a new submission or resubmission here. Your submission must be carefully formatted.</p>
         </div>
-        <div className="mx:pl-4 pl-4 m-4 pb-8 ">
+      <div className="lg:pt-12  mx-auto my-0 xl:px-12  overflow-hidden bg-fixed bg-center bg-cover bg-drone_swam">
+        <div className="mx:pl-4 pl-4 m-4 pb-8 " >
           <Slider {...settings} className='flex ' >
               {droneItems.map(({iconLink, title, preview, link} : any) => (
-                  <div key={''} className="p-4 flex items-stretch  " style={{display: 'flex: 1 1 auto'}}> 
-                  <div className="border-2 border-gray-200 rounded-lg w-full  ">
-                      <img className="object-cover object-center w-full lg:h-48 md:h-36 px-4 pt-4"
+                  <div key={''} className="p-4 flex items-stretch" style={{display: 'flex: 1 1 auto'}}> 
+                  <div className="border-2 border-gray-200 rounded-lg w-full p-8 bg-white ">
+                      <img className="object-cover object-center h-8 w-8 mb-2"
                           src={ iconLink || 'https://res.cloudinary.com/tacafrica/image/upload/v1657884296/my_folder/fq0rkbyibtd4heb2bjom.png'} alt="blog" />
-                      <div className="p-4">
-                          <h1 className="mb-2 text-lg font-medium text-gray-900">
+                      <div className="p-">
+                          <h1 className="mb-2 text-lg font-semibold w-40 text-gray-900">
                             {title}
                           </h1>
                           <p className="mb-6 text-sm tracking-wide text-gray-700">
                               {preview}
                           </p>
-                          <div className='block text-center'>
-
-                              {/* <Button center text={'read more'} color={'bg-main_blue'} /> */}
+                          <div className='block t'>
+                              <Button text={'Explore More'} color={'bg-black'} />
                           </div>
                       </div>
                   </div>

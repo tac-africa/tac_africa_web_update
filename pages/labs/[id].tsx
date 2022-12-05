@@ -83,6 +83,7 @@ const renderBlock = (block : any ) => {
     case "bulleted_list_item":
     case "numbered_list_item":
       return (
+        // 
         <li>
           <Text text={value.rich_text} />
           {!!value.children && renderNestedList(block)}

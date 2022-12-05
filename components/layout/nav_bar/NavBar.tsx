@@ -101,7 +101,7 @@ const NavBar = () => {
                                             setMenuState={setMenuState}
                                             menuState={menuState}
                                             isFooter
-                                            i={''}/>
+                                            i={i}/>
                                     </div> // dropdown
                                 ) : label == 'blog' ? (
                                     <Link href="/blog">

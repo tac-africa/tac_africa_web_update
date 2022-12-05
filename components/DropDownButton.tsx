@@ -15,9 +15,9 @@ type DropDownProps = {
   isFooter : boolean
   setMenuState  : React.Dispatch<React.SetStateAction<boolean>>;
   menuState  : boolean;
-  label  : string;
+  label  : any;
   content  : ContentType[]
-  i  : string;
+  i  : number;
   type : string;
 }
 
