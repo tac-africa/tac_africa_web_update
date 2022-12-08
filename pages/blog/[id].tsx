@@ -163,7 +163,9 @@ const renderBlock = (block : any ) => {
 };
 
 export default function Post({ page, blocks } : any) {
+  console.log(page, '{load page}')
   if (!page || !blocks) {
+    console.log(page, '{<page>}')
     return <div />;
   }
   return (
