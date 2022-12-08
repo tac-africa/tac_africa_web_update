@@ -163,22 +163,23 @@ const renderBlock = (block  ) => {
 // TEXT END
 
 
-const CodeBlock = ({ language, codestring }) => {
-return (
-    <SyntaxHighlighter language={language} style={vscDarkPlus} PreTag="div">
-        {codestring}
-    </SyntaxHighlighter>
-)
-}
+// const CodeBlock = ({ language, codestring }) => {
+// return (
+//     <SyntaxHighlighter language={language} style={vscDarkPlus} PreTag="div">
+//         {codestring}
+//     </SyntaxHighlighter>
+// )
+// }
 const Post = ({ post }) => {
   console.log(post[0].properties.Name.title[0].plain_text)
+  if(!post) return <h1>No posts</h1>
   return (
       <section className={styles.container}> 
         <Head>
         <title>{post[0].properties.Name.title[0].plain_text}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        {/* <Text text={post.properties.Name.title} /> */}
+        <h3>{post[0].properties.Name.title[0].plain_text}</h3>
         {/* <span>{post.metadata.date}</span>
         <p style={{color: "gray"}}>{post.metadata.tags.join(', ')}</p>
         <ReactMarkdown
