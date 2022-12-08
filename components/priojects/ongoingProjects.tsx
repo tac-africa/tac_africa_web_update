@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 // import { Text } from '../../pages/projects/[id]';
-import { Text } from '../../pages/blog/[id]';
+import { Text } from '../../pages/labs/[id]';
 
 export default function OngoingProjects({ posts } : any ) {
 
