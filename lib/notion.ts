@@ -49,7 +49,23 @@ export const getBlocks = async (blockId : string) => {
         if (!next_cursor) {
             break;
         }
-        cursor = next_cursor;
+        // cursor = next_cursor;
     }
     return blocks;
 };
+
+export const getSingleBlogPostBySlug = async (databaseId : string, slug : any) => {
+    const response = await notion.databases.query({
+      database_id: databaseId,
+      filter: {
+        property: "Slug",
+        formula: {
+          string: {
+            equals: slug,
+          },
+        },
+      },
+    });
+    
+    return response.results
+  }

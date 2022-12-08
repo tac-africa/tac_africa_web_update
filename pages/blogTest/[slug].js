@@ -1,20 +1,18 @@
-import { Fragment } from "react";
+import ReactMarkdown from 'react-markdown'
 import Head from "next/head";
-import { getDatabase, getPage, getBlocks } from "../../lib/notion";
-import Link from "next/link";
-// import { databaseId } from "./index.js";
-import styles from "../../styles/post.module.css";
-import Button from "../../components/button/Button";
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism'
+import { getDatabase, getSingleBlogPostBySlug } from "../../lib/notion";
+import styles from '../../styles/Home.module.css'
 
+const databaseId = process.env.NOTION_BLOG_DATABASE_ID || ""
 
-const databaseId: string = process.env.NOTION_BLOG_DATABASE_ID || ""
-
-
-export const Text = ({ text } : any) => {
+// TEXT START
+export const Text = ({ text } ) => {
   if (!text) {
     return null;
   }
-  return text.map((value : any) => {
+  return text.map((value ) => {
     const {
       annotations: { bold, code, color, italic, strikethrough, underline },
       text,
@@ -36,7 +34,7 @@ export const Text = ({ text } : any) => {
   });
 };
 
-const renderNestedList = (block : any) => {
+const renderNestedList = (block ) => {
   const { type } = block;
   const value = block[type];
   if (!value) return null;
@@ -44,12 +42,12 @@ const renderNestedList = (block : any) => {
   const isNumberedList = value.children[0].type === "numbered_list_item";
 
   if (isNumberedList) {
-    return <ol>{value.children.map((block : any ) => renderBlock(block))}</ol>;
+    return <ol>{value.children.map((block  ) => renderBlock(block))}</ol>;
   }
-  return <ul>{value.children.map((block : any ) => renderBlock(block))}</ul>;
+  return <ul>{value.children.map((block  ) => renderBlock(block))}</ul>;
 };
 
-const renderBlock = (block : any ) => {
+const renderBlock = (block  ) => {
   const { type, id } = block;
   const value = block[type];
 
@@ -102,7 +100,7 @@ const renderBlock = (block : any ) => {
           <summary>
             <Text text={value.rich_text} />
           </summary>
-          {value.children?.map((block : any ) => (
+          {value.children?.map((block  ) => (
             <Fragment key={block.id}>{renderBlock(block)}</Fragment>
           ))}
         </details>
@@ -162,76 +160,66 @@ const renderBlock = (block : any ) => {
   }
 };
 
-export default function Post({ page, blocks } : any) {
-  console.log(page, '{load page}')
-  if (!page || !blocks) {
-    console.log(page, '{<page>}')
-    return <div />;
-  }
+// TEXT END
+
+
+const CodeBlock = ({ language, codestring }) => {
+return (
+    <SyntaxHighlighter language={language} style={vscDarkPlus} PreTag="div">
+        {codestring}
+    </SyntaxHighlighter>
+)
+}
+const Post = ({ post }) => {
+  console.log(post[0].properties.Name.title[0].plain_text)
   return (
-    <div>
-      <Head>
-        <title>{page.properties.Name.title[0].plain_text}</title>
+      <section className={styles.container}> 
+        <Head>
+        <title>{post[0].properties.Name.title[0].plain_text}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <article className={`${styles.container}`}>
-        <h1 className={`${styles.name} text-main_blue mt-6`}>
-          <Text text={page.properties.Name.title} />
-        </h1>
-        <section>
-          {blocks.map((block : any ) => (
-            <Fragment key={block.id}>{renderBlock(block)}</Fragment>
-          ))}
-          <Link href="/" className={styles.back}>
-            <Button text={' ← Go home'} />
-          </Link>
-        </section>
-      </article>
-    </div>
+        {/* <Text text={post.properties.Name.title} /> */}
+        {/* <span>{post.metadata.date}</span>
+        <p style={{color: "gray"}}>{post.metadata.tags.join(', ')}</p>
+        <ReactMarkdown
+        components={{
+            code({node, inline, className, children, ...props}) {
+            const match = /language-(\w+)/.exec(className || '')
+            return !inline && match ? (
+                <CodeBlock
+                codestring={String(children).replace(/\n$/, '')}
+                language={match[1]}
+                />
+            ) : (
+                <code className={className} {...props}>
+                {children}
+                </code>
+            )
+            }
+        }}>{post.markdown}</ReactMarkdown> */}
+      </section>
   );
-}
+};
+
+export const getStaticProps = async ({ params }) => {
+
+
+  const post = await getSingleBlogPostBySlug(databaseId, params.slug)
+  return {
+    props: {
+      post,
+    },
+    revalidate: 60
+  };
+};
 
 export const getStaticPaths = async () => {
-  const database = await getDatabase(databaseId, 'blog');
+  const posts = await getDatabase(databaseId, 'news')
+  const paths = posts.map(({ slug }) => ({ params: { slug: `${slug}` } }));
   return {
-    paths: database.map((page : any) => ({ params: { id: page.id } })),
+    paths,
     fallback: "blocking",
   };
 };
 
-export const getStaticProps = async (context : any) => {
-  const { id } = context.params;
-  const page = await getPage(id);
-  const blocks = await getBlocks(id);
-
-  // Retrieve block children for nested blocks (one level deep), for example toggle blocks
-  // https://developers.notion.com/docs/working-with-page-content#reading-nested-blocks
-  const childBlocks = await Promise.all(
-    blocks
-      .filter((block : any ) => block.has_children)
-      .map(async (block : any ) => {
-        return {
-          id: block.id,
-          children: await getBlocks(block.id),
-        };
-      })
-  );
-  const blocksWithChildren = blocks.map((block : any ) => {
-    // Add child blocks if the block should contain children but none exists
-    if (block.has_children && !block[block.type].children) {
-      block[block.type]["children"] = childBlocks.find(
-        (x : any) => x.id === block.id
-      )?.children;
-    }
-    return block;
-  });
-
-  return {
-    props: {
-      page,
-      blocks: blocksWithChildren,
-    },
-    revalidate: 1,
-  };
-};
+export default Post;
