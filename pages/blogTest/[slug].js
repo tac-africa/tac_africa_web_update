@@ -216,10 +216,10 @@ export const getStaticProps = async ({ params }) => {
 
 export const getStaticPaths = async () => {
   const posts = await getDatabase(databaseId, 'news')
-  const paths = posts.map(({ slug }) => ({ params: { slug: `${slug}` } }));
+  const paths = posts.map(({ slug }) => ({ params: { slug } }));
   return {
     paths,
-    fallback: true,
+    fallback: "blocking",
   };
 };
 
