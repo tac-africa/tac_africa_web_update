@@ -171,7 +171,7 @@ const renderBlock = (block  ) => {
 // )
 // }
 const Post = ({ post }) => {
-  console.log(post[0].properties.Name.title[0].plain_text)
+  // console.log(post[0].properties.Name.title[0].plain_text)
   if(!post) return <h1>No posts</h1>
   return (
       <section className={styles.container}> 
@@ -216,7 +216,8 @@ export const getStaticProps = async ({ params }) => {
 
 export const getStaticPaths = async () => {
   const posts = await getDatabase(databaseId, 'news')
-  const paths = posts.map(({ slug }) => ({ params: { slug } }));
+  const paths = posts.map((post) => ({ params: {slug:`${post.properties.Slug.formula.string}`} }));
+  console.log(paths , '<---->')
   return {
     paths,
     fallback: "blocking",

@@ -4,7 +4,7 @@ import { getDatabase } from '../../lib/notion';
 import styles from '../../styles/Home.module.css'
 export default function Home({posts}) {
 
-  console.log(posts[0].properties, '<---->')
+  // console.log(posts[0].properties, '<---->')
   if(!posts) return <h1>No posts</h1>
   return (
     <div className={styles.container}>
