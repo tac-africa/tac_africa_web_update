@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const databaseId: string = process.env.NOTION_BLOG_DATABASE_ID || ""
 
-export const getStaticProps : GetStaticProps = async () => {
+export const getStaticProps = async () => {
   const newsletter = await getDatabase(databaseId, 'newsletter');
 
   return {
@@ -17,7 +17,6 @@ export const getStaticProps : GetStaticProps = async () => {
 };
 
 export default function Newsletters({ posts } : any) {
-    console.log(posts[0].properties.excerpt.rich_text, '<>' )
   return (
     <div className='pt-10 pb-32 bg-gray-200'>
         <div className=" flex flex-col gap-4 items-center justify-center">

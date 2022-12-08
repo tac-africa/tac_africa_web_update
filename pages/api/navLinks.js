@@ -24,16 +24,16 @@ export const data = [
         ],
         type: 'dropdown button'
     },
-    {
-        label: 'Projects',
-        content: [
-            {href: '/irpas', name: 'Institute For Remotely Piloted Aircraft Systems'},
-            {href: '/tac_community_hub/', name: 'TAC Community Hub'},
-            {href: '/tac_community_hub/', name: 'Project 774'},
-            {href: 'https://www.schoolofhardknocks.com.ng/', name: 'School Of HardKnocks'},
-        ],
-        type: 'dropdown button'
-    },
+    // {
+    //     label: 'Projects',
+    //     content: [
+    //         {href: '/irpas', name: 'Institute For Remotely Piloted Aircraft Systems'},
+    //         {href: '/tac_community_hub/', name: 'TAC Community Hub'},
+    //         {href: '/tac_community_hub/', name: 'Project 774'},
+    //         {href: 'https://www.schoolofhardknocks.com.ng/', name: 'School Of HardKnocks'},
+    //     ],
+    //     type: 'dropdown button'
+    // },
     {
         label: 'Publications',
         content: [

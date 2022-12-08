@@ -1,14 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
-import { Text } from '../../pages/news/[id]'
+import { Text } from '../../pages/newsletters/[id]';
 
-type CardProps = {
-    title : string;
-    excerpt : string;
-    image: string;
-    link: string;
-    category: string;
-}
 
 export const CardWithDetails = ( {post, path } : any ) => {
 

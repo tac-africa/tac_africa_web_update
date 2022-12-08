@@ -3,15 +3,15 @@ import Button from '../components/button/Button'
 
 export default function aboutUs() {
   return (
-    <div className='mx-auto'>
+        <div className='mx-auto'>
         {/* <div className='space-y-4 mb-16 '> */}
         <div className='h-[35rem]  bg-[#F8FAFC] flex flex-col justify-center items-center mb-20'>
             <div className='w-10/12 lg:w-8/12 '>
                 <h2 className='font-bold mb-6'>Who We Are?</h2>
                 <div className='tracking-wide text-gray-700 space-y-4'>
-                    <p>TAC NGO AFRICA was born out of an International Forum on Technologies, a high level meeting dedicated to “Technology for a Safer world. The first two editions were held in Lyon France, in April 2013 and April 2016 respectively under the patronage of the Ministry of Interior and INTERPOL.
+                    <p className='text-sm text-gray-700'>TAC NGO AFRICA was born out of an International Forum on Technologies, a high level meeting dedicated to “Technology for a Safer world. The first two editions were held in Lyon France, in April 2013 and April 2016 respectively under the patronage of the Ministry of Interior and INTERPOL.
                     </p>
-                    <p>  
+                    <p className='text-sm text-gray-700'>  
                     Essentially, we are a non-governmental, bipartisan organisation, connecting law enforcement, subject matter experts, civil society to solve issues that affect our society. We work on the transformation of our law enforcement and judiciary. We make them more technologically enabled. Besides this, we solve problems through policy advocacy, research, training and capacity building and volunteering.</p>
                 </div>
             </div>
@@ -51,7 +51,7 @@ export default function aboutUs() {
                     <div className='tracking-wide text-gray-700 space-y-4'>
                         <p className=''>Law enforcement officials today are facing a challenging and demanding operating environment. As society is increasingly connected and the world becoming borderless, technologies can help law enforcement to prevent, detect and investigate more efficiently, but at the same time, they also open up possibilities for criminals. Technology Against Crime believes that its vision of a safer continent is possible through a multi-stake holder approach to innovation in policing.
                         </p>
-                        <p>
+                        <p className='text-sm text-gray-700'>
                         Autonomous cars, Artificial Intelligence, robotics, drones and crypto-currencies in the dark web; these are becoming part of today’s reality, which intensifies the challenges of securing our cities, major events, borders and cyberspace.</p>
                     </div>
                 </div>
@@ -70,10 +70,12 @@ export default function aboutUs() {
                     <div className='flex flex-col lg:flex-row lg:space-x-8 '>
                         <div className="max-w-[20rem] rounded shadow-2xl ">
                             <img src="https://res.cloudinary.com/tacafrica/image/upload/v1669022868/my_folder/secretariat_images/Mask_groupdr_d0f0tn.png"
-                                alt="image"/>
+                                alt="image"
+                                className='object-cover w-full '
+                            />
                         </div>
                         <div className='space-y-6'>
-                            <p>
+                            <p className='text-sm text-gray-700'>
                             Dr. Jerry Akubo founded TAC Africa as a futurist oriented, Law Enforcement Centric NGO, borne out of an International Forum on Technologies – a high level meeting dedicated to Technologies for a Safer World, co-organized by INTERPOL and the Ministry of Interior in Lyon, France in 2013.
                             </p>
                             <Button text={'Visit Linkedin Profile'} textColor={'text-main_blue'} 
@@ -87,56 +89,68 @@ export default function aboutUs() {
         </div>
         <div className='mt-40 mb-20'>
             <div className='w-10/12 lg:w-8/12 mx-auto'>
-                <h2 className='text-center my-10 flex justify-center '><hr className='hidden lg:block w-4/12 my-auto h-[2px] bg-gray-200 border-none mr-8' /> Scientific Committe <hr className='hidden lg:block w-4/12 my-auto h-[2px] bg-gray-200 border-none ml-8' /></h2>
+                <h2 className='text-center my-10 flex justify-center '><hr className='hidden lg:block w-4/12 my-auto h-[2px] bg-gray-200 border-none mr-8' /> Scientific Committee <hr className='hidden lg:block w-4/12 my-auto h-[2px] bg-gray-200 border-none ml-8' /></h2>
             </div>
-            <div className='w-10/12 lg:w-8/12 mx-auto'>
-                <div className="container mx-auto space-y-2 lg:space-y-0 lg:gap-8 lg:grid lg:grid-cols-3">
+            <div className='w-10/12 lg:w-10/12 mx-auto'>
+                <div className="container mx-auto space-y-2 lg:space-y-0 lg:gap-16 lg:grid lg:grid-cols-3">
                     <div className="w-full rounded shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="image"/>
-                            <div className='h-[5rem] bg-white text-center'>
-                                <h3>name</h3>
-                                <p>description</p>
+                        <img src="https://res.cloudinary.com/tacafrica/image/upload/v1670457150/my_folder/TACteam/brooke-tapsall_clvgmt.png"
+                            alt="image"
+                            className='object-cover w-full h-[400px]'
+                        />
+                            <div className=' bg-white p-4'>
+                                <h3 className='mb-2 font-semibold text-main_blue'>name</h3>
+                                <p className='text-sm text-gray-700'>description</p>
                             </div>
                     </div>
                     <div className="w-full rounded shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="image"/>
-                            <div className='h-[5rem] bg-white text-center'>
-                                <h3>name</h3>
-                                <p>description</p>
+                        <img src="https://res.cloudinary.com/tacafrica/image/upload/v1670457151/my_folder/TACteam/orville_mccalla_nub3nv.png"
+                            alt="image"
+                            className='object-cover w-full h-[400px]'
+                        />
+                            <div className=' bg-white p-4'>
+                                <h3 className='mb-2 font-semibold text-main_blue'>name</h3>
+                                <p className='text-sm text-gray-700'>description</p>
                             </div>
                     </div>
                     <div className="w-full rounded shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="image"/>
-                            <div className='h-[5rem] bg-white text-center'>
-                                <h3>name</h3>
-                                <p>description</p>
+                        <img src="https://res.cloudinary.com/tacafrica/image/upload/v1670457151/my_folder/TACteam/Sanjana_Rathi_ojkcng.png"
+                            alt="image"
+                            className='object-cover w-full h-[400px]'
+                        />
+                            <div className=' bg-white p-4'>
+                                <h3 className='mb-2 font-semibold text-main_blue'>name</h3>
+                                <p className='text-sm text-gray-700'>description</p>
                             </div>
                     </div>
                     <div className="w-full rounded shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="image"/>
-                            <div className='h-[5rem] bg-white text-center'>
-                                <h3>name</h3>
-                                <p>description</p>
+                        <img src="https://res.cloudinary.com/tacafrica/image/upload/v1670457151/my_folder/TACteam/philip_j_ingram_nhx8sl.png"
+                            alt="image"
+                            className='object-cover w-full h-[400px]'
+                        />
+                            <div className=' bg-white p-4'>
+                                <h3 className='mb-2 font-semibold text-main_blue'>name</h3>
+                                <p className='text-sm text-gray-700'>description</p>
                             </div>
                     </div>
                     <div className="w-full rounded shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="image"/>
-                            <div className='h-[5rem] bg-white text-center'>
-                                <h3>name</h3>
-                                <p>description</p>
+                        <img src="https://res.cloudinary.com/tacafrica/image/upload/v1670457151/my_folder/TACteam/Professor_B.K._Alese_n8lbrd.png"
+                            alt="image"
+                            className='object-cover w-full h-[400px]'
+                        />
+                            <div className=' bg-white p-4'>
+                                <h3 className='mb-2 font-semibold text-main_blue'>name</h3>
+                                <p className='text-sm text-gray-700'>description</p>
                             </div>
                     </div>
                     <div className="w-full rounded shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="image"/>
-                            <div className='h-[5rem] bg-white text-center'>
-                                <h3>name</h3>
-                                <p>description</p>
+                        <img src="https://res.cloudinary.com/tacafrica/image/upload/v1670457151/my_folder/TACteam/Mr._Kelvin_Lungu_zk6vue.jpg"
+                            alt="image"
+                            className='object-cover w-full h-[400px]'
+                        />
+                            <div className=' bg-white p-4'>
+                                <h3 className='mb-2 font-semibold text-main_blue'>name</h3>
+                                <p className='text-sm text-gray-700'>description</p>
                             </div>
                     </div>
                 </div>
@@ -147,78 +161,134 @@ export default function aboutUs() {
             <div className='w-10/12 lg:w-8/12 mx-auto'>
             <h2 className='text-center my-10 flex justify-center '><hr className='hidden lg:block w-4/12 my-auto h-[2px] bg-gray-200 border-none mr-8' /> Secretariat <hr className='hidden lg:block w-4/12 my-auto h-[2px] bg-gray-200 border-none ml-8' /></h2>
             </div>
-            <div className='w-10/12 lg:w-8/12 mx-auto'>
-                <div className="container mx-auto space-y-2 lg:space-y-0 lg:gap-8 lg:grid lg:grid-cols-3">
+            <div className='w-10/12 lg:w-10/12 mx-auto'>
+                <div className="container mx-auto space-y-2 lg:space-y-0 lg:gap-16 lg:grid lg:grid-cols-3">
                     <div className="w-full rounded shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="image"/>
-                            <div className='h-[5rem] bg-white text-center'>
-                                <h3>name</h3>
-                                <p>description</p>
+                        <img src="https://res.cloudinary.com/tacafrica/image/upload/v1670457150/my_folder/TACteam/ibro_ardo1w.png"
+                            alt="image"
+                            className='object-cover w-full h-[400px]'
+                        />
+                            <div className=' bg-white p-4'>
+                                <h3 className='mb-2 font-semibold text-main_blue'>IBRAHIM M. ALI</h3>
+                                <p className='text-sm text-gray-700'>
+                                Is an Expert in UAV/ Drone technology, he has been employed with
+                                Technology Against Crime Africa (TAC-AFRICA) for more than four years He oversees all
+                                technical operations and maintenances using his professional expertise in IT, drones, and other
+                                engineering services including networking and CCTV camera installation e.t.c. He obtains a
+                                Certification in Introduction to Drone, UAV/Drone Pilot 107, Drone Aerial Photogrammetry and
+                                Videography, Drone GIS and 3D Mapping Techniques Using Drones.
+                                </p>
                             </div>
                     </div>
                     <div className="w-full rounded shadow-2xl">
                         <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="image"/>
-                            <div className='h-[5rem] bg-white text-center'>
-                                <h3>name</h3>
-                                <p>description</p>
+                            alt="image"
+                            className='object-cover w-full h-[400px]'
+                        />
+                            <div className=' bg-white p-4'>
+                                <h3 className='mb-2 font-semibold text-main_blue'>name</h3>
+                                <p className='text-sm text-gray-700'>description</p>
+                            </div>
+                    </div>
+                    <div className="w-full rounded shadow-2xl">
+                        <img src="https://res.cloudinary.com/tacafrica/image/upload/v1670457151/my_folder/TACteam/WhatsApp_Image_2022-07-07_at_12.37.30_PM_chsmbq.jpg"
+                            alt="image"
+                            className='object-cover w-full h-[400px]'
+                        />
+                            <div className=' bg-white p-4'>
+                                <h3 className='mb-2 font-semibold text-main_blue'>EKAJI ONAH</h3>
+                                <p className='text-sm text-gray-700'>
+                                is an experienced web/software developer with knowledge of various programming
+                                and version control systems. He is responsible for developing and maintaining the TAC Africa
+                                website and other in-house software.
+                                </p>
                             </div>
                     </div>
                     <div className="w-full rounded shadow-2xl">
                         <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="image"/>
-                            <div className='h-[5rem] bg-white text-center'>
-                                <h3>name</h3>
-                                <p>description</p>
+                            alt="image"
+                            className='object-cover w-full h-[400px]'
+                        />
+                            <div className=' bg-white p-4'>
+                                <h3 className='mb-2 font-semibold text-main_blue'>JAHSWILL EMMANUEL OMASIO</h3>
+                                <p className='text-sm text-gray-700'>
+                                Is Enterprising 3d Visual Manager in tune with current
+                                trends especially in executive ideations. Adept at working well under pressure to ensure that
+                                engaging displays are designed and fully completed within often tight time frames. Skilled at
+                                delegating and ensuring efficient project turnaround.
+                                </p>
                             </div>
                     </div>
                     <div className="w-full rounded shadow-2xl">
                         <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="image"/>
-                            <div className='h-[5rem] bg-white text-center'>
-                                <h3>name</h3>
-                                <p>description</p>
+                            alt="image"
+                            className='object-cover w-full h-[400px]'
+                        />
+                            <div className=' bg-white p-4'>
+                                <h3 className='mb-2 font-semibold text-main_blue'>ENGR. INNOCENT OCHIGBO</h3>
+                                <p className='text-sm text-gray-700'>
+                                A Researcher and a Drone Flight Pilot, Technology Against
+                                Crime for Africa (TAC Africa), with a Higher National Diploma in Electronics and
+                                Telecommunication, Kaduna polytechnic. Own certifications on Introduction to Drone, Airdata
+                                Certification, 3D mapping Techniques using Drones and GIS On drone. A drone enthusiast,
+                                extremely motivated and organized, With a firsthand experience on drones, a team player and loves
+                                challenge, time management, creative, fast learner, highly motivated, and a problem solve
+                                </p>
                             </div>
                     </div>
                     <div className="w-full rounded shadow-2xl">
                         <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="image"/>
-                            <div className='h-[5rem] bg-white text-center'>
-                                <h3>name</h3>
-                                <p>description</p>
+                            alt="image"
+                            className='object-cover w-full h-[400px]'
+                            />
+                            <div className=' bg-white p-4'>
+                                <h3 className='mb-2 font-semibold text-main_blue'>ANDOR EMMANUEL IKPATEM</h3>
+                                <p className='text-sm text-gray-700'>
+                                A critical and analytic researcher on Africa Drone & Data
+                                Academy (ADDA) & UNICEF collaborations, TAC Africa Drone Schema for IRPAS, Drone &
+                                Counter-Drone Measures, UAVs, UAS, C-UAS, Drone Alliance & Drone Corridors in Africa and the
+                                world at large. Works with the TAC Africa Drone and Counter-Drone Team under IRPAS in
+                                Calibrating and Navigating the Drones in the Lab. Admin manager at the TAC-AFRICA Community
+                                Hub. Administrative Data Processor, ICT and Info-Media Consultant, Web Developer, Content
+                                Creator and Creative Director.
+                                </p>
                             </div>
                     </div>
                     <div className="w-full rounded shadow-2xl">
                         <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="image"/>
-                            <div className='h-[5rem] bg-white text-center'>
-                                <h3>name</h3>
-                                <p>description</p>
+                            alt="image"
+                            className='object-cover w-full h-[400px]'
+                        />
+                            <div className=' bg-white p-4'>
+                                <h3 className='mb-2 font-semibold text-main_blue'>name</h3>
+                                <p className='text-sm text-gray-700'>description</p>
                             </div>
                     </div>
                     <div className="w-full rounded shadow-2xl">
                         <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="image"/>
-                            <div className='h-[5rem] bg-white text-center'>
-                                <h3>name</h3>
-                                <p>description</p>
+                            alt="image"
+                            className='object-cover w-full h-[400px]'
+                        />
+                            <div className=' bg-white p-4'>
+                                <h3 className='mb-2 font-semibold text-main_blue'>OIZA GOODNESS EMMANUEL</h3>
+                                <p className='text-sm text-gray-700'>
+                                is a content writer and social media manager. With a degree in
+                                International relations and Diplomacy, she is keen, passionate and reliable with remarkable
+                                organization and communication skills. She reads over drafts, generates content and determines
+                                which ones make the final cut for publication. She also cross references citations in content to ensure
+                                accuracy and formats the final product in a way consistent with the rest of the content on our blog
+                                and pages.
+                                </p>
                             </div>
                     </div>
                     <div className="w-full rounded shadow-2xl">
                         <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="image"/>
-                            <div className='h-[5rem] bg-white text-center'>
-                                <h3>name</h3>
-                                <p>description</p>
-                            </div>
-                    </div>
-                    <div className="w-full rounded shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
-                            alt="image"/>
-                            <div className='h-[5rem] bg-white text-center'>
-                                <h3>name</h3>
-                                <p>description</p>
+                            alt="image"
+                            className='object-cover w-full h-[400px]'
+                        />
+                            <div className=' bg-white p-4'>
+                                <h3 className='mb-2 font-semibold text-main_blue'>name</h3>
+                                <p className='text-sm text-gray-700'>description</p>
                             </div>
                     </div>
                 </div>

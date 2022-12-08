@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
-import { Text } from '../../pages/news/[id]'
 import Button from '../button/Button';
+import { Text } from '../../pages/newsletters/[id]';
 
 type CardProps = {
     title : string;

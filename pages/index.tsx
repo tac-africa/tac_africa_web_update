@@ -9,7 +9,7 @@ import LatestNews from '../components/LatestNews'
 import { getDatabase } from '../lib/notion'
 import { GetStaticProps } from "next";
 import OngoingProjects from '../components/priojects/ongoingProjects'
-import Contact from '../components/contact'
+import Contact from '../components/contact/Contact'
 
 
 const databaseId: string = process.env.NOTION_BLOG_DATABASE_ID || ""
