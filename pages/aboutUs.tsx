@@ -171,12 +171,7 @@ export default function aboutUs() {
                             <div className=' bg-white p-4'>
                                 <h3 className='mb-2 font-semibold text-main_blue'>IBRAHIM M. ALI</h3>
                                 <p className='text-sm text-gray-700'>
-                                Is an Expert in UAV/ Drone technology, he has been employed with
-                                Technology Against Crime Africa (TAC-AFRICA) for more than four years He oversees all
-                                technical operations and maintenances using his professional expertise in IT, drones, and other
-                                engineering services including networking and CCTV camera installation e.t.c. He obtains a
-                                Certification in Introduction to Drone, UAV/Drone Pilot 107, Drone Aerial Photogrammetry and
-                                Videography, Drone GIS and 3D Mapping Techniques Using Drones.
+                                Is an Expert in UAV/ Drone technology, he has been employed with Technology Against Crime Africa (TAC-AFRICA) for more than four years, He oversees and manages all technical operations and maintenance using his professional expertise in IT, drones, and other engineering services including networking and CCTV camera installation, etc. He obtains a Certification in Introduction to Drone, UAV/Drone Pilot 107, Drone Aerial Photogrammetry and Videography, Drone GIS, and 3D Mapping Techniques Using Drones.
                                 </p>
                             </div>
                     </div>
