@@ -57,7 +57,6 @@ export const getStaticProps = async ({ params }) => {
 export const getStaticPaths = async () => {
   const posts = await getDatabase(databaseId, 'blog')
   const paths = posts.map((post) => ({ params: {slug:`${post.properties.Slug.formula.string}`} }));
-  console.log(paths , '<---->')
   return {
     paths,
     fallback: "blocking",

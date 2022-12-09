@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Link from 'next/link';
 import { getDatabase } from '../../lib/notion';
 export default function Home({posts}) {
-console.log(posts[0].properties.excerpt.rich_text[0].plain_text )
   if(!posts) return <h1>No posts</h1>
   return (
     <div>

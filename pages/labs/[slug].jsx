@@ -46,7 +46,6 @@ return (
 }
 const Post = ({ post }) => {
 
-  console.log( post.response.results[0].cover.external.url, '<<<<->>>>')
   if(!post) return <h1>No posts</h1>
   return (
     <div>
@@ -249,7 +248,6 @@ export const getStaticProps = async ({ params }) => {
 export const getStaticPaths = async () => {
   const posts = await getDatabase(databaseId, 'labs')
   const paths = posts.map((post) => ({ params: {slug:`${post.properties.Slug.formula.string}`} }));
-  console.log(paths , '<---->')
   return {
     paths,
     fallback: "blocking",
