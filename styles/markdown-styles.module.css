@@ -1,6 +1,8 @@
-
+/* 
   .reactMarkDown > p {
-    color: rgb(55 65 81 / 1 )
+    display: block !important;
+    color: rgb(55 65 81 / 1 );
+    margin: 50px 0px !important;
   }
 
   .reactMarkDown ul {
@@ -13,4 +15,4 @@
     margin-left: 2em;
     display: list-item;
     text-align: -webkit-match-parent;
-  }
+  } */

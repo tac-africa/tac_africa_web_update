@@ -71,7 +71,7 @@ export default function aboutUs() {
                         <div className="max-w-[20rem] rounded shadow-2xl ">
                             <img src="https://res.cloudinary.com/tacafrica/image/upload/v1669022868/my_folder/secretariat_images/Mask_groupdr_d0f0tn.png"
                                 alt="image"
-                                className='object-cover w-full '
+                                className='object-cover w-full shadow-custom '
                             />
                         </div>
                         <div className='space-y-6'>
@@ -186,8 +186,10 @@ export default function aboutUs() {
                             className='object-cover w-full h-[400px]'
                         />
                             <div className=' bg-white p-4'>
-                                <h3 className='mb-2 font-semibold text-main_blue'>name</h3>
-                                <p className='text-sm text-gray-700'>description</p>
+                                <h3 className='mb-2 font-semibold text-main_blue'>Salau Umar-Mukhtar</h3>
+                                <p className='text-sm text-gray-700'>
+                                Is a graphics designer and also a front-end web developer in practice. He is proficient with multiple visual programs and familiar with layouts and graphic fundamentals. Umar’s responsibility is to assist in completing all types of work that are related to graphic design and website content. And also managing the company’s social media
+                                </p>
                             </div>
                     </div>
                     <div className="w-full rounded shadow-2xl">
@@ -220,7 +222,7 @@ export default function aboutUs() {
                             </div>
                     </div>
                     <div className="w-full rounded shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
+                        <img src="https://res.cloudinary.com/tacafrica/image/upload/v1670585496/my_folder/TACteam/IMG20221207155902_iv3you.jpg"
                             alt="image"
                             className='object-cover w-full h-[400px]'
                         />
@@ -237,7 +239,7 @@ export default function aboutUs() {
                             </div>
                     </div>
                     <div className="w-full rounded shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
+                        <img src="https://res.cloudinary.com/tacafrica/image/upload/v1670585492/my_folder/TACteam/IMG20221207160436_osmdxe.jpg"
                             alt="image"
                             className='object-cover w-full h-[400px]'
                             />
@@ -254,7 +256,7 @@ export default function aboutUs() {
                                 </p>
                             </div>
                     </div>
-                    <div className="w-full rounded shadow-2xl">
+                    {/* <div className="w-full rounded shadow-2xl">
                         <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
                             alt="image"
                             className='object-cover w-full h-[400px]'
@@ -263,7 +265,7 @@ export default function aboutUs() {
                                 <h3 className='mb-2 font-semibold text-main_blue'>name</h3>
                                 <p className='text-sm text-gray-700'>description</p>
                             </div>
-                    </div>
+                    </div> */}
                     <div className="w-full rounded shadow-2xl">
                         <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
                             alt="image"
@@ -281,7 +283,7 @@ export default function aboutUs() {
                                 </p>
                             </div>
                     </div>
-                    <div className="w-full rounded shadow-2xl">
+                    {/* <div className="w-full rounded shadow-2xl">
                         <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
                             alt="image"
                             className='object-cover w-full h-[400px]'
@@ -290,7 +292,7 @@ export default function aboutUs() {
                                 <h3 className='mb-2 font-semibold text-main_blue'>name</h3>
                                 <p className='text-sm text-gray-700'>description</p>
                             </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

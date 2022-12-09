@@ -18,8 +18,9 @@ return (
 const Post = ({ post }) => {
   if(!post) return <h1>No posts</h1>
   return (
+    <div className='w-10/12'>
       <section className='reactMarkdown' >
-          <h2 className='text-main_blue font-bold text-2xl mt-4 mb-8'>{post.metadata.title}</h2>
+          <h2 className='text-main_blue font-bold mt-4 mb-8' style={{fontSize: '1.875rem', lineHeight: '2.25rem' }}>{post.metadata.title}</h2>
         <ReactMarkdown
         components={{
             code({node, inline, className, children, ...props}) {
@@ -37,6 +38,7 @@ const Post = ({ post }) => {
             }
         }}>{post.markdown}</ReactMarkdown>
       </section>
+    </div>
   );
 };
 

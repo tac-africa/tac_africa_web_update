@@ -58,7 +58,7 @@ const Post = ({ post }) => {
       <img src={ post.response.results[0].cover.external.url || 'https://res.cloudinary.com/tacafrica/image/upload/v1667746391/uav_z9yprr.jpg'} alt="project" 
           className=' h-full w-full object-cover  rounded-lg'
           />
-      <div className='h-[12rem] bg-white rounded-md w-8/12 mx-auto absolute bottom-0 translate-y-1/2 translate-x-1/4 '>
+      <div className='h-[12rem] bg-white rounded-md w-8/12 mx-auto absolute bottom-0 translate-y-1/2 translate-x-1/4 shadow-custom '>
         <div className='flex justify-center items-center  h-full'>
           <h2 className='font-semibold text-3xl mb-6 text-center text-blue-700 '>{post.metadata.title}</h2>
         </div>
@@ -68,7 +68,7 @@ const Post = ({ post }) => {
       <h2 className='font-semibold text-blue-700 uppercase text-2xl mb-6'>{'Introduction'}</h2>
 
 
-      <section className=''> 
+      <section className='reactMarkdown' > 
           {/* <h2>{post.metadata.title}</h2> */}
         <ReactMarkdown
         components={{

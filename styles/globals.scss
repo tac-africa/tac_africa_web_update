@@ -58,12 +58,16 @@
     color: #1F47AF;
   }
 
+  .shadow-custom {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
   @layer components {
     .reactMarkdown {
-      @apply w-10/12 mx-auto
+      @apply mx-auto mb-20
     }
     .reactMarkdown > p {
-      @apply text-sm tracking-wide text-gray-700;
+      @apply text-sm tracking-wide text-gray-700 mt-2 mb-4;
     }
     .reactMarkdown > h3 {
       @apply text-main_blue font-bold text-2xl mb-3 tracking-wide;
@@ -71,7 +75,7 @@
     .reactMarkdown > p > img {
       @apply w-screen my-10
     }
-    .reactMarkdown > h2 > strong {
-      @apply text-main_blue font-bold text-xl py-8 tracking-wide;
+    .reactMarkdown > h2  {
+      @apply text-main_blue font-bold text-xl tracking-wide;
     }
   }
