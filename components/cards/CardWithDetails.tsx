@@ -28,7 +28,7 @@ export const CardWithDetails = ( {post, path } : any ) => {
                         </p>
                     </div>
                     <div className="flex items-center mt-0">
-                        <Link href={`/${path}/${post.id}`} className="inline-flex items-center text-indigo-500 cursor-pointer md:mb-2 lg:mb-0">Read
+                        <Link href={`/${path}/${post.properties.Slug.formula.string}`} className="inline-flex items-center text-indigo-500 cursor-pointer md:mb-2 lg:mb-0">Read
                             More
 
                             <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 mt-1" fill="none"

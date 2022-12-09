@@ -57,3 +57,21 @@
   button.slick-arrow.slick-next::before {
     color: #1F47AF;
   }
+
+  @layer components {
+    .reactMarkdown {
+      @apply w-10/12 mx-auto
+    }
+    .reactMarkdown > p {
+      @apply text-sm tracking-wide text-gray-700;
+    }
+    .reactMarkdown > h3 {
+      @apply text-main_blue font-bold text-2xl mb-3 tracking-wide;
+    }
+    .reactMarkdown > p > img {
+      @apply w-screen my-10
+    }
+    .reactMarkdown > h2 > strong {
+      @apply text-main_blue font-bold text-xl py-8 tracking-wide;
+    }
+  }

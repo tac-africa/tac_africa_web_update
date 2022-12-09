@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Slider from "react-slick";
+import Button from '../../components/button/Button';
 
 const droneItems = [
   {
@@ -111,7 +112,8 @@ export default function DroneAndCounterDroneLab() {
 }
 
 
- export const CarouselCard = ({ posts , path } : any) =>{
+ 
+export const CarouselCard = ({ posts , path } : any) =>{
 
   var settings = {
     dots: true,
@@ -148,29 +150,28 @@ export default function DroneAndCounterDroneLab() {
   };
 
   return (
-    <div className="w-full ">
-      <div className="lg:pt-12 pb-20 mx-auto my-0 xl:px-12  ">
-        <div className='lg:w-4/12'>
-          <h2>Understanding Drone Use And Applications</h2>
-          <p>You may submit a new submission or resubmission here. Your submission must be carefully formatted.</p>
+    <div className="w-full bg-white">
+        <div className='lg:w-4/12 mx-auto text-center py-20'>
+          <h2 className='font-semibold text-xl w-72 mx-auto mb-3'>Understanding Drone Use And Applications</h2>
+          <p className='text-slate-600'>You may submit a new submission or resubmission here. Your submission must be carefully formatted.</p>
         </div>
-        <div className="mx:pl-4 pl-4 m-4 pb-8 ">
+      <div className="lg:pt-12  mx-auto my-0 xl:px-12  overflow-hidden bg-fixed bg-center bg-cover bg-drone_swam">
+        <div className="mx:pl-4 pl-4 m-4 pb-8 " >
           <Slider {...settings} className='flex ' >
               {droneItems.map(({iconLink, title, preview, link} : any) => (
-                  <div key={''} className="p-4 flex items-stretch  " style={{display: 'flex: 1 1 auto'}}> 
-                  <div className="border-2 border-gray-200 rounded-lg w-full  ">
-                      <img className="object-cover object-center w-full lg:h-48 md:h-36 px-4 pt-4"
+                  <div key={''} className="p-4 flex items-stretch" style={{display: 'flex: 1 1 auto'}}> 
+                  <div className="border-2 border-gray-200 rounded-lg w-full p-8 bg-white ">
+                      <img className="object-cover object-center h-8 w-8 mb-2"
                           src={ iconLink || 'https://res.cloudinary.com/tacafrica/image/upload/v1657884296/my_folder/fq0rkbyibtd4heb2bjom.png'} alt="blog" />
-                      <div className="p-4">
-                          <h1 className="mb-2 text-lg font-medium text-gray-900">
+                      <div className="p-">
+                          <h1 className="mb-2 text-lg font-semibold w-40 text-gray-900">
                             {title}
                           </h1>
                           <p className="mb-6 text-sm tracking-wide text-gray-700">
                               {preview}
                           </p>
-                          <div className='block text-center'>
-
-                              {/* <Button center text={'read more'} color={'bg-main_blue'} /> */}
+                          <div className='block t'>
+                              <Button text={'Explore More'} color={'bg-black'} />
                           </div>
                       </div>
                   </div>
@@ -182,5 +183,4 @@ export default function DroneAndCounterDroneLab() {
     </div>
   );
 };
-
 

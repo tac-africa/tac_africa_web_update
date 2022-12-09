@@ -3,7 +3,8 @@ import Head from "next/head";
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 import { getDatabase, getSingleBlogPostBySlug } from "../../lib/notion";
-import styles from '../../styles/Home.module.css'
+import styles from '../../styles/markdown-styles.module.css'
+
 
 const databaseId = process.env.NOTION_BLOG_DATABASE_ID || ""
 
@@ -17,8 +18,8 @@ return (
 const Post = ({ post }) => {
   if(!post) return <h1>No posts</h1>
   return (
-      <section className={styles.container}> 
-          <h2>{post.metadata.title}</h2>
+      <section className='reactMarkdown' >
+          <h2 className='text-main_blue font-bold text-2xl mt-4 mb-8'>{post.metadata.title}</h2>
         <ReactMarkdown
         components={{
             code({node, inline, className, children, ...props}) {

@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link';
 import { getDatabase } from '../../lib/notion';
-import styles from '../../styles/Home.module.css'
 export default function Home({posts}) {
 console.log(posts[0].properties.excerpt.rich_text[0].plain_text )
   if(!posts) return <h1>No posts</h1>
@@ -60,7 +59,7 @@ console.log(posts[0].properties.excerpt.rich_text[0].plain_text )
 const databaseId = process.env.NOTION_BLOG_DATABASE_ID || ""
 
 export const getStaticProps = async () => {
-  const data = await getDatabase(databaseId, 'news')
+  const data = await getDatabase(databaseId, 'blog')
   return {
     props: {
       posts: data,
