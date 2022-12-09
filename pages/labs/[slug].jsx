@@ -45,6 +45,8 @@ return (
 )
 }
 const Post = ({ post }) => {
+
+  console.log( post.response.results[0].cover.external.url, '<<<<->>>>')
   if(!post) return <h1>No posts</h1>
   return (
     <div>
@@ -53,21 +55,21 @@ const Post = ({ post }) => {
 
 <div className='w-10/12 mx-auto'>
     <div className='h-[28rem] bg-slate-600 rounded-md relative mt-8 mb-28'>
-      <img src={ 'https://res.cloudinary.com/tacafrica/image/upload/v1667746391/uav_z9yprr.jpg'} alt="project" 
+      <img src={ post.response.results[0].cover.external.url || 'https://res.cloudinary.com/tacafrica/image/upload/v1667746391/uav_z9yprr.jpg'} alt="project" 
           className=' h-full w-full object-cover  rounded-lg'
           />
       <div className='h-[12rem] bg-white rounded-md w-8/12 mx-auto absolute bottom-0 translate-y-1/2 translate-x-1/4 '>
         <div className='flex justify-center items-center  h-full'>
-          <h2 className='font-semibold text-lg mb-6 text-center text-blue-700 '>{post.metadata.title}</h2>
+          <h2 className='font-semibold text-3xl mb-6 text-center text-blue-700 '>{post.metadata.title}</h2>
         </div>
       </div>
     </div>
     <div className=''>
-      <h2 className='font-semibold text-lg mb-6'>{post.metadata.title}</h2>
+      <h2 className='font-semibold text-blue-700 uppercase text-2xl mb-6'>{'Introduction'}</h2>
 
 
       <section className=''> 
-          <h2>{post.metadata.title}</h2>
+          {/* <h2>{post.metadata.title}</h2> */}
         <ReactMarkdown
         components={{
             code({node, inline, className, children, ...props}) {

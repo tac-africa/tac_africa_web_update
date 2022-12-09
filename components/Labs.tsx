@@ -9,11 +9,11 @@ import {Client} from "@notionhq/client";
 // import { BlogPost } from "../@types/schema";
 
 
-const notion = new Client({auth: process.env.NOTION_ACCESS_TOKEN});
+// const notion = new Client({auth: process.env.NOTION_ACCESS_TOKEN});
 
 
 
-const databaseId: string = process.env.NOTION_BLOG_DATABASE_ID || ""
+// const databaseId: string = process.env.NOTION_BLOG_DATABASE_ID || ""
 
 
 export default function Labs({ posts } : any ) {
@@ -56,7 +56,7 @@ export default function Labs({ posts } : any ) {
               <div className="lg:w-6/12 mx-auto ">
                 <div id='irpas'>
                   <h2  className="text-sweet_blue font-bold text-xl my-3">
-                  Who we are and what we hope to accomplish
+                  Who we are
                   </h2>
                   <p className="text-xs mb-10 lg:text-base 2xl:text-xl tracking-wide text-gray-700">
                   <em>Project</em> 774 is an ongoing initiative of the Technology Against 
@@ -67,7 +67,7 @@ export default function Labs({ posts } : any ) {
                   </p>
 
                   <h2  className="text-sweet_blue font-bold text-xl my-3">
-                  Who we are and what we hope to accomplish
+                  what we hope to accomplish
                   </h2>
                   <p className="text-xs  lg:text-base 2xl:text-xl tracking-wide text-gray-700">
                   <em>Project</em> 774 is an ongoing initiative of the Technology Against 
@@ -95,10 +95,10 @@ export default function Labs({ posts } : any ) {
 
     <div className='bg-[#F5F7FA] '>
       <div className="flex justify-Center items-center  py-4 mx-auto capitalize ">
-        <h2 className="text-black mx-auto text-center pt-1.5 font-bold text-4xl mt-12">
-          {'Our Digitalized '}
+      <h2 className="text-black mx-auto text-center pt-1.5 font-bold text-4xl mt-12">
+          {'Drone Value Chain '}
           <span className="text-main_blue font-bold text-4xl ">
-            {'Specialized Labs'}
+            {'Analytics'}
           </span>
         </h2>
       </div>
