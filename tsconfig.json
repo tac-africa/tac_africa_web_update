@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/api/navLinks.js", "pages/blog/[slug].js", "pages/blog/index.js", "pages/labs/[slug].jsx", "components/priojects/ongoingProjects.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/api/navLinks.js", "pages/blog/[slug].js", "pages/blog/index.js", "pages/labs/[slug].jsx", "components/priojects/ongoingProjects.tsx", "pages/api/researchWork.js"],
   "exclude": ["node_modules"]
 }

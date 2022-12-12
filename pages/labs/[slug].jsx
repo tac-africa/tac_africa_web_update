@@ -4,6 +4,7 @@ import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 import { getDatabase, getSingleBlogPostBySlug } from "../../lib/notion";
 import Slider from "react-slick";
 import Button from '../../components/button/Button';
+import { ResearchWorks } from '../api/researchWork';
 
 
 const droneItems = [
@@ -44,7 +45,20 @@ return (
     </SyntaxHighlighter>
 )
 }
+
 const Post = ({ post }) => {
+  console.log(post.metadata.id, '<post>')
+
+  const newList = []
+
+  ResearchWorks.filter(item => {
+    if(item.id === post.metadata.id) {
+      newList.push(item)
+    }
+  })
+
+  console.log(newList[0].items , '<><>')
+
 
   if(!post) return <h1>No posts</h1>
   return (
@@ -146,7 +160,7 @@ const Post = ({ post }) => {
         </div>
           <section className='flex flex-col'>
               <div className=''>
-                <CarouselCard />
+                <CarouselCard newList={newList} />
               </div>
           </section>
       </div>
@@ -160,7 +174,7 @@ const Post = ({ post }) => {
 
 
 
-export const CarouselCard = ({ posts , path }) =>{
+export const CarouselCard = ({ newList }) =>{
 
   var settings = {
     dots: true,
@@ -205,20 +219,22 @@ export const CarouselCard = ({ posts , path }) =>{
       <div className="lg:pt-12  mx-auto my-0 xl:px-12  overflow-hidden bg-fixed bg-center bg-cover bg-drone_swam">
         <div className="mx:pl-4 pl-4 m-4 pb-8 " >
           <Slider {...settings} className='flex ' >
-              {droneItems.map(({iconLink, title, preview, link}) => (
+              {newList[0].items.map(({ title, except , link, iconLink }) => (
                   <div key={''} className="p-4 flex items-stretch" style={{display: 'flex: 1 1 auto'}}> 
                   <div className="border-2 border-gray-200 rounded-lg w-full p-8 bg-white ">
                       <img className="object-cover object-center h-8 w-8 mb-2"
-                          src={ iconLink || 'https://res.cloudinary.com/tacafrica/image/upload/v1657884296/my_folder/fq0rkbyibtd4heb2bjom.png'} alt="blog" />
+                          src={iconLink} alt="blog" />
                       <div className="p-">
-                          <h1 className="mb-2 text-lg font-semibold w-40 text-gray-900">
+                          <h1 className="mb-2 text-lg font-semibold h-[60px] overflow-hidden text-gray-900">
                             {title}
                           </h1>
-                          <p className="mb-6 text-sm tracking-wide text-gray-700">
-                              {preview}
+                          <p className="mb-6 text-sm tracking-wide text-gray-700 h-[100px] overflow-hidden">
+                              { except }
                           </p>
-                          <div className='block t'>
+                          <div className='block '>
+                            <a href={link} target='_blank' >
                               <Button text={'Explore More'} color={'bg-black'} />
+                            </a>
                           </div>
                       </div>
                   </div>
