@@ -30,28 +30,40 @@ export default function aboutUs() {
                             alt="image"
                             className='h-full object-cover object-center'
                             />
-                            <div className='h-[4rem] bg-white rounded-md w-10/12 mx-auto absolute bottom-0 translate-y-1/2 translate-x-[10%]  '></div>
+                            <div className='h-[4rem] flex justify-center align-center  bg-white rounded-md w-10/12 mx-auto absolute bottom-0 translate-y-1/2 translate-x-[10%]  '>
+                                <p className='font-semibold text-main_blue my-auto '>
+                                Prevent
+                                </p>
+                            </div>
                     </div>
                     <div className="w-full rounded shadow-2xl relative ">
                         <img src="https://res.cloudinary.com/tacafrica/image/upload/v1657885301/my_folder/zdjeexh3kdlp9yb77srz.jpg"
                             alt="image"
                             className='h-full object-cover object-center'
                             />
-                            <div className='h-[4rem] bg-white rounded-md w-10/12 mx-auto absolute bottom-0 translate-y-1/2 translate-x-[10%]  '></div>
+                            <div className='h-[4rem] flex justify-center align-center  bg-white rounded-md w-10/12 mx-auto absolute bottom-0 translate-y-1/2 translate-x-[10%]  '>
+                            <p className='font-semibold text-main_blue my-auto '>
+                                Detect
+                            </p>
+                            </div>
                     </div>
                     <div className="w-full rounded shadow-2xl relative ">
                         <img src="https://res.cloudinary.com/tacafrica/image/upload/v1667746391/uav_z9yprr.jpg"
                             alt="image"
                             className='h-full object-cover object-center'
                             />
-                            <div className='h-[4rem] bg-white rounded-md w-10/12 mx-auto absolute bottom-0 translate-y-1/2 translate-x-[10%] '></div>
+                            <div className='h-[4rem] flex justify-center align-center  bg-white rounded-md w-10/12 mx-auto absolute bottom-0 translate-y-1/2 translate-x-[10%] '>
+                            <p className='font-semibold text-main_blue my-auto '>
+                                Investigate
+                            </p>
+                            </div>
                     </div>
                 </div>
                 <div className='my-16 space-y-4'>
                     <div className='tracking-wide text-gray-700 space-y-4'>
                         <p className=''>Law enforcement officials today are facing a challenging and demanding operating environment. As society is increasingly connected and the world becoming borderless, technologies can help law enforcement to prevent, detect and investigate more efficiently, but at the same time, they also open up possibilities for criminals. Technology Against Crime believes that its vision of a safer continent is possible through a multi-stake holder approach to innovation in policing.
                         </p>
-                        <p className='text-sm text-gray-700'>
+                        <p className=' text-gray-700'>
                         Autonomous cars, Artificial Intelligence, robotics, drones and crypto-currencies in the dark web; these are becoming part of today’s reality, which intensifies the challenges of securing our cities, major events, borders and cyberspace.</p>
                     </div>
                 </div>
@@ -78,8 +90,10 @@ export default function aboutUs() {
                             <p className='text-sm text-gray-700'>
                             Dr. Jerry Akubo founded TAC Africa as a futurist oriented, Law Enforcement Centric NGO, borne out of an International Forum on Technologies – a high level meeting dedicated to Technologies for a Safer World, co-organized by INTERPOL and the Ministry of Interior in Lyon, France in 2013.
                             </p>
-                            <Button text={'Visit Linkedin Profile'} textColor={'text-main_blue'} 
-                            borderColor={'border-main_blue'} color={'bg-white'} border />
+                            <a href="https://www.linkedin.com/in/ajerry/" target='_blank'>
+                                <Button text={'Visit Linkedin Profile'} textColor={'text-main_blue'} 
+                                borderColor={'border-main_blue'} color={'bg-white'} border />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -99,8 +113,8 @@ export default function aboutUs() {
                             className='object-cover w-full h-[400px]'
                         />
                             <div className=' bg-white p-4'>
-                                <h3 className='mb-2 font-semibold text-main_blue'>name</h3>
-                                <p className='text-sm text-gray-700'>description</p>
+                                <h3 className='mb-2 font-semibold text-main_blue'>Ms. Brooke Taspall</h3>
+                                <p className='text-sm text-gray-700'>CEO/Founder, Drone Alert</p>
                             </div>
                     </div>
                     <div className="w-full rounded shadow-2xl">
@@ -109,8 +123,8 @@ export default function aboutUs() {
                             className='object-cover w-full h-[400px]'
                         />
                             <div className=' bg-white p-4'>
-                                <h3 className='mb-2 font-semibold text-main_blue'>name</h3>
-                                <p className='text-sm text-gray-700'>description</p>
+                                <h3 className='mb-2 font-semibold text-main_blue'>Orville McCalla</h3>
+                                <p className='text-sm text-gray-700'>CEO/President AeroStream Consulting Inc.</p>
                             </div>
                     </div>
                     <div className="w-full rounded shadow-2xl">
@@ -119,8 +133,8 @@ export default function aboutUs() {
                             className='object-cover w-full h-[400px]'
                         />
                             <div className=' bg-white p-4'>
-                                <h3 className='mb-2 font-semibold text-main_blue'>name</h3>
-                                <p className='text-sm text-gray-700'>description</p>
+                                <h3 className='mb-2 font-semibold text-main_blue'>Sanjana Rathi</h3>
+                                <p className='text-sm text-gray-700'>Vice President, TAC Africa</p>
                             </div>
                     </div>
                     <div className="w-full rounded shadow-2xl">
@@ -129,8 +143,8 @@ export default function aboutUs() {
                             className='object-cover w-full h-[400px]'
                         />
                             <div className=' bg-white p-4'>
-                                <h3 className='mb-2 font-semibold text-main_blue'>name</h3>
-                                <p className='text-sm text-gray-700'>description</p>
+                                <h3 className='mb-2 font-semibold text-main_blue'>philip j ingram</h3>
+                                {/* <p className='text-sm text-gray-700'>description</p> */}
                             </div>
                     </div>
                     <div className="w-full rounded shadow-2xl">
@@ -139,8 +153,8 @@ export default function aboutUs() {
                             className='object-cover w-full h-[400px]'
                         />
                             <div className=' bg-white p-4'>
-                                <h3 className='mb-2 font-semibold text-main_blue'>name</h3>
-                                <p className='text-sm text-gray-700'>description</p>
+                                <h3 className='mb-2 font-semibold text-main_blue'>Professor B.K. Alese</h3>
+                                {/* <p className='text-sm text-gray-700'>description</p> */}
                             </div>
                     </div>
                     <div className="w-full rounded shadow-2xl">
@@ -149,8 +163,8 @@ export default function aboutUs() {
                             className='object-cover w-full h-[400px]'
                         />
                             <div className=' bg-white p-4'>
-                                <h3 className='mb-2 font-semibold text-main_blue'>name</h3>
-                                <p className='text-sm text-gray-700'>description</p>
+                                <h3 className='mb-2 font-semibold text-main_blue'>Mr. Kelvin Lungu</h3>
+                                <p className='text-sm text-gray-700'>Lecturer - University of Zambia</p>
                             </div>
                     </div>
                 </div>
@@ -202,7 +216,7 @@ export default function aboutUs() {
                             </div>
                     </div>
                     <div className="w-full rounded shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
+                        <img src="https://res.cloudinary.com/tacafrica/image/upload/v1670847761/my_folder/TACteam/Snapchat-1195055322_a2n4hg.jpg"
                             alt="image"
                             className='object-cover w-full h-[400px]'
                         />
