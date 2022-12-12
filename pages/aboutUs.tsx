@@ -190,7 +190,7 @@ export default function aboutUs() {
                             </div>
                     </div>
                     <div className="w-full rounded shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=989&q=80"
+                        <img src="https://res.cloudinary.com/tacafrica/image/upload/v1670849838/my_folder/TACteam/54ca6959-fd82-406f-a7f0-f8ec4ab5c906_o0vbws.jpg"
                             alt="image"
                             className='object-cover w-full h-[400px]'
                         />
