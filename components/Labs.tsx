@@ -33,26 +33,29 @@ export default function Labs({ posts } : any ) {
     <div className=''>
             <div className="flex flex-col lg:h-[40rem] w-10/12 mx-auto" >
              <div  className="flex flex-col lg:flex-row w-full m-auto "  >
-              <div className="grid grid-cols-2 gap-2 grid-rows-5 w-full lg:mr-4 lg:w-4/12 rounded-xl overflow-hidden h-[25rem] m-auto ">
-                <div className=" row-span-2 rounded-lg">
-                  <img src={ 'https://res.cloudinary.com/tacafrica/image/upload/v1659626896/my_folder/internationaldayagainsttourture2022/IMG_7705_pvrsrr.jpg'} alt="project" 
-                  className=' h-full w-full object-cover  rounded-lg'
-                  />
-                </div>
-                <div className=" bg-blue-700 row-span-2 mt-4 rounded-lg">
-                
-                </div>
-                <div className=" bg-blue-700 row-span-3 mb-4 rounded-lg">
-                {/* <img src={ 'https://res.cloudinary.com/tacafrica/image/upload/v1660216602/my_folder/youth%20skill%20day/IMG-20220718-WA0017_axnea4.jpg'} alt="project" 
-                  className=' h-full w-full object-cover ' */}
-                  {/* /> */}
-                </div>
-                <div className="row-span-3 rounded-lg">
-                <img src={ 'https://res.cloudinary.com/tacafrica/image/upload/v1657883873/my_folder/projects/ageqfoxdysye0qngyp2h.jpg'} alt="project" 
-                  className=' h-full w-full object-cover rounded-lg'
-                  />
-                </div>
-              </div>
+             <div className="grid grid-cols-2 gap-2 grid-rows-5 w-full lg:mr-4 lg:w-4/12 rounded-xl overflow-hidden h-[35rem] px-4 py-12 m-auto ">
+            <div className=" row-span-2 rounded-lg">
+              <img src={ 'https://res.cloudinary.com/tacafrica/image/upload/v1659626896/my_folder/internationaldayagainsttourture2022/IMG_7705_pvrsrr.jpg'} alt="project" 
+              className=' h-full w-full object-cover  rounded-lg'
+              />
+            </div>
+            <div className=" bg-blue-700 row-span-2 mt-4 rounded-lg">
+                <img src= 'https://res.cloudinary.com/tacafrica/image/upload/v1657886040/my_folder/team/IMG_5480_zcgigo.jpg'
+                className=' h-full w-full object-cover ' 
+                />
+             
+            </div>
+            <div className=" bg-blue-700 row-span-3 mb-4 rounded-lg">
+            <img src={ 'https://res.cloudinary.com/tacafrica/image/upload/v1670579951/my_folder/drone/Kids_drone_presentation_2_pvrhry.jpg'} alt="project" 
+              className=' h-full w-full object-cover ' 
+              />
+            </div>
+            <div className="row-span-3 rounded-lg">
+            <img src={ 'https://res.cloudinary.com/tacafrica/image/upload/v1657883873/my_folder/projects/ageqfoxdysye0qngyp2h.jpg'} alt="project" 
+              className=' h-full w-full object-cover rounded-lg'
+              />
+            </div>
+        </div>
               <div className="lg:w-6/12 mx-auto ">
                 <div id='irpas'>
                   <h2  className="text-sweet_blue font-bold text-xl my-3">
