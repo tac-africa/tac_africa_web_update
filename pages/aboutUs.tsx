@@ -113,7 +113,7 @@ export default function aboutUs() {
                             className='object-cover w-full h-[400px]'
                         />
                             <div className=' bg-white p-4'>
-                                <h3 className='mb-2 font-semibold text-main_blue'>Ms. Brooke Taspall</h3>
+                                <h3 className='mb-2 font-semibold text-main_blue '>Ms. Brooke Taspall</h3>
                                 <p className='text-sm text-gray-700'>CEO/Founder, Drone Alert</p>
                             </div>
                     </div>
@@ -123,7 +123,7 @@ export default function aboutUs() {
                             className='object-cover w-full h-[400px]'
                         />
                             <div className=' bg-white p-4'>
-                                <h3 className='mb-2 font-semibold text-main_blue'>Orville McCalla</h3>
+                                <h3 className='mb-2 font-semibold text-main_blue '>Orville McCalla</h3>
                                 <p className='text-sm text-gray-700'>CEO/President AeroStream Consulting Inc.</p>
                             </div>
                     </div>
@@ -133,7 +133,7 @@ export default function aboutUs() {
                             className='object-cover w-full h-[400px]'
                         />
                             <div className=' bg-white p-4'>
-                                <h3 className='mb-2 font-semibold text-main_blue'>Sanjana Rathi</h3>
+                                <h3 className='mb-2 font-semibold text-main_blue '>Sanjana Rathi</h3>
                                 <p className='text-sm text-gray-700'>Vice President, TAC Africa</p>
                             </div>
                     </div>
@@ -143,7 +143,7 @@ export default function aboutUs() {
                             className='object-cover w-full h-[400px]'
                         />
                             <div className=' bg-white p-4'>
-                                <h3 className='mb-2 font-semibold text-main_blue'>philip j ingram</h3>
+                                <h3 className='mb-2 font-semibold text-main_blue '>philip j ingram</h3>
                                 {/* <p className='text-sm text-gray-700'>description</p> */}
                             </div>
                     </div>
@@ -153,7 +153,7 @@ export default function aboutUs() {
                             className='object-cover w-full h-[400px]'
                         />
                             <div className=' bg-white p-4'>
-                                <h3 className='mb-2 font-semibold text-main_blue'>Professor B.K. Alese</h3>
+                                <h3 className='mb-2 font-semibold text-main_blue '>Professor B.K. Alese</h3>
                                 {/* <p className='text-sm text-gray-700'>description</p> */}
                             </div>
                     </div>
@@ -163,7 +163,7 @@ export default function aboutUs() {
                             className='object-cover w-full h-[400px]'
                         />
                             <div className=' bg-white p-4'>
-                                <h3 className='mb-2 font-semibold text-main_blue'>Mr. Kelvin Lungu</h3>
+                                <h3 className='mb-2 font-semibold text-main_blue '>Mr. Kelvin Lungu</h3>
                                 <p className='text-sm text-gray-700'>Lecturer - University of Zambia</p>
                             </div>
                     </div>
@@ -183,7 +183,7 @@ export default function aboutUs() {
                             className='object-cover w-full h-[400px]'
                         />
                             <div className=' bg-white p-4'>
-                                <h3 className='mb-2 font-semibold text-main_blue'>IBRAHIM M. ALI</h3>
+                                <h3 className='mb-2 font-semibold text-main_blue '>IBRAHIM M. ALI</h3>
                                 <p className='text-sm text-gray-700'>
                                 Is an Expert in UAV/ Drone technology, he has been employed with Technology Against Crime Africa (TAC-AFRICA) for more than four years, He oversees and manages all technical operations and maintenance using his professional expertise in IT, drones, and other engineering services including networking and CCTV camera installation, etc. He obtains a Certification in Introduction to Drone, UAV/Drone Pilot 107, Drone Aerial Photogrammetry and Videography, Drone GIS, and 3D Mapping Techniques Using Drones.
                                 </p>
@@ -195,7 +195,7 @@ export default function aboutUs() {
                             className='object-cover w-full h-[400px]'
                         />
                             <div className=' bg-white p-4'>
-                                <h3 className='mb-2 font-semibold text-main_blue'>Salau Umar-Mukhtar</h3>
+                                <h3 className='mb-2 font-semibold text-main_blueleading'>SALAU UMAR-MUKHTAR</h3>
                                 <p className='text-sm text-gray-700'>
                                 Is a graphics designer and also a front-end web developer in practice. He is proficient with multiple visual programs and familiar with layouts and graphic fundamentals. Umar’s responsibility is to assist in completing all types of work that are related to graphic design and website content. And also managing the company’s social media
                                 </p>
@@ -207,7 +207,7 @@ export default function aboutUs() {
                             className='object-cover w-full h-[400px]'
                         />
                             <div className=' bg-white p-4'>
-                                <h3 className='mb-2 font-semibold text-main_blue'>EKAJI ONAH</h3>
+                                <h3 className='mb-2 font-semibold text-main_blue  '>EKAJI ONAH</h3>
                                 <p className='text-sm text-gray-700'>
                                 is an experienced web/software developer with knowledge of various programming
                                 and version control systems. He is responsible for developing and maintaining the TAC Africa
@@ -221,7 +221,7 @@ export default function aboutUs() {
                             className='object-cover w-full h-[400px]'
                         />
                             <div className=' bg-white p-4'>
-                                <h3 className='mb-2 font-semibold text-main_blue'>JAHSWILL EMMANUEL OMASIO</h3>
+                                <h3 className='mb-2 font-semibold text-main_blue '>JAHSWILL EMMANUEL OMASIO</h3>
                                 <p className='text-sm text-gray-700'>
                                 Is Enterprising 3d Visual Manager in tune with current
                                 trends especially in executive ideations. Adept at working well under pressure to ensure that
@@ -236,7 +236,7 @@ export default function aboutUs() {
                             className='object-cover w-full h-[400px]'
                         />
                             <div className=' bg-white p-4'>
-                                <h3 className='mb-2 font-semibold text-main_blue'>ENGR. INNOCENT OCHIGBO</h3>
+                                <h3 className='mb-2 font-semibold text-main_blue '>ENGR. INNOCENT OCHIGBO</h3>
                                 <p className='text-sm text-gray-700'>
                                 A Researcher and a Drone Flight Pilot, Technology Against
                                 Crime for Africa (TAC Africa), with a Higher National Diploma in Electronics and
@@ -253,15 +253,12 @@ export default function aboutUs() {
                             className='object-cover w-full h-[400px]'
                             />
                             <div className=' bg-white p-4'>
-                                <h3 className='mb-2 font-semibold text-main_blue'>ANDOR EMMANUEL IKPATEM</h3>
+                                <h3 className='mb-2 font-semibold text-main_blue '>ANDOR EMMANUEL IKPATEM</h3>
                                 <p className='text-sm text-gray-700'>
-                                A critical and analytic researcher on Africa Drone & Data
-                                Academy (ADDA) & UNICEF collaborations, TAC Africa Drone Schema for IRPAS, Drone &
-                                Counter-Drone Measures, UAVs, UAS, C-UAS, Drone Alliance & Drone Corridors in Africa and the
-                                world at large. Works with the TAC Africa Drone and Counter-Drone Team under IRPAS in
-                                Calibrating and Navigating the Drones in the Lab. Admin manager at the TAC-AFRICA Community
-                                Hub. Administrative Data Processor, ICT and Info-Media Consultant, Web Developer, Content
-                                Creator and Creative Director.
+                                A critical and analytic researcher for TAC Africa Drone Schema for IRPAS, Drone & Counter-Drone Measures, UAVs, UAS, C-UAS, Africa Drone & Data Academy (ADDA) & UNICEF collaborations, Drone Alliance & Drone Corridors in Africa and the world at large.
+                                With a BSc Degree in Computer science he works with the TAC Africa Drone and Counter-Drone Team as a Drone pilot & head of Exhibitions in Calibrating and Navigating the Drones in the Lab.
+                                Admin manager at the TAC Community Hub.
+                                Administrative Data Processor, ICT and Info-Media Consultant, Web Developer, Content Creator and Creative Director.
                                 </p>
                             </div>
                     </div>
@@ -271,7 +268,7 @@ export default function aboutUs() {
                             className='object-cover w-full h-[400px]'
                         />
                             <div className=' bg-white p-4'>
-                                <h3 className='mb-2 font-semibold text-main_blue'>name</h3>
+                                <h3 className='mb-2 font-semibold text-main_blue '>name</h3>
                                 <p className='text-sm text-gray-700'>description</p>
                             </div>
                     </div> */}
@@ -281,7 +278,7 @@ export default function aboutUs() {
                             className='object-cover w-full h-[400px]'
                         />
                             <div className=' bg-white p-4'>
-                                <h3 className='mb-2 font-semibold text-main_blue'>OIZA GOODNESS EMMANUEL</h3>
+                                <h3 className='mb-2 font-semibold text-main_blue '>OIZA GOODNESS EMMANUEL</h3>
                                 <p className='text-sm text-gray-700'>
                                 is a content writer and social media manager. With a degree in
                                 International relations and Diplomacy, she is keen, passionate and reliable with remarkable
@@ -298,7 +295,7 @@ export default function aboutUs() {
                             className='object-cover w-full h-[400px]'
                         />
                             <div className=' bg-white p-4'>
-                                <h3 className='mb-2 font-semibold text-main_blue'>name</h3>
+                                <h3 className='mb-2 font-semibold text-main_blue '>name</h3>
                                 <p className='text-sm text-gray-700'>description</p>
                             </div>
                     </div> */}

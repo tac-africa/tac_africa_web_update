@@ -13,7 +13,7 @@ const NavBar = () => {
 
     return (
         <nav className={
-            `bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800 ${
+            `bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded ${
                 menuState && 'h-screen'
             } lg:h-full`
         }>
@@ -30,16 +30,17 @@ const NavBar = () => {
                             data[0].label
                         }/>
                 </Link>
-                <button onClick={toggleButton}
+                <button 
+                    onClick={toggleButton}
                     data-collapse-toggle="mobile-menu"
                     type="button"
-                    className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 "
                     aria-controls="mobile-menu"
                     aria-expanded="false"
                     key={
                         data[0].label
                 }>
-                    <span className="visible lg:hidden"
+                    <span className="visible lg:hidden "
                         style={
                             {zIndex: '100'}
                         }
@@ -105,7 +106,7 @@ const NavBar = () => {
                                     </div> // dropdown
                                 ) : label == 'blog' ? (
                                     <Link href="/blog">
-                                        <button type="button" className="capitalize text-white w-28 bg-blue-700 ml-6 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm 2xl:text-lg px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                        <button type="button" className="capitalize text-white w-28 bg-blue-700 ml-6 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm 2xl:text-lg px-5 py-2.5 text-center mr-2 mb-2"
                                             key={
                                                 data[0].label
                                         }>
@@ -113,7 +114,7 @@ const NavBar = () => {
                                     </Link>
                                 ) : label == 'News & Events' ? (
                                     <Link href='/tac_events'>
-                                        <button type="button" className="capitalize mt-80 lg:mt-0 py-2.5 px-4 mr-2 mb-2 text-sm 2xl:text-lg font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                                        <button type="button" className="capitalize mt-80 lg:mt-0 py-2.5 px-4 mr-2 mb-2 text-sm 2xl:text-lg font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200"
                                             key={
                                                 data[0].label
                                         }>
@@ -128,7 +129,7 @@ const NavBar = () => {
                                                 // label == '/contact' && '/contact' || 
                                                 // label == 'about' && 'aboutUs' || '/'
                                             }
-                                            className="capitalize block py-2.5 pr-4 pl-3 text-gray-700 border-b 2xl:text-lg border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                                            className="capitalize block py-2.5 pr-4 pl-3 text-gray-700 border-b 2xl:text-lg border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
                                             {label} </Link>
                                     </li>
                                 )
