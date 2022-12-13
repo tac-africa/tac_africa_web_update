@@ -32,7 +32,7 @@ export default function aboutUs() {
                             />
                             <div className='h-[4rem] flex justify-center align-center  bg-white rounded-md w-10/12 mx-auto absolute bottom-0 translate-y-1/2 translate-x-[10%]  '>
                                 <p className='font-semibold text-main_blue my-auto '>
-                                Prevent
+                                Investigate
                                 </p>
                             </div>
                     </div>
@@ -54,7 +54,7 @@ export default function aboutUs() {
                             />
                             <div className='h-[4rem] flex justify-center align-center  bg-white rounded-md w-10/12 mx-auto absolute bottom-0 translate-y-1/2 translate-x-[10%] '>
                             <p className='font-semibold text-main_blue my-auto '>
-                                Investigate
+                                Prevent
                             </p>
                             </div>
                     </div>
