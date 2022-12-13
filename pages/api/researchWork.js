@@ -10,17 +10,24 @@ export const ResearchWorks = [
             iconLink: '/icons/1.png',
         },
         {
-            title: 'AFRICA DRONE AND DATA ACADEMY',
-            except: 'In March 2016, UNICEF started testing the use of drones in Malawi to reduce waiting times for HIV testing of infants, by flying dried blood spot (DBS) samples from hard-to-reach communities directly to laboratories.',
-            link: 'https://www.dropbox.com/s/2xqpbfzwdzyki01/THE%20AFRICAN%20DATA%20AND%20DRONE%20ACADEMY.pdf?dl=1',
+            title: 'DRONE AS A THREAT',
+            except: 'The potential use of drones in a terrorist incident or attack against a critical infrastructure and soft targets is a growing concern for law enforcement as the availability of drone technology becomes more widespread globally.',
+            link: 'https://www.dropbox.com/s/kczvmrznzzs26s0/Drone%20as%20Threat.pdf?dl=1',
             iconLink: '/icons/2.png',
         },
         {
-            title: 'DRONE AS A TOOL',
-            except: 'What started as hot air balloons for reconnaissance for the military purpose has grown to become  a behemoth technological feat that is used for the betterment of mankind. Today, drones are used across various applications from wildlife conservation to emergency response, insurance to mapping, and from disease control to delivery services.',
-            link: 'https://www.dropbox.com/s/b5f96m7fk4t1ddg/Drone%20as%20a%20Tool.pdf?dl=1',
+            title: 'DRONE EVIDENCE',
+            except: 'Drone forensics is a term that refers to forensic processing, examination, and analysis of unmanned air vehicles (UAVs). It involves extracting and securing evidence in a forensically sound manner on drones (UAVs).',
+            link: 'https://www.dropbox.com/s/1dynvbblifp3nzy/Drone%20Evidence.pdf?dl=1',
             iconLink: '/icons/3.png',
         },
+    ],
+    ourWork: [
+        'AFRICA ADOPTING UAVs TECHNOLOGY',
+        'AFRICA DRONE AND DATA ACADEMY',
+        'RENOWN INSTITUTE IN AFRICA',
+        'THE JOURNEY SO FAR OF UNICEFs DRONE WORK IN MALAWI',
+        'UNICEF AND ADDA COLLABORATION',
     ]
     },
     {
@@ -45,7 +52,14 @@ export const ResearchWorks = [
             link: 'https://www.dropbox.com/s/mee9ya6sloeerwc/drone%20Alliance%20in%20Africa.pdf?dl=1',
             iconLink: '/icons/3.png',
         },
-    ]
+    ],
+        ourWork: [
+            'DRONE BUSINESS AND INDUSTRY DATABASE',
+            'INSTANCE OF DUAL USE OF DRONES IN THE WORLD',
+            'DRONE ALLIANCE IN AFRICA',
+            'USE CASES OF DRONE',
+            'COMPANIES LEADING THE AIR NAVIGATION SERVICE PROVIDERS',
+        ]
     },
     {
         title: 'DRONE AS A THREAT',
@@ -69,7 +83,10 @@ export const ResearchWorks = [
             link: 'https://www.dropbox.com/s/jw5iwsi8rvn52ai/Counter-measures%20Technology.pdf?dl=1',
             iconLink: '/icons/3.png',
         },
-    ]
+    ],
+        ourWork: [ 'DRONE TECHNOLOGY – A RISING THREAT TO CYBER-SECURITY', 'COUNTERING THE DRONE THREAT', 
+                    'TECHNICAL COUNTER-MEASURES  (ANTI-DRONE TECHNOLOGY)','AND MALICIOUS CODE ASSAULTS', 'TAKING CONTROL OF THE DRONE THROUGH COMMUNICATION LIN' 
+                ]
     },
     {
         title: 'DRONE AS EVIDENCE',
@@ -93,7 +110,14 @@ export const ResearchWorks = [
             link: 'https://www.dropbox.com/s/1qd2pjy8gdj0xcb/Drone%20Education.pdf?dl=1',
             iconLink: '/icons/3.png',
         },
-    ]
+    ],
+        ourWork: [
+            'FORENSICS RECOVERY OF DRONE DATA',
+            'DRONE FORENSICS APPLICATION',
+            'DRONE FORENSICS METHODOLOGY',
+            'COUNTRIES WITH DRONE FORENSICS FOOTPRINTS',
+            'CHALLENGES FACED IN DRONE FORENSICS',
+        ]
     },
     
 ]

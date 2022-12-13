@@ -16,10 +16,10 @@ export const data = [
     {
         label: 'Labs',
         content : [
-            {href: '/labs/DroneAndCounterDroneLab', name: 'Drone And Counter Drone'},
-            {href: '/labs/CyberSecurity&CyberDefense', name: 'Cyber Security And Cyber Defense'},
-            {href: '/labs/BlockChain&CryptoLab', name: 'Blockchain And Crypto Lab'},
-            {href: '/labs/AI&RoboticsLab', name: 'AI And Robotics Lab'},
+            {href: '/labs/DRONE-EDUCATION.5dbbef6317774c24a93f8eee20036dd0', name: 'DRONE EDUCATION'},
+            {href: '/labs/DRONE-AS-A-TOOL.55059f54be2c4d45895cd0f8da285d68', name: 'DRONE AS A TOOL'},
+            {href: '/labs/DRONE-AS-EVIDENCE.d041c88bf316449ca8d7fb4eec4c3e00', name: 'DRONE AS EVIDENCE'},
+            {href: '/labs/DRONE-AS-A-THREAT.985155822d17473291e238d986edd3e6', name: 'DRONE AS A THREAT'},
             // {href: '/tech_for_social_good', name: 'Technology for social good'}
         ],
         type: 'dropdown button'

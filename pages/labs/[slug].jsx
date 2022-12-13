@@ -7,34 +7,6 @@ import Button from '../../components/button/Button';
 import { ResearchWorks } from '../api/researchWork';
 
 
-const droneItems = [
-  {
-    iconLink: '/icons/1.png',
-    title: 'Drone Education & Research',
-    preview: 'Are you a drone pilot/instructor, are you open to expansion and strategic collaboration in essentially...',
-    link: ''
-  },
-  {
-    iconLink: '/icons/2.png',
-    title: 'Drone Education & Research',
-    preview: 'Are you a drone pilot/instructor, are you open to expansion and strategic collaboration in essentially...',
-    link: ''
-  },
-  {
-    iconLink: '/icons/3.png',
-    title: 'Drone Education & Research',
-    preview: 'Are you a drone pilot/instructor, are you open to expansion and strategic collaboration in essentially...',
-    link: ''
-  },
-  {
-    iconLink: '/icons/1.png',
-    title: 'Drone Education & Research',
-    preview: 'Are you a drone pilot/instructor, are you open to expansion and strategic collaboration in essentially...',
-    link: ''
-  },
-]
-
-
 
 const databaseId = process.env.NOTION_BLOG_DATABASE_ID || ""
 
@@ -47,7 +19,6 @@ return (
 }
 
 const Post = ({ post }) => {
-  console.log(post.metadata.id, '<post>')
 
   const newList = []
 
@@ -57,8 +28,9 @@ const Post = ({ post }) => {
     }
   })
 
-  console.log(newList[0].items , '<><>')
-
+  newList[0].ourWork.map((ourWork) => {
+    console.log(ourWork, 'nnn')
+  })
 
   if(!post) return <h1>No posts</h1>
   return (
@@ -110,49 +82,47 @@ const Post = ({ post }) => {
     </div>
 </div>
 {/* <div></div> */}
-    <div className="flex flex-col mx-auto  bg-[#f6f6f6]" >
+    <div className="flex flex-col mx-auto py-8 bg-[#f6f6f6]" >
         <div  className="flex flex-col lg:flex-row w-full m-auto "  >
-          <div className="grid grid-cols-2 gap-2 grid-rows-5 w-full lg:mr-4 lg:w-4/12 rounded-xl overflow-hidden h-[25rem] m-auto ">
+          <div className="grid grid-cols-2 gap-2 grid-rows-5 w-full lg:mr-4 lg:w-4/12 rounded-xl overflow-hidden h-[35rem] px-4 py-12 m-auto ">
             <div className=" row-span-2 rounded-lg">
               <img src={ 'https://res.cloudinary.com/tacafrica/image/upload/v1659626896/my_folder/internationaldayagainsttourture2022/IMG_7705_pvrsrr.jpg'} alt="project" 
               className=' h-full w-full object-cover  rounded-lg'
               />
             </div>
             <div className=" bg-blue-700 row-span-2 mt-4 rounded-lg">
-            
+                <img src= 'https://res.cloudinary.com/tacafrica/image/upload/v1657886040/my_folder/team/IMG_5480_zcgigo.jpg'
+                className=' h-full w-full object-cover ' 
+                />
+             
             </div>
             <div className=" bg-blue-700 row-span-3 mb-4 rounded-lg">
-            {/* <img src={ 'https://res.cloudinary.com/tacafrica/image/upload/v1660216602/my_folder/youth%20skill%20day/IMG-20220718-WA0017_axnea4.jpg'} alt="project" 
-              className=' h-full w-full object-cover ' */}
-              {/* /> */}
+            <img src={ 'https://res.cloudinary.com/tacafrica/image/upload/v1670579951/my_folder/drone/Kids_drone_presentation_2_pvrhry.jpg'} alt="project" 
+              className=' h-full w-full object-cover ' />
             </div>
             <div className="row-span-3 rounded-lg">
             <img src={ 'https://res.cloudinary.com/tacafrica/image/upload/v1657883873/my_folder/projects/ageqfoxdysye0qngyp2h.jpg'} alt="project" 
               className=' h-full w-full object-cover rounded-lg'
               />
             </div>
-          </div>
+        </div>
 {/*  */}
-          <div className=" mx-auto" >
-            <div className=' lg:h-[70%] mt-6 lg:my-auto mx-auto'>
+          <div className=" m-auto p-4" >
+            <div className=' lg:h-[400px] mt-6 lg:my-auto mx-auto'>
               <div className='lg:my-8 '>
                 <h2 className='text-2xl font-semibold mb-4'>Our work in this space</h2>
               </div>
               <div className='flex flex-col space-y-6 mt-6 md:mt-0'>
-              <ul className='space-y-4 text-grayText'>
-                  <div className='m-0 p-0 inline' >
-                      <img className='inline w-2  mr-1' src="/projects/e.jpg" alt="" /><li className='inline-block'> Create awareness of issues of Cyber security and personal data protection.</li>
-                  </div>
-                  <div className='m-0 p-0'>
-                      <img className='inline w-2  mr-1' src="/projects/e.jpg" alt="" /><li className='inline-block'>Create employment opportunities for digital jobs across the country.</li>
-                  </div>
-                  <div className='m-0 p-0'>
-                      <img className='inline w-2  mr-1' src="/projects/e.jpg" alt="" /><li className='inline-block'> Develop more community Tech Hubs & expand to the six LGAs.</li>
-                  </div>
-                  <div className='m-0 p-0'>
-                      <img className='inline w-2  mr-1' src="/projects/e.jpg" alt="" /><li className='inline-block'> Provide an enabling environment for productivity and connectivity.</li>
-                  </div>
-              </ul>
+                <ul className='space-y-4 text-grayText'>
+                  {
+                    newList[0].ourWork.map((ourWork) => (
+                        <div className='m-0 p-0' >
+                            <img className='inline w-2  mr-1' src="/projects/e.jpg" alt="" />
+                            <li className='inline-block'>{ourWork}</li>
+                        </div>
+                      ))
+                  }
+                </ul>
               </div>
             </div>
           

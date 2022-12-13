@@ -123,7 +123,7 @@ export default function Contact() {
                     </div>
                     <input type="hidden" name="redirect" value="/aboutus"></input>
                     <div className='flex' >
-                        <Button type="submit" text={'Send Message'} />
+                        <Button color='bg-blue-700' type="submit" text={'Send Message'} />
                     </div>
                 </form>
                 </div>

@@ -59,22 +59,27 @@ export default function Labs({ posts } : any ) {
                   Who we are
                   </h2>
                   <p className="text-xs mb-10 lg:text-base 2xl:text-xl tracking-wide text-gray-700">
-                  <em>Project</em> 774 is an ongoing initiative of the Technology Against 
-                  Crime Africa NGO. It is a project initiated to help
-                  curb the security challenges and drive the growth of the Digital Economy 
-                  in Africa through a community-based
-                  approach (Community-centered Digital Hub) to promote digital engagement
+                  Drone data management, flight Analysis and Actionable Flight Intelligence advisors. We support
+                  agencies and organization in building, setting up and integrating drone data management
+                  infrastructure into their existing system.
+                  We offer a detailed outline of technological, legal and operational aspects of drone applications
+                  and training.
+                  Making Drone technology more enabled, we offer this advisory through Policy Advocacy
+                  Research, Training and Capacity Building and Volunteering.
                   </p>
 
                   <h2  className="text-sweet_blue font-bold text-xl my-3">
                   what we hope to accomplish
                   </h2>
                   <p className="text-xs  lg:text-base 2xl:text-xl tracking-wide text-gray-700">
-                  <em>Project</em> 774 is an ongoing initiative of the Technology Against 
-                  Crime Africa NGO. It is a project initiated to help
-                  curb the security challenges and drive the growth of the Digital Economy 
-                  in Africa through a community-based
-                  approach (Community-centered Digital Hub) to promote digital engagement
+                  {`To be the first RPAS Training institute for Africa, thereby helping organizations and industries
+                  achieve the benefits of drone technology through;
+                  Drone training – UAS Basics, Introduction and Fundamental Industry, Communities and
+                  Everyone.
+                  Drone Analytics – First Responders, Law Enforcement, Aviation Regulatory, Industry and
+                  Innovation
+                  Drone management – UAS Licensing, Expert Community, Partnership with Tertiary/Higher
+                  Education`}
                   </p>
                   
                 </div>
