@@ -22,6 +22,12 @@ export const ResearchWorks = [
             iconLink: '/icons/3.png',
         },
     ],
+    images: [
+        'https://res.cloudinary.com/tacafrica/image/upload/v1671013124/my_folder/Website%20pics/drone%20education/Drone_Installation_dkzde1.jpg',
+        'https://res.cloudinary.com/tacafrica/image/upload/v1671013121/my_folder/Website%20pics/drone%20education/Kids_drone_presentation_2_jrvtpw.jpg',
+        'https://res.cloudinary.com/tacafrica/image/upload/v1671013111/my_folder/Website%20pics/drone%20education/Drone_Education_intro_jniyhv.jpg',
+        'https://res.cloudinary.com/tacafrica/image/upload/v1671013115/my_folder/Website%20pics/drone%20education/Introducing_Kids_drone_education_w0qicg.jpg'
+    ],
     ourWork: [
         'AFRICA ADOPTING UAVs TECHNOLOGY',
         'AFRICA DRONE AND DATA ACADEMY',
@@ -53,6 +59,12 @@ export const ResearchWorks = [
             iconLink: '/icons/3.png',
         },
     ],
+        images: [
+            'https://res.cloudinary.com/tacafrica/image/upload/v1671013115/my_folder/Website%20pics/drone%20as%20a%20tool/Agriculture_Drone_popsm0.jpg',
+            'https://res.cloudinary.com/tacafrica/image/upload/v1671013114/my_folder/Website%20pics/drone%20as%20a%20tool/drones-inspections_power_x74ry3.png',
+            'https://res.cloudinary.com/tacafrica/image/upload/v1671013113/my_folder/Website%20pics/drone%20as%20a%20tool/Drone_in_blood_transportation_aowqv8.jpg',
+            'https://res.cloudinary.com/tacafrica/image/upload/v1671013115/my_folder/Website%20pics/drone%20as%20a%20tool/Drones_in_the_Oil_Gas_Industry_bwt1nj.jpg'
+        ],
         ourWork: [
             'DRONE BUSINESS AND INDUSTRY DATABASE',
             'INSTANCE OF DUAL USE OF DRONES IN THE WORLD',
@@ -84,6 +96,12 @@ export const ResearchWorks = [
             iconLink: '/icons/3.png',
         },
     ],
+        images: [
+            'https://res.cloudinary.com/tacafrica/image/upload/v1671013112/my_folder/Website%20pics/Drone%20as%20a%20threat/Gun-toting_Drone_ulj8hd.jpg',
+            'https://res.cloudinary.com/tacafrica/image/upload/v1671013114/my_folder/Website%20pics/Drone%20as%20a%20threat/Pakistan_s_ISI_sets_up_drone_centres_to_send_arms_drugs_into_India_qhpo5p.jpg',
+            'https://res.cloudinary.com/tacafrica/image/upload/v1671013113/my_folder/Website%20pics/Drone%20as%20a%20threat/Drone-attached-handgun_iyqi7l.jpg',
+            'https://res.cloudinary.com/tacafrica/image/upload/v1671013112/my_folder/Website%20pics/Drone%20as%20a%20threat/drone_use_carry_bomb_ryeylz.jpg'
+        ],
         ourWork: [ 'DRONE TECHNOLOGY – A RISING THREAT TO CYBER-SECURITY', 'COUNTERING THE DRONE THREAT', 
                     'TECHNICAL COUNTER-MEASURES  (ANTI-DRONE TECHNOLOGY)','AND MALICIOUS CODE ASSAULTS', 'TAKING CONTROL OF THE DRONE THROUGH COMMUNICATION LIN' 
                 ]
@@ -110,6 +128,12 @@ export const ResearchWorks = [
             link: 'https://www.dropbox.com/s/1qd2pjy8gdj0xcb/Drone%20Education.pdf?dl=1',
             iconLink: '/icons/3.png',
         },
+    ],
+        images: [
+            'https://res.cloudinary.com/tacafrica/image/upload/v1671013116/my_folder/Website%20pics/Drone%20as%20a%20Evidence/Crash_Circuit_Drone_mmagxx.jpg',
+            'https://res.cloudinary.com/tacafrica/image/upload/v1671013114/my_folder/Website%20pics/Drone%20as%20a%20Evidence/Crash_Terrorist_Drone_vsyb5w.jpg',
+            'https://res.cloudinary.com/tacafrica/image/upload/v1671013114/my_folder/Website%20pics/Drone%20as%20a%20Evidence/Drug_Smuggling_Drone_Crashes_dmaovk.jpg',
+            'https://res.cloudinary.com/tacafrica/image/upload/v1671013113/my_folder/Website%20pics/Drone%20as%20a%20Evidence/Drone_that_was_carrying_contraband_into_prison_hyec4n.jpg'
     ],
         ourWork: [
             'FORENSICS RECOVERY OF DRONE DATA',

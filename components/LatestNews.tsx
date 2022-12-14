@@ -44,9 +44,9 @@ export default function LatestNews( {posts} : any) { // fix any type
             </span>
           </h2>
         </div>
-        <p className='text-center tracking-wide text-gray-700 p-4'>Browse through latest happenings and events.</p>
+        <p className='text-center tracking-wide text-gray-700'>Browse through latest happenings and events.</p>
         <div className="pl-4 m-4 flex-wrap items-stretch grow">
-          <CarouselCardWithDetails posts={news} path={'blog'} />
+          <CarouselCardWithDetails posts={news}  />
         </div>
       </div>
     </div>

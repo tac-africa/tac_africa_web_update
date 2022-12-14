@@ -20,10 +20,10 @@ export const Card = ({ post, path }: any ) => {
                 <img className="object-cover object-center w-full lg:h-48 md:h-36 px-4 pt-4"
                     src={ post.cover?.external?.url || 'https://res.cloudinary.com/tacafrica/image/upload/v1657884296/my_folder/fq0rkbyibtd4heb2bjom.png'} alt="blog" />
                 <div className="p-4">
-                    <h1 className="mb-2 text-lg font-medium text-gray-900">
+                    <h1 className="mb-2 text-lg text-center font-medium text-gray-900">
                         <Text text={ post.properties.Name.title} />
                     </h1>
-                    <p className="mb-6 text-sm tracking-wide h-[160px] overflow-hidden text-gray-700">
+                    <p className="mb-6 text-sm tracking-wide h-[160px] text-center overflow-hidden text-gray-700">
                         <Text text={post.properties.excerpt.rich_text} />
                     </p>
                     <div className='block text-center'>

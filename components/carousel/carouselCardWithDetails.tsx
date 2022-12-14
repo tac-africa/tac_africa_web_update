@@ -44,11 +44,11 @@ const CarouselCardWithDetails = ({ posts, path } : any) => {
 
   return (
     <div className="w-full ">
-      <div className=" md:pt-12 pb-20 mx-auto my-0 xl:px-12 ">
+      <div className="pb-20 mx-auto my-0 xl:px-12 ">
         <div className="mx:pl-4 pb-8 ">
         <Slider {...settings} className='flex '>
             {posts.map( (post : any) => (
-                <CardWithDetails post={post} path={path} />
+                <CardWithDetails post={post} />
             ) )}
         </Slider>
         </div>

@@ -28,10 +28,6 @@ const Post = ({ post }) => {
     }
   })
 
-  newList[0].ourWork.map((ourWork) => {
-    console.log(ourWork, 'nnn')
-  })
-
   if(!post) return <h1>No posts</h1>
   return (
     <div>
@@ -86,22 +82,22 @@ const Post = ({ post }) => {
         <div  className="flex flex-col lg:flex-row w-full m-auto "  >
           <div className="grid grid-cols-2 gap-2 grid-rows-5 w-full lg:mr-4 lg:w-4/12 rounded-xl overflow-hidden h-[35rem] px-4 py-12 m-auto ">
             <div className=" row-span-2 rounded-lg">
-              <img src={ 'https://res.cloudinary.com/tacafrica/image/upload/v1659626896/my_folder/internationaldayagainsttourture2022/IMG_7705_pvrsrr.jpg'} alt="project" 
+              <img src={ newList[0].images[0] } alt="project" 
               className=' h-full w-full object-cover  rounded-lg'
               />
             </div>
-            <div className=" bg-blue-700 row-span-2 mt-4 rounded-lg">
-                <img src= 'https://res.cloudinary.com/tacafrica/image/upload/v1657886040/my_folder/team/IMG_5480_zcgigo.jpg'
+            <div className=" row-span-2 mt-4 rounded-lg">
+                <img src={ newList[0].images[1] }
                 className=' h-full w-full object-cover ' 
                 />
              
             </div>
-            <div className=" bg-blue-700 row-span-3 mb-4 rounded-lg">
-            <img src={ 'https://res.cloudinary.com/tacafrica/image/upload/v1670579951/my_folder/drone/Kids_drone_presentation_2_pvrhry.jpg'} alt="project" 
+            <div className="row-span-3 mb-4 rounded-lg">
+            <img src={ newList[0].images[2] } alt="project" 
               className=' h-full w-full object-cover ' />
             </div>
             <div className="row-span-3 rounded-lg">
-            <img src={ 'https://res.cloudinary.com/tacafrica/image/upload/v1657883873/my_folder/projects/ageqfoxdysye0qngyp2h.jpg'} alt="project" 
+            <img src={ newList[0].images[3] } alt="project" 
               className=' h-full w-full object-cover rounded-lg'
               />
             </div>

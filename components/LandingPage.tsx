@@ -48,7 +48,7 @@ export default function LandingPage() {
                 }
               >
                 <h1 className="text-4xl font-semibold leading-10 capitalize text-main_blue 2xl:text-6xl  ">
-                  fostering innovation for future security challenges
+                Drone Value Chain Analytics 
                 </h1>
 
                 <h2 className="flex space-x-4 mt-4 2xl:mt-8 ">
@@ -59,7 +59,7 @@ export default function LandingPage() {
                     }
                     // style={{margin: '0em 0.5em 0em 0em'}}
                   >
-                    prevent
+                    Training
                   </div>
                   <div
                     className={
@@ -68,7 +68,7 @@ export default function LandingPage() {
                     }
                     // style={{margin: '0em 0.5em 0em 0em'}}
                   >
-                    detect
+                    Systems
                   </div>
                   <div
                     className={
@@ -77,21 +77,17 @@ export default function LandingPage() {
                     }
                     // style={{margin: '0em 0.5em 0em 0em'}}
                   >
-                    investigate
+                    Platforms
                   </div>
                 </h2>
 
                 <p className=" mt-4 2xl:mt-8  text-main_blue xl:text-base 2xl:text-3xl 2xl:leading-11 xl:mb-12  ">
-                  Law enforcement officials today are facing a
-                  challenging and demanding operating environment. As
-                  society is increasingly connected and the world
-                  becoming borderless, technologies can help law
-                  enforcement to prevent, detect and investigate more
-                  efficiently, but at the same time, they also open up
-                  possibilities for criminals.
+                Unmanned Aerial Vehicles (UAVs), more commonly referred to as Drones are becoming increasingly popular due to the perilous times we live in. Law enforcement agencies are constantly on the look out for emerging technologies in order to achieve their mission more effectively.
+                {/* These unmanned and autonomous systems present a myriad of opportunities to address challenges faced by law enforcement and ultimately plays an important role in policing smart cities in Africa and the world at large.                 
+                Welcome to TAC Africa where we leverage on Drones and Counter Drones technology in a bid to combat crime; we remain on the leading edge of the technological curve as we delve into thorough research on how they can successfully be  integrated into the system */}
                 </p>
 
-                <Link href={'/about_us'}>
+                <Link href={'/aboutUs'}>
                     <button
                       type="button"
                       className="text-blue-700 hover:text-white hover:bg-blue-700 border focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
@@ -99,7 +95,7 @@ export default function LandingPage() {
                       Learn More
                     </button>
                 </Link>
-                <Link href={'/all_labs'}>
+                <Link href={'/newsletters'}>
                     <button
                       type="button"
                       className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
