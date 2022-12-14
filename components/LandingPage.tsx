@@ -82,9 +82,9 @@ export default function LandingPage() {
                 </h2>
 
                 <p className=" mt-4 2xl:mt-8  text-main_blue xl:text-base 2xl:text-3xl 2xl:leading-11 xl:mb-12  ">
-                Unmanned Aerial Vehicles (UAVs), more commonly referred to as Drones are becoming increasingly popular due to the perilous times we live in. Law enforcement agencies are constantly on the look out for emerging technologies in order to achieve their mission more effectively.
-                {/* These unmanned and autonomous systems present a myriad of opportunities to address challenges faced by law enforcement and ultimately plays an important role in policing smart cities in Africa and the world at large.                 
-                Welcome to TAC Africa where we leverage on Drones and Counter Drones technology in a bid to combat crime; we remain on the leading edge of the technological curve as we delve into thorough research on how they can successfully be  integrated into the system */}
+                {/* Unmanned Aerial Vehicles (UAVs), more commonly referred to as Drones are becoming increasingly popular due to the perilous times we live in. Law enforcement agencies are constantly on the look out for emerging technologies in order to achieve their mission more effectively.
+                These unmanned and autonomous systems present a myriad of opportunities to address challenges faced by law enforcement and ultimately plays an important role in policing smart cities in Africa and the world at large.                  */}
+                Welcome to TAC Africa where we leverage on Drones and Counter Drones technology in a bid to combat crime; we remain on the leading edge of the technological curve as we delve into thorough research on how they can successfully be  integrated into the system
                 </p>
 
                 <Link href={'/aboutUs'}>

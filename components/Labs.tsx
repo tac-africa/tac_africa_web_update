@@ -35,23 +35,23 @@ export default function Labs({ posts } : any ) {
              <div  className="flex flex-col lg:flex-row w-full m-auto "  >
              <div className="grid grid-cols-2 gap-2 grid-rows-5 w-full lg:mr-4 lg:w-4/12 rounded-xl overflow-hidden h-[35rem] px-4 py-12 m-auto ">
             <div className=" row-span-2 rounded-lg">
-              <img src={ 'https://res.cloudinary.com/tacafrica/image/upload/v1659626896/my_folder/internationaldayagainsttourture2022/IMG_7705_pvrsrr.jpg'} alt="project" 
+              <img src={ 'https://res.cloudinary.com/tacafrica/image/upload/v1671013112/my_folder/Website%20pics/Drone%20as%20a%20threat/Drone_smuggling_drugs_hbvb1n.jpg'} alt="project" 
               className=' h-full w-full object-cover  rounded-lg'
               />
             </div>
             <div className=" bg-blue-700 row-span-2 mt-4 rounded-lg">
-                <img src= 'https://res.cloudinary.com/tacafrica/image/upload/v1657886040/my_folder/team/IMG_5480_zcgigo.jpg'
+                <img src= 'https://res.cloudinary.com/tacafrica/image/upload/v1671013116/my_folder/Website%20pics/Drone%20as%20a%20Evidence/Crash_Circuit_Drone_mmagxx.jpg'
                 className=' h-full w-full object-cover ' 
                 />
              
             </div>
             <div className=" bg-blue-700 row-span-3 mb-4 rounded-lg">
-            <img src={ 'https://res.cloudinary.com/tacafrica/image/upload/v1670579951/my_folder/drone/Kids_drone_presentation_2_pvrhry.jpg'} alt="project" 
+            <img src={ 'https://res.cloudinary.com/tacafrica/image/upload/v1671013114/my_folder/Website%20pics/drone%20as%20a%20tool/Weed_control_Drone_gakgyf.jpg'} alt="project" 
               className=' h-full w-full object-cover ' 
               />
             </div>
             <div className="row-span-3 rounded-lg">
-            <img src={ 'https://res.cloudinary.com/tacafrica/image/upload/v1657883873/my_folder/projects/ageqfoxdysye0qngyp2h.jpg'} alt="project" 
+            <img src={ 'https://res.cloudinary.com/tacafrica/image/upload/v1671013115/my_folder/Website%20pics/drone%20education/Introducing_Kids_drone_education_w0qicg.jpg'} alt="project" 
               className=' h-full w-full object-cover rounded-lg'
               />
             </div>
@@ -62,27 +62,14 @@ export default function Labs({ posts } : any ) {
                   Who we are
                   </h2>
                   <p className="text-xs mb-10 lg:text-base 2xl:text-xl tracking-wide text-gray-700">
-                  Drone data management, flight Analysis and Actionable Flight Intelligence advisors. We support
-                  agencies and organization in building, setting up and integrating drone data management
-                  infrastructure into their existing system.
-                  We offer a detailed outline of technological, legal and operational aspects of drone applications
-                  and training.
-                  Making Drone technology more enabled, we offer this advisory through Policy Advocacy
-                  Research, Training and Capacity Building and Volunteering.
+                  TAC Africa is a non governmental, bipartisan organization committed to Drone Data Management, Flight Analytics and actionable Flight Intelligence advisory. We help Law enforcement agencies and organizations take full advantage of Drones and counter Drone technologies for surveillance, mapping, deliveries and monitoring. We set global standards for drone detection and verification and  integrate drone data management infrastructure into their existing framework. TAC Africa has rolled out an ongoing online presence on Drone Awareness, training and capability enhancement course for application and adoption by relevant institutions, organizations and agencies within Nigeria and Africa at large.
                   </p>
 
                   <h2  className="text-sweet_blue font-bold text-xl my-3">
                   what we hope to accomplish
                   </h2>
                   <p className="text-xs  lg:text-base 2xl:text-xl tracking-wide text-gray-700">
-                  {`To be the first RPAS Training institute for Africa, thereby helping organizations and industries
-                  achieve the benefits of drone technology through;
-                  Drone training – UAS Basics, Introduction and Fundamental Industry, Communities and
-                  Everyone.
-                  Drone Analytics – First Responders, Law Enforcement, Aviation Regulatory, Industry and
-                  Innovation
-                  Drone management – UAS Licensing, Expert Community, Partnership with Tertiary/Higher
-                  Education`}
+                  {`We want to be the first Institute of Remote Piloted Aircraft System (IRPAS) Institute in Africa, helping organizations and industries to achieve their full potential with the aid of Drone Technologies. The future of Aviation is gradually being powered by unmanned Aerial Vehicles and it is in line with this that TAC Africa is pioneering this movement. We want to help tackle complex issues and ultimately help to combat crime.`}
                   </p>
                   
                 </div>
