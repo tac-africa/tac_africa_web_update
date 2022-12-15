@@ -80,7 +80,7 @@ const Post = ({ post }) => {
 {/* <div></div> */}
     <div className="flex flex-col mx-auto py-8 bg-[#f6f6f6]" >
         <div  className="flex flex-col lg:flex-row w-full m-auto "  >
-          <div className="grid grid-cols-2 gap-2 grid-rows-5 w-full lg:mr-4 lg:w-4/12 rounded-xl overflow-hidden h-[35rem] px-4 py-12 m-auto ">
+          <div className="grid grid-cols-2 gap-2 grid-rows-5 w-full lg:mr-4 lg:w-5/12 rounded-xl overflow-hidden h-[35rem] px-4 py-12 m-auto ">
             <div className=" row-span-2 rounded-lg">
               <img src={ newList[0].images[0] } alt="project" 
               className=' h-full w-full object-cover  rounded-lg'
@@ -103,10 +103,10 @@ const Post = ({ post }) => {
             </div>
         </div>
 {/*  */}
-          <div className=" m-auto p-4" >
-            <div className=' lg:h-[400px] mt-6 lg:my-auto mx-auto'>
+          <div className=" m-auto p-4 lg:w-5/12 " >
+            <div className=' lg:h-[700px] mt-6 lg:my-auto mx-auto'>
               <div className='lg:my-8 '>
-                <h2 className='text-2xl font-semibold mb-4'>Our work in this space</h2>
+                <h2 className='text-2xl font-semibold mb-4 text-blue-700'>{ newList[0].title || `Our work in this space`}</h2>
               </div>
               <div className='flex flex-col space-y-6 mt-6 md:mt-0'>
                 <ul className='space-y-4 text-grayText'>
@@ -114,7 +114,7 @@ const Post = ({ post }) => {
                     newList[0].ourWork.map((ourWork) => (
                         <div className='m-0 p-0' >
                             <img className='inline w-2  mr-1' src="/projects/e.jpg" alt="" />
-                            <li className='inline-block'>{ourWork}</li>
+                            <li className='inline'>{ourWork}</li>
                         </div>
                       ))
                   }

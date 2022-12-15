@@ -28,12 +28,13 @@ export const ResearchWorks = [
         'https://res.cloudinary.com/tacafrica/image/upload/v1671013111/my_folder/Website%20pics/drone%20education/Drone_Education_intro_jniyhv.jpg',
         'https://res.cloudinary.com/tacafrica/image/upload/v1671013115/my_folder/Website%20pics/drone%20education/Introducing_Kids_drone_education_w0qicg.jpg'
     ],
+    title: 'VIABLE DRONE INSTITUTIONS IN AFRICA',
     ourWork: [
-        'AFRICA ADOPTING UAVs TECHNOLOGY',
-        'AFRICA DRONE AND DATA ACADEMY',
-        'RENOWN INSTITUTE IN AFRICA',
-        'THE JOURNEY SO FAR OF UNICEFs DRONE WORK IN MALAWI',
-        'UNICEF AND ADDA COLLABORATION',
+        'MALAWI: Africa Drone and Data Academy (ADDA) Malawi which happens to be the first Africa Drone Academy. It was founded by United Nations. The government of Malawi and UNCEF spearheaded the use of drones and data for development and humanitarian purposes. Opened the first drone Corridor worldwide as technology friendly environment for local and international drone companies to test their solutions.',
+
+        'South Africa: was one of the first countries t have comprehensive drone law. Making it a world leader in drone regulations while many other countries followed suit. Sme institute in sth Africa 4IRI Drone Academy, South African. The first Drone school to offer custom made mission rehearsals for business in terms of risk Assessments and effective flight preparations.RPAS Training Academy. South Africa.Durban Drone Academy -Drone Practical Training. Starlite Aviation Group.Feenix Drone Academy - Advanced Drone Pilot Training, Cape town. Flight School -UAV industries. NTSU Drone Academy/RPAS Specialist - South Africa. Training South Africa.',
+
+        'Morocco: will be the first Africa country to manufacture drones. For years it has been increasing it drone imports in a context of tension with Algeria and Western Sahara which it consider an integral part of its territory. It has reached an agreement with the Israeli defense companies to build two factories to produce drone at low cost. Some drone institute in morocco, Morocco Flying Labs. Morocco Aerospace Institute Drone Morocco.',
     ]
     },
     {
@@ -65,12 +66,13 @@ export const ResearchWorks = [
             'https://res.cloudinary.com/tacafrica/image/upload/v1671013113/my_folder/Website%20pics/drone%20as%20a%20tool/Drone_in_blood_transportation_aowqv8.jpg',
             'https://res.cloudinary.com/tacafrica/image/upload/v1671013115/my_folder/Website%20pics/drone%20as%20a%20tool/Drones_in_the_Oil_Gas_Industry_bwt1nj.jpg'
         ],
+        title: 'APPLICATIONS OF DRONE',
         ourWork: [
-            'DRONE BUSINESS AND INDUSTRY DATABASE',
-            'INSTANCE OF DUAL USE OF DRONES IN THE WORLD',
-            'DRONE ALLIANCE IN AFRICA',
-            'USE CASES OF DRONE',
-            'COMPANIES LEADING THE AIR NAVIGATION SERVICE PROVIDERS',
+            'Agricultural Application In Agriculture, drones offers farmers affordable and effective methods to monitor crops. Drones equipped with infrared sensors are especially helpful to monitor crop health, giving farmers faster and reliable information to take precautionary measures to improve the crop conditions and yield. According to estimates, drone technology will cover 80% of the agriculture industry in the coming few years.',
+
+            'Terrain Mapping Scientists and researchers use drones fitted with LIDAR sensors and 3D cameras to capture 3D imagery of terrains for terrain mapping. The AI-powered drones are pre-programmed to fly over a defined course without any need for human intervention. The drone can either store recording onboard or sent live video/images to the ground stations for further processes. This application of the drone is especially useful to create powerful and precise Digital Elevation Models (DEM) of terrains, which subsequently is used in a variety of scientific researches including remote sensing and GIS.',
+
+            'Livestock Management Apart from agricultural management, drones are now being used for livestock management as well. The AI-powered drones can be pre-programmed to monitor and track livestock in the fields, giving ranchers real-time aerial view of the livestock for better management and monitoring of livestock. Thermal sensors equipped drones are also used for nighttime surveillance of livestock and identification of any issues in real-time.'
         ]
     },
     {
@@ -102,8 +104,13 @@ export const ResearchWorks = [
             'https://res.cloudinary.com/tacafrica/image/upload/v1671013113/my_folder/Website%20pics/Drone%20as%20a%20threat/Drone-attached-handgun_iyqi7l.jpg',
             'https://res.cloudinary.com/tacafrica/image/upload/v1671013112/my_folder/Website%20pics/Drone%20as%20a%20threat/drone_use_carry_bomb_ryeylz.jpg'
         ],
-        ourWork: [ 'DRONE TECHNOLOGY – A RISING THREAT TO CYBER-SECURITY', 'COUNTERING THE DRONE THREAT', 
-                    'TECHNICAL COUNTER-MEASURES  (ANTI-DRONE TECHNOLOGY)','AND MALICIOUS CODE ASSAULTS', 'TAKING CONTROL OF THE DRONE THROUGH COMMUNICATION LIN' 
+        title: 'Cyber Domain Threats caused by Drone',
+        ourWork: [ 
+            'GPS spoofing: A way to take control of a drone. Attackers feed drones with false GPS coordinates and take full control of the platform. Security researchers have demonstrated how a hijacked drone can be used to hijack other drones, ending in a drone swarm under the control of cyber criminals.',
+
+            'Downlink intercept: Allows a criminal accessing all transmitted data between the drone and the controller. Since the majority of commercial drones systems interact with their base using unencrypted communication Channels, they can become vulnerable to exploitation by a cyber-criminal who can intercept and have access to sensitive data drone exchanges with the base such as pictures, videos, and flight paths.',
+
+            'Data exploitation: Critical infrastructure is protected in the terms of digital and physical security. The use of drones can overcome physical security limitations and cyber security protections, for a mini computer mounted on small drone can approach undetected sensitive areas and carry out nefarious operations, mimic a Wi-Fi network to steal data, hijack Bluetooth peripherals, and perform key logging operations to steal sensitive passwords.'
                 ]
     },
     {
@@ -135,12 +142,22 @@ export const ResearchWorks = [
             'https://res.cloudinary.com/tacafrica/image/upload/v1671013114/my_folder/Website%20pics/Drone%20as%20a%20Evidence/Drug_Smuggling_Drone_Crashes_dmaovk.jpg',
             'https://res.cloudinary.com/tacafrica/image/upload/v1671013113/my_folder/Website%20pics/Drone%20as%20a%20Evidence/Drone_that_was_carrying_contraband_into_prison_hyec4n.jpg'
     ],
+        title: 'POTENTIAL THREAT POSE BY DRONE',
         ourWork: [
-            'FORENSICS RECOVERY OF DRONE DATA',
-            'DRONE FORENSICS APPLICATION',
-            'DRONE FORENSICS METHODOLOGY',
-            'COUNTRIES WITH DRONE FORENSICS FOOTPRINTS',
-            'CHALLENGES FACED IN DRONE FORENSICS',
+            'POTENTIAL THREAT POSE BY DRONE As harmless and cute as drones may look, don’t be fooled by their appearance! In fact, criminals often use these modern devices to conduct a myriad of illegal activities, including:',
+            'Piloting them to smuggle drugs, mobile phones, guns, knives, and other weapons, illegal substances, and objects into prisons',
+            'Using them as a tool to conduct terrorism by planting explosives into stadiums and other public venues.',
+            
+            'Corporate and government espionage, unauthorized monitoring and intelligence gathering',
+            'Voyeurism and invasion of people’s privacy by trespassing on private property ',
+            'Disrupting the workflow of airports and distracting air traffic ',
+            'International espionage and unauthorized trans-border supervision ',
+            'Stalking, harassment, and invasion of privacy by paparazzi or unethical journalists and reporters ',
+            'War crimes such as launching aerial missile attacks ',
+            'Physical attacks on unsuspecting citizens ',
+            'Smuggling of contraband items between minors Property ',
+            'vandalism ',
+            'Violation of no-fly zones '
         ]
     },
     
