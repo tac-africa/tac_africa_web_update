@@ -5,6 +5,7 @@ import { getDatabase, getSingleBlogPostBySlug } from "../../lib/notion";
 import Slider from "react-slick";
 import Button from '../../components/button/Button';
 import { ResearchWorks } from '../api/researchWork';
+import Link from 'next/link';
 
 
 
@@ -104,7 +105,7 @@ const Post = ({ post }) => {
         </div>
 {/*  */}
           <div className=" m-auto p-4 lg:w-5/12 " >
-            <div className=' lg:h-[700px] mt-6 lg:my-auto mx-auto'>
+            <div className=' lg:min-h-[700px] mt-6 lg:my-auto mx-auto'>
               <div className='lg:my-8 '>
                 <h2 className='text-2xl font-semibold mb-4 text-blue-700'>{ newList[0].title || `Our work in this space`}</h2>
               </div>
@@ -120,6 +121,9 @@ const Post = ({ post }) => {
                   }
                 </ul>
               </div>
+              <Link href={newList[0].externalLink}>
+                <Button backgroundColor={'bg-blue-700'} color={'text-white'} text={'read more'} />
+              </Link>
             </div>
           
           </div>

@@ -91,8 +91,8 @@ export default function aboutUs() {
                             Dr. Jerry Akubo founded TAC Africa as a futurist oriented, Law Enforcement Centric NGO, borne out of an International Forum on Technologies – a high level meeting dedicated to Technologies for a Safer World, co-organized by INTERPOL and the Ministry of Interior in Lyon, France in 2013.
                             </p>
                             <a href="https://www.linkedin.com/in/ajerry/" target='_blank'>
-                                <Button text={'Visit Linkedin Profile'} textColor={'text-main_blue'} 
-                                borderColor={'border-main_blue'} color={'bg-white'} border />
+                                <Button text={'Visit Linkedin Profile'}
+                                borderColor={'border-main_blue'} border color={'text-blue-700'} />
                             </a>
                         </div>
                     </div>
