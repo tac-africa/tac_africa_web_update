@@ -19,7 +19,10 @@ export const CardWithDetails = ( {post, path } : any ) => {
                 <div className="pt-4 flex flex-col justify-between h-[16rem]">
                     <div className="h-full">
                         <span
-                            className={`inline-block p-2 mb-2 text-xs font-medium tracking-widest text-green-800 ${ 'bg' + post.properties.Tags.multi_select[0].color + 200} rounded`} >{post.properties.Tags.multi_select[0].name}
+                          className={`inline-block p-2 mb-2 text-xs font-medium tracking-widest text-white 
+                            ${'bg' + '-' + post.properties.Tags.multi_select[0].color + '-' + 600} } 
+                            ${'bg' + '-' + post.properties.Tags.multi_select[0].color + '-' + 400} rounded`}
+                      >{post.properties.Tags.multi_select[0].name}
                         </span>
                         <h1 className="mb-2 text-sm font-medium text-gray-900">
                             <Text text={post.properties.Name.title} />
