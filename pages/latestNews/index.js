@@ -30,14 +30,14 @@ export default function Home({posts}) {
                         {post.properties.excerpt.rich_text[0].plain_text}
                     </p>
                     <div className="flex items-center ">
-                        <Link href={`/latestNews/${post.properties.Slug.formula.string}`} className="inline-flex items-center text-indigo-500 cursor-pointer md:mb-2 lg:mb-0">
+                        <a href={`/latestNews/${post.properties.Slug.formula.string}`} className="inline-flex items-center text-indigo-500 cursor-pointer md:mb-2 lg:mb-0">
                           Read More
                                 <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 mt-1" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                         d="M13 7l5 5m0 0l-5 5m5-5H6" />
                                 </svg>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>

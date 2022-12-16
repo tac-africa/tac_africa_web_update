@@ -55,7 +55,7 @@ export const getStaticProps = async ({ params }) => {
 };
 
 export const getStaticPaths = async () => {
-  const posts = await getDatabase(databaseId, 'blog')
+  const posts = await getDatabase(databaseId, 'news')
   const paths = posts.map((post) => ({ params: {slug:`${post.properties.Slug.formula.string}`} }));
   return {
     paths,
