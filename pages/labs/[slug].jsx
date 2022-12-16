@@ -69,38 +69,47 @@ const Post = ({ post }) => {
             }
         }}>{post.markdown}</ReactMarkdown>
       </section>
-
-      {/* <p className='pb-4'>
-        The TAC AFRICA virtual Drone and Counter Drone lab creates a platform to assemble global subject matter experts from a multidisciplinary background that include academia, law enforcement agencies to synergies through a dedicated online knowledge platform that will raise critical issues which will promote the institutionalization of drone best practices 
-      </p>
-      <p className='pb-4'>
-        in Africa. The key outputs of this virtual lab, will include the production of a global compendium of drone-related thematic areas that will be published in the public domain for regional and international drone and robotics communities.
-      </p> */}
     </div>
 </div>
 {/* <div></div> */}
     <div className="flex flex-col mx-auto py-8 bg-[#f6f6f6]" >
         <div  className="flex flex-col lg:flex-row w-full m-auto "  >
           <div className="grid grid-cols-2 gap-2 grid-rows-5 w-full lg:mr-4 lg:w-5/12 rounded-xl overflow-hidden h-[35rem] px-4 py-12 m-auto ">
-            <div className=" row-span-2 rounded-lg">
-              <img src={ newList[0].images[0] } alt="project" 
+            
+            <div className="relative overflow-hidden row-span-2 rounded-lg">
+              <img src={ newList[0].images[0].link } alt="project" 
               className=' h-full w-full object-cover  rounded-lg'
               />
+              <span className='absolute min-h-[40px] w-full bg-overlay bottom-0'>
+                <p className='text-white ml-4 mt-3'>{ newList[0].images[0].caption }</p>
+              </span>
             </div>
-            <div className=" row-span-2 mt-4 rounded-lg">
-                <img src={ newList[0].images[1] }
+
+            <div className="relative overflow-hidden row-span-2 mt-4 rounded-lg">
+                <img src={ newList[0].images[1].link }
                 className=' h-full w-full object-cover ' 
                 />
-             
+                <span className='absolute min-h-[40px] w-full bg-overlay bottom-0'>
+                    <p className='text-white ml-4 mt-3'>{ newList[0].images[1].caption }</p>
+                </span>
             </div>
-            <div className="row-span-3 mb-4 rounded-lg">
-            <img src={ newList[0].images[2] } alt="project" 
-              className=' h-full w-full object-cover ' />
+
+            <div className="relative overflow-hidden row-span-3 mb-4 rounded-lg">
+            <img src={ newList[0].images[2].link } alt="project" 
+              className=' h-full w-full object-cover ' 
+              />
+              <span className='absolute min-h-[40px] w-full bg-overlay bottom-0'>
+                <p className='text-white ml-4 mt-3'>{ newList[0].images[2].caption }</p>
+              </span>
             </div>
-            <div className="row-span-3 rounded-lg">
-            <img src={ newList[0].images[3] } alt="project" 
+
+            <div className="relative overflow-hidden row-span-3 rounded-lg">
+            <img src={ newList[0].images[3].link } alt="project" 
               className=' h-full w-full object-cover rounded-lg'
               />
+              <span className='absolute min-h-[40px] w-full bg-overlay bottom-0'>
+                <p className='text-white ml-4 mt-3'>{ newList[0].images[3].caption }</p>
+              </span>
             </div>
         </div>
 {/*  */}

@@ -20,8 +20,24 @@ export const ResearchWorks = [
                 iconLink: '/icons/3.png'
             },
         ],
-        images: [
-            'https://res.cloudinary.com/tacafrica/image/upload/v1671013124/my_folder/Website%20pics/drone%20education/Drone_Installation_dkzde1.jpg', 'https://res.cloudinary.com/tacafrica/image/upload/v1671013121/my_folder/Website%20pics/drone%20education/Kids_drone_presentation_2_jrvtpw.jpg', 'https://res.cloudinary.com/tacafrica/image/upload/v1671013111/my_folder/Website%20pics/drone%20education/Drone_Education_intro_jniyhv.jpg', 'https://res.cloudinary.com/tacafrica/image/upload/v1671013115/my_folder/Website%20pics/drone%20education/Introducing_Kids_drone_education_w0qicg.jpg'
+        images: [ 
+            {
+                link: 'https://res.cloudinary.com/tacafrica/image/upload/v1671013124/my_folder/Website%20pics/drone%20education/Drone_Installation_dkzde1.jpg',
+                caption: ' Drone Installation' 
+            },
+            {
+                link: 'https://res.cloudinary.com/tacafrica/image/upload/v1671013121/my_folder/Website%20pics/drone%20education/Kids_drone_presentation_2_jrvtpw.jpg',
+                caption: 'Kids drone presentation'
+            },
+            {
+                link: 'https://res.cloudinary.com/tacafrica/image/upload/v1671013111/my_folder/Website%20pics/drone%20education/Drone_Education_intro_jniyhv.jpg',
+                caption: 'Drone flight test with CDI kids'
+            },
+            {
+                link: 'https://res.cloudinary.com/tacafrica/image/upload/v1671013115/my_folder/Website%20pics/drone%20education/Introducing_Kids_drone_education_w0qicg.jpg',
+                caption: 'Introducing Kids drone education'
+            },
+               
         ],
         title: 'VIABLE DRONE INSTITUTIONS IN AFRICA',
         ourWork: [
@@ -50,7 +66,22 @@ export const ResearchWorks = [
             },
         ],
         images: [
-            'https://res.cloudinary.com/tacafrica/image/upload/v1671013115/my_folder/Website%20pics/drone%20as%20a%20tool/Agriculture_Drone_popsm0.jpg', 'https://res.cloudinary.com/tacafrica/image/upload/v1671013114/my_folder/Website%20pics/drone%20as%20a%20tool/drones-inspections_power_x74ry3.png', 'https://res.cloudinary.com/tacafrica/image/upload/v1671013113/my_folder/Website%20pics/drone%20as%20a%20tool/Drone_in_blood_transportation_aowqv8.jpg', 'https://res.cloudinary.com/tacafrica/image/upload/v1671013115/my_folder/Website%20pics/drone%20as%20a%20tool/Drones_in_the_Oil_Gas_Industry_bwt1nj.jpg'
+            {
+                link: 'https://res.cloudinary.com/tacafrica/image/upload/v1671013115/my_folder/Website%20pics/drone%20as%20a%20tool/Agriculture_Drone_popsm0.jpg',
+                caption: 'Drone for Agricultural purposes'
+            },
+            {
+                link: 'https://res.cloudinary.com/tacafrica/image/upload/v1671013114/my_folder/Website%20pics/drone%20as%20a%20tool/drones-inspections_power_x74ry3.png',
+                caption: 'drone inspecting power line'
+            },
+            {
+                link: 'https://res.cloudinary.com/tacafrica/image/upload/v1671013113/my_folder/Website%20pics/drone%20as%20a%20tool/Drone_in_blood_transportation_aowqv8.jpg',
+                caption: 'Drone used for blood/organ delivery'
+            },
+            {
+                line: 'https://res.cloudinary.com/tacafrica/image/upload/v1671013115/my_folder/Website%20pics/drone%20as%20a%20tool/Drones_in_the_Oil_Gas_Industry_bwt1nj.jpg',
+                caption: 'Drones in the Oil and Gas Industry'
+            },  
         ],
         title: 'APPLICATIONS OF DRONE',
         ourWork: [
@@ -79,7 +110,22 @@ export const ResearchWorks = [
             },
         ],
         images: [
-            'https://res.cloudinary.com/tacafrica/image/upload/v1671013112/my_folder/Website%20pics/Drone%20as%20a%20threat/Gun-toting_Drone_ulj8hd.jpg', 'https://res.cloudinary.com/tacafrica/image/upload/v1671013114/my_folder/Website%20pics/Drone%20as%20a%20threat/Pakistan_s_ISI_sets_up_drone_centres_to_send_arms_drugs_into_India_qhpo5p.jpg', 'https://res.cloudinary.com/tacafrica/image/upload/v1671013113/my_folder/Website%20pics/Drone%20as%20a%20threat/Drone-attached-handgun_iyqi7l.jpg', 'https://res.cloudinary.com/tacafrica/image/upload/v1671013112/my_folder/Website%20pics/Drone%20as%20a%20threat/drone_use_carry_bomb_ryeylz.jpg'
+            {
+                link: 'https://res.cloudinary.com/tacafrica/image/upload/v1671013112/my_folder/Website%20pics/Drone%20as%20a%20threat/Gun-toting_Drone_ulj8hd.jpg',
+                caption: 'Gun toting Drone'
+            },
+            {
+                link: 'https://res.cloudinary.com/tacafrica/image/upload/v1671013114/my_folder/Website%20pics/Drone%20as%20a%20threat/Pakistan_s_ISI_sets_up_drone_centres_to_send_arms_drugs_into_India_qhpo5p.jpg',
+                caption: 'ISIS sets up drone centres to send drugs into India'
+            },
+            {
+                link: 'https://res.cloudinary.com/tacafrica/image/upload/v1671013113/my_folder/Website%20pics/Drone%20as%20a%20threat/Drone-attached-handgun_iyqi7l.jpg',
+                caption: 'Drone with a handgun'
+            },
+            {
+                link:  'https://res.cloudinary.com/tacafrica/image/upload/v1671013112/my_folder/Website%20pics/Drone%20as%20a%20threat/drone_use_carry_bomb_ryeylz.jpg',
+                caption: 'drone carrying bomb'
+            },
         ],
         title: 'Cyber Domain Threats caused by Drone',
         ourWork: [
@@ -108,7 +154,22 @@ export const ResearchWorks = [
             },
         ],
         images: [
-            'https://res.cloudinary.com/tacafrica/image/upload/v1671013116/my_folder/Website%20pics/Drone%20as%20a%20Evidence/Crash_Circuit_Drone_mmagxx.jpg', 'https://res.cloudinary.com/tacafrica/image/upload/v1671013114/my_folder/Website%20pics/Drone%20as%20a%20Evidence/Crash_Terrorist_Drone_vsyb5w.jpg', 'https://res.cloudinary.com/tacafrica/image/upload/v1671013114/my_folder/Website%20pics/Drone%20as%20a%20Evidence/Drug_Smuggling_Drone_Crashes_dmaovk.jpg', 'https://res.cloudinary.com/tacafrica/image/upload/v1671013113/my_folder/Website%20pics/Drone%20as%20a%20Evidence/Drone_that_was_carrying_contraband_into_prison_hyec4n.jpg'
+            {
+                link:  'https://res.cloudinary.com/tacafrica/image/upload/v1671013116/my_folder/Website%20pics/Drone%20as%20a%20Evidence/Crash_Circuit_Drone_mmagxx.jpg',
+                caption: 'Crash Circuit Drone'
+            },
+            {
+                link:  'https://res.cloudinary.com/tacafrica/image/upload/v1671013114/my_folder/Website%20pics/Drone%20as%20a%20Evidence/Crash_Terrorist_Drone_vsyb5w.jpg',
+                caption: 'Crashed Terrorist Drone'
+            },
+            {
+                link: 'https://res.cloudinary.com/tacafrica/image/upload/v1671013114/my_folder/Website%20pics/Drone%20as%20a%20Evidence/Drug_Smuggling_Drone_Crashes_dmaovk.jpg',
+                caption: 'Drug Smuggling Drone Crashes'
+            },
+            {
+                link: 'https://res.cloudinary.com/tacafrica/image/upload/v1671013113/my_folder/Website%20pics/Drone%20as%20a%20Evidence/Drone_that_was_carrying_contraband_into_prison_hyec4n.jpg',
+                caption: 'Drone used for smuggling contraband into prison'
+            },
         ],
         title: 'POTENTIAL THREAT POSE BY DRONE',
         ourWork: [
