@@ -5,8 +5,8 @@ import { Text } from '../../pages/newsletters/[id]';
 
 export const CardWithDetails = ( {post, path } : any ) => {
 
-    console.log(post.properties.Tags.multi_select[0].color, ',.')
-    console.log(post.properties.Tags.multi_select[0].name, ',.')
+    // console.log(post.properties.Tags.multi_select[0].color, ',.')
+    // console.log(post.properties.Tags.multi_select[0].name, ',.')
   return (
     <div key={ post.properties.Name.title } className="p-4 flex items-stretch h-[32rem] " style={{display: 'flex: 1 1 auto'}}> {/*md:w-6/12 lg:w-1/3*/}
         <div className=" rounded-lg w-full p-4 bg-white ">
@@ -19,9 +19,10 @@ export const CardWithDetails = ( {post, path } : any ) => {
                 <div className="pt-4 flex flex-col justify-between h-[16rem]">
                     <div className="h-full">
                         <span
+                        //   ${'bg' + '-' + post.properties.Tags.multi_select[0].color + '-' + 400} 
                           className={`inline-block p-2 mb-2 text-xs font-medium tracking-widest text-white 
-                            ${'bg' + '-' + post.properties.Tags.multi_select[0].color + '-' + 600} } 
-                            ${'bg' + '-' + post.properties.Tags.multi_select[0].color + '-' + 400} rounded`}
+                            ${'bg' + '-' + post.properties.Tags.multi_select[0].color + '-' + 600} 
+                            rounded`}
                       >{post.properties.Tags.multi_select[0].name}
                         </span>
                         <h1 className="mb-2 text-sm font-medium text-gray-900">
