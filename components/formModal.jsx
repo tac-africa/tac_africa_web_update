@@ -2,22 +2,9 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-type initialValueType = {
-    email: string;
-    first_name: string;
-    last_name: string;
-    is_subscribed: number;
-    phone_number: string;
-}
 
-type formModalTypes = {
-    PDF: string;
-    setPDF: React.Dispatch<React.SetStateAction<string>>;
-    modalShow: boolean;
-    setModalShow: React.Dispatch<React.SetStateAction<boolean>>
-}
 
-const initialValue : initialValueType = {
+const initialValue = {
   email: '',
   first_name: '',
   last_name: '',
@@ -25,7 +12,7 @@ const initialValue : initialValueType = {
   phone_number: '',
 };
 
-const FormModal = ({ PDF, modalShow, setModalShow } : formModalTypes) => {
+const FormModal = ({ PDF, modalShow, setModalShow } ) => {
   const [values, setValues] = useState(initialValue);
   const [checkBoxState, setCheckBoxState] = useState(false);
 
@@ -46,7 +33,7 @@ const FormModal = ({ PDF, modalShow, setModalShow } : formModalTypes) => {
 
   
 
-  const handleInputChange = (propertyName: string) => (e: { preventDefault: () => void; target: { value: any; }; }) => {
+  const handleInputChange = (propertyName ) => (e) => {
     e.preventDefault();
     setValues({
       ...values,
@@ -68,7 +55,7 @@ const FormModal = ({ PDF, modalShow, setModalShow } : formModalTypes) => {
 
   const [downloadSpinner, setDownloadSpinner] = useState(false)
 
-  let response: string[] | any = [];
+  let response = [];
 
   useEffect(() => {
     if(response) setDownloadSpinner(false)
@@ -81,7 +68,7 @@ const FormModal = ({ PDF, modalShow, setModalShow } : formModalTypes) => {
       axios.post(
         'https://cdn.tacafrica.org/api/visitors',values
       )
-      .then( (res: { data: string[] }) => {
+      .then( (res) => {
         response = res.data
         if (response.error == false && typeof window !== "undefined") {
               window.location.href = PDF

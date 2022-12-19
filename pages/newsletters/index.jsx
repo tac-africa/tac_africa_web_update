@@ -4,7 +4,7 @@ import { getDatabase } from '../../lib/notion';
 import { Text } from './[id]';
 import Link from 'next/link';
 
-const databaseId: string = process.env.NOTION_BLOG_DATABASE_ID || ""
+const databaseId = process.env.NOTION_BLOG_DATABASE_ID || ""
 
 export const getStaticProps = async () => {
   const newsletter = await getDatabase(databaseId, 'newsletter');
@@ -16,12 +16,12 @@ export const getStaticProps = async () => {
   };
 };
 
-export default function Newsletters({ posts } : any) {
+export default function Newsletters({ posts } ) {
   return (
     <div className='pt-10 pb-32 bg-gray-200'>
         <div className=" flex flex-col gap-4 items-center justify-center">
             {
-            posts.map((post :any , i : number) => (
+            posts.map((post, i ) => (
                 <Link href={`${post.properties.externalURL.url}`} className="rounded-sm w-10/12 lg:w-1/2 grid grid-cols-12 bg-white shadow p-3 gap-2 items-center hover:shadow-lg transition delay-150 duration-300 ease-in-out hover:scale-105 transform" >
                     
                     {/* <!-- Title --> */}

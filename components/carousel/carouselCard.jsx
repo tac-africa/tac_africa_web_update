@@ -1,12 +1,9 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable @next/next/no-img-element */
-import React from 'react'
-import { CardWithDetails } from "../cards/CardWithDetails";
+import { Card } from "../cards/Card";
 import Slider from "react-slick";
 
-export const databaseId: string = process.env.NOTION_BLOG_DATABASE_ID || ""
-
-const CarouselCardWithDetails = ({ posts, path } : any) => {
+export default function carouselCard({ posts , path } ){
 
   var settings = {
     dots: true,
@@ -44,11 +41,11 @@ const CarouselCardWithDetails = ({ posts, path } : any) => {
 
   return (
     <div className="w-full ">
-      <div className="pb-20 mx-auto my-0 xl:px-12 ">
-        <div className="mx:pl-4 pb-8 ">
-        <Slider {...settings} className='flex '>
-            {posts.map( (post : any) => (
-                <CardWithDetails post={post} />
+      <div className="lg:pt-12 pb-20 mx-auto my-0 xl:px-12  ">
+        <div className="mx:pl-4 pl-4 m-4 pb-8 ">
+        <Slider {...settings} className='flex ' >
+            {posts.map((post) => (
+                <Card post={post} path={path} />
             ) )}
         </Slider>
         </div>
@@ -58,5 +55,3 @@ const CarouselCardWithDetails = ({ posts, path } : any) => {
 };
 
 
-
-export default CarouselCardWithDetails;

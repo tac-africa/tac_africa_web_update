@@ -5,22 +5,6 @@ import FormModal from './formModal';
 import { ConditionalLinks } from './ConditionalLinks';
 
 
-    type ContentType = {
-      // map(arg0: ({ name, href }: ContentType) => JSX.Element): import("react").ReactNode;
-      name: string;
-      href: string;
-    };
-
-    type DropDownProps = {
-      isFooter : boolean
-      setMenuState  : React.Dispatch<React.SetStateAction<boolean>>;
-      menuState  : boolean;
-      label  : any;
-      content  : ContentType[]
-      i  : number;
-      type : string;
-    }
-
     const DropDownButton = ({
       isFooter,
       setMenuState,
@@ -29,7 +13,7 @@ import { ConditionalLinks } from './ConditionalLinks';
       content,
       i,
       type
-    }: DropDownProps ) => {
+    }) => {
 
     const [isShown, setIsShown] = useState(false);
 
@@ -80,7 +64,7 @@ import { ConditionalLinks } from './ConditionalLinks';
           className='block bg-white z-10 absolute divide-gray-100 rounded shadow dark:bg-gray-700 '
         >
           <ul className={` ${content[0].name ? "py-1 px-2" : undefined } text-sm divide-y text-gray-700 dark:text-gray-200`}>
-            {content.map(({ name, href } : ContentType ) => (
+              {content.map(({ name, href } ) => (
               <li
                 onMouseEnter={() => setIsShown(true)}
                 onMouseLeave={() => setIsShown(false)}

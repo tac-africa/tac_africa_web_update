@@ -3,16 +3,9 @@ import Link from 'next/link'
 import Button from '../button/Button';
 import { Text } from '../../pages/newsletters/[id]';
 
-type CardProps = {
-    title : string;
-    excerpt : string;
-    image: string;
-    link: string;
-}
 
 
-
-export const Card = ({ post, path }: any ) => {
+export const Card = ({ post, path }) => {
   return (
     <Link href={`/${path}/${post.properties.Slug.formula.string}`} >
         <div key={''} className="p-4 flex items-stretch  " style={{display: 'flex: 1 1 auto'}}> {/*md:w-6/12 lg:w-1/3*/}

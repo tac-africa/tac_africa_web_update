@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Text } from '../../pages/newsletters/[id]';
 
 
-export const CardWithDetails = ( {post, path } : any ) => {
+export const CardWithDetails = ( {post, path } ) => {
 
     // console.log(post.properties.Tags.multi_select[0].color, ',.')
     // console.log(post.properties.Tags.multi_select[0].name, ',.')

@@ -7,14 +7,14 @@ import styles from "../../styles/post.module.css";
 import Button from "../../components/button/Button";
 
 
-const databaseId: string = process.env.NOTION_BLOG_DATABASE_ID || ""
+const databaseId = process.env.NOTION_BLOG_DATABASE_ID || ""
 
 
-export const Text = ({ text } : any) => {
+export const Text = ({ text } ) => {
   if (!text) {
     return null;
   }
-  return text.map((value : any) => {
+  return text.map((value ) => {
     const {
       annotations: { bold, code, color, italic, strikethrough, underline },
       text,
@@ -36,7 +36,7 @@ export const Text = ({ text } : any) => {
   });
 };
 
-const renderNestedList = (block : any) => {
+const renderNestedList = (block ) => {
   const { type } = block;
   const value = block[type];
   if (!value) return null;
@@ -44,12 +44,12 @@ const renderNestedList = (block : any) => {
   const isNumberedList = value.children[0].type === "numbered_list_item";
 
   if (isNumberedList) {
-    return <ol>{value.children.map((block : any ) => renderBlock(block))}</ol>;
+    return <ol>{value.children.map((block  ) => renderBlock(block))}</ol>;
   }
-  return <ul>{value.children.map((block : any ) => renderBlock(block))}</ul>;
+  return <ul>{value.children.map((block  ) => renderBlock(block))}</ul>;
 };
 
-const renderBlock = (block : any ) => {
+const renderBlock = (block  ) => {
   const { type, id } = block;
   const value = block[type];
 
@@ -102,7 +102,7 @@ const renderBlock = (block : any ) => {
           <summary>
             <Text text={value.rich_text} />
           </summary>
-          {value.children?.map((block : any ) => (
+          {value.children?.map((block  ) => (
             <Fragment key={block.id}>{renderBlock(block)}</Fragment>
           ))}
         </details>
@@ -162,7 +162,7 @@ const renderBlock = (block : any ) => {
   }
 };
 
-export default function Post({ page, blocks } : any) {
+export default function Post({ page, blocks } ) {
   if (!page || !blocks) {
     return <div />;
   }
@@ -178,7 +178,7 @@ export default function Post({ page, blocks } : any) {
           <Text text={page.properties.Name.title} />
         </h1>
         <section>
-          {blocks.map((block : any ) => (
+          {blocks.map((block  ) => (
             <Fragment key={block.id}>{renderBlock(block)}</Fragment>
           ))}
           <Link href="/" className={styles.back}>
@@ -193,12 +193,12 @@ export default function Post({ page, blocks } : any) {
 export const getStaticPaths = async () => {
   const database = await getDatabase(databaseId, 'blog');
   return {
-    paths: database.map((page : any) => ({ params: { id: page.id } })),
+    paths: database.map((page ) => ({ params: { id: page.id } })),
     fallback: true,
   };
 };
 
-export const getStaticProps = async (context : any) => {
+export const getStaticProps = async (context ) => {
   const { id } = context.params;
   const page = await getPage(id);
   const blocks = await getBlocks(id);
@@ -207,19 +207,19 @@ export const getStaticProps = async (context : any) => {
   // https://developers.notion.com/docs/working-with-page-content#reading-nested-blocks
   const childBlocks = await Promise.all(
     blocks
-      .filter((block : any ) => block.has_children)
-      .map(async (block : any ) => {
+      .filter((block  ) => block.has_children)
+      .map(async (block  ) => {
         return {
           id: block.id,
           children: await getBlocks(block.id),
         };
       })
   );
-  const blocksWithChildren = blocks.map((block : any ) => {
+  const blocksWithChildren = blocks.map((block  ) => {
     // Add child blocks if the block should contain children but none exists
     if (block.has_children && !block[block.type].children) {
       block[block.type]["children"] = childBlocks.find(
-        (x : any) => x.id === block.id
+        (x ) => x.id === block.id
       )?.children;
     }
     return block;

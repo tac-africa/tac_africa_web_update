@@ -1,16 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
-// import { Text } from '../../pages/projects/[id]';
 import { Text } from '../../pages/newsletters/[id]';
 
-export default function OngoingProjects({ posts } : any ) {
-
+export default function OngoingProjects({ posts } ) {
 
   let projectsPosts = posts[0].properties.Category.select.name;
 
-  let projects: any[] = []
+  let projects = []
 
-  posts.forEach((post: any) => {
+  posts.forEach((post) => {
     if( projectsPosts == 'projects') {
       projects.push(post)
     }
@@ -22,7 +20,7 @@ export default function OngoingProjects({ posts } : any ) {
       <div className="w-10/12 mx-auto mt-12 ">
         <div className="mx-auto w-10/12 text-center mb-12 lg:w-7/12">
           <h2 className=" mx-auto pt-1.5 font-bold text-4xl text-center mb-6">
-            Explore our <span className="text-main_blue font-bold ">recent Projects </span>{' '}
+            Explore Our <span className="text-main_blue font-bold ">Recent Projects </span>{' '}
           </h2>
           <p className="tracking-wide text-gray-700">
             TAC Africa through her collaborations and partnerships

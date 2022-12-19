@@ -1,4 +1,4 @@
-import type { NextPage } from 'next'
+
 import Head from 'next/head'
 import Image from 'next/image'
 import Labs from '../components/Labs'
@@ -12,9 +12,9 @@ import OngoingProjects from '../components/priojects/ongoingProjects'
 import Contact from '../components/contact/Contact'
 
 
-const databaseId: string = process.env.NOTION_BLOG_DATABASE_ID || ""
+const databaseId = process.env.NOTION_BLOG_DATABASE_ID || ""
 
-export const getStaticProps : GetStaticProps = async () => {
+export const getStaticProps  = async () => {
   const news = await getDatabase(databaseId, 'news');
   const labs = await getDatabase(databaseId, 'labs');
   const projects = await getDatabase(databaseId, 'projects');
@@ -29,7 +29,7 @@ export const getStaticProps : GetStaticProps = async () => {
 };
 
 
-const Home: NextPage = ( { posts, labPosts, projects} : any ) => {
+const Home = ( { posts, labPosts, projects} ) => {
 
   return (
     <div className="">

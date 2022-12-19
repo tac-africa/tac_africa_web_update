@@ -4,15 +4,6 @@ import Button from '../button/Button'
 import { data } from '../../pages/api/navLinks'
 import DropDownButton from '../DropDownButton'
 
-type Data = {
-    label: string;
-    content: {
-        href: string;
-        name: string;
-    }[];
-    type: string;
-    details?: undefined;
-} 
 
 export default function Footer() {
     const [menuState, setMenuState] = useState(false);

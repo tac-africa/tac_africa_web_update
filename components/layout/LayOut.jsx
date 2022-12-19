@@ -4,11 +4,7 @@
 import Footer from '../footer/footer'
 import NavBar from './nav_bar/NavBar'
 
-type ChildrenProps = {
-    children : React.ReactNode
-}
-
-export default function Layout( { children }: ChildrenProps ) {
+export default function Layout( { children } ) {
 
 
   return(

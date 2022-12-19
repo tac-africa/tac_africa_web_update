@@ -4,19 +4,14 @@ import FormModal from './formModal';
 import React, { useState } from 'react';
 import CarouselCardWithDetails from './carousel/carouselCardWithDetails';
 
-type PdfType = {
-    children: React.ReactNode;
-    pdfs: string;
-}
-
-export default function LatestNews( {posts} : any) { // fix any type
+export default function LatestNews( {posts} ) { // fix any type
 
 //fix bug on production
   let labPosts = posts[0].properties.Category.select.name;
 
-  let news: any[] = []
+  let news = []
 
-  posts.forEach((post: any) => {
+  posts.forEach((post) => {
     if(labPosts == 'news') {
       news.push(post)
     }
