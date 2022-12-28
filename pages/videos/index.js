@@ -15,9 +15,9 @@ export default function aboutUs() {
                   <div className="container mx-auto space-y-2 lg:space-y-0 lg:gap-16 lg:grid lg:grid-cols-3">
                       
                       {
-                          data[0].youtube.map(({ title, description, link}) => (      
+                          data[0].youtube.map(({ title, description, link, videoSrc}) => (      
                             <div className="w-full rounded shadow-2xl">
-                            <YoutubeEmbed embedId={link} />
+                              <YoutubeEmbed embedId={link} videoSrc={ videoSrc } />
                                 
                                     {/* className='object-cover w-full h-[400px]' */}
                                     <div className=' bg-white p-4'>
