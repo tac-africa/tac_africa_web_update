@@ -113,28 +113,31 @@ export default function Footer() {
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
                             <ul className="text-gray-600 dark:text-gray-400">
                                 <li className="mb-4">
-                                    <a href="https://github.com/themesberg/flowbite" className="hover:underline ">free E-books</a>
+                                    <a href="/newsletters" className="hover:underline ">free E-books</a>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">development tutorial</a>
-                                </li>
+                                </li> */}
                                 <li className="mb-4">
-                                    <a href="https://github.com/themesberg/flowbite" className="hover:underline ">how to blog</a>
+                                    <a href="/blog" className="hover:underline ">blog</a>
                                 </li>
                                 <li>
-                                    <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">youtube playlist</a>
+                                    <a href="/videos" className="hover:underline">videos</a>
                                 </li>
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Help</h2>
-                            <ul className="text-gray-600 dark:text-gray-400">
+                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">GET IN TOUCH</h2>
+                            <ul className="text-gray-600 dark:text-gray-400 space-y-4" >
+                                <li>
+                                    <a href="#" className="hover:underline">TAC HQ: Plot 239 P.O.W <br /> Mafemi Crescent, Besides<br /> Daily Trust Newspapers,  <br />Utako District, Abuja, <br />Nigeria. 900112</a>
+                                </li>
                                 <li className="mb-4">
-                                    <a href="#" className="hover:underline">Customer Support </a>
+                                    <a href="#" className="hover:underline">phone: +234 706 224 7581 </a>
                                 </li>
                                 <li>
-                                    <a href="#" className="hover:underline">Assist Us</a>
-                                </li>
+                                    <a href="#" className="hover:underline">email: secretariat@tacafrica.org</a>
+                                  </li>
                             </ul>
                         </div>
                     </div>
